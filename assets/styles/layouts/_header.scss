@@ -13,8 +13,10 @@
 .menu-button {
 	background-color: #52B488; 
 	color: white;
-	width: 200px;
+	@include make-sm-column(2);
 	height: 50px;
+	position:fixed;
+	left: 0;
 	&:focus {
 		outline: none;
 	}
