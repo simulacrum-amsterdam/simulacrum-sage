@@ -1,8 +1,8 @@
 {
   "name": "sage",
-  "homepage": "https://roots.io/sage/",
+  "homepage": "https://www.simulacrum.nl",
   "authors": [
-    "Ben Word <ben@benword.com>"
+    "Robert-Jan Korteschiel"
   ],
   "license": "MIT",
   "private": true,

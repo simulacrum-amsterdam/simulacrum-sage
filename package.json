@@ -1,15 +1,15 @@
 {
-  "name": "sage",
-  "version": "8.2.1",
-  "author": "Ben Word <ben@benword.com>",
-  "homepage": "https://roots.io/sage/",
+  "name": "Simulacrum-Sage",
+  "version": "0.0.1",
+  "author": "Robert-Jan Korteschiel",
+  "homepage": "https://www.simulacrum.nl",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git://github.com/roots/sage.git"
+    "url": "git://github.com/simulacrum-amsterdam/simulacrum-sage"
   },
   "bugs": {
-    "url": "https://github.com/roots/sage/issues"
+    "url": "https://github.com/simulacrum-amsterdam/simulacrum-sage/issues"
   },
   "licenses": [
     {
