@@ -1,6 +1,7 @@
 // Grid system
 .main {
-  @include make-sm-column($main-sm-columns);
+  @include make-sm-column($main-sm-columns - 2);
+  @include make-sm-column-offset(2);
   .sidebar-primary & {
     @include make-sm-column($main-sm-columns - $sidebar-sm-columns);
   }

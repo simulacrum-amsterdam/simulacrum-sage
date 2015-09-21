@@ -1,0 +1,24 @@
+.banner {
+	background-color: white;
+	color: black;
+}
+
+.main-logo {
+	position: fixed;
+	left: 0%;
+	top: 20%;
+	height: 60%;
+}
+
+.menu-button {
+	background-color: #52B488; 
+	color: white;
+	width: 200px;
+	height: 50px;
+	&:focus {
+		outline: none;
+	}
+	&:active {
+		outline: none;
+	}
+}
