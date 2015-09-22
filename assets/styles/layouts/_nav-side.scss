@@ -1,0 +1,21 @@
+.side-nav {
+	height: 100%;
+}
+
+.wrap-fixed {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+}
+
+.header-left {
+
+}
+
+.main-logo {
+	position: absolute;
+	left: $gutter;
+	top: 20%;
+	height: 60%;
+	max-width: 100%;
+}

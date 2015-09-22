@@ -1,32 +1,25 @@
-.main-logo {
-	@include make-sm-column(2);
+.menu-button {
 	position: fixed;
 	left: 0%;
-	top: 20%;
-	padding-right: 0;
-	padding-left: 0;
-}
-
-.header-nav-container {
-	padding: 0 0 0 0; 
-}
-
-.menu-button {
-	@include make-sm-column(2);
 	width: 100%;
-	left: 0%;
 	height: 50px;
 	background-color: #52B488; 
 	color: white;
-
-	@media (min-width: $screen-sm-min) {
-		position:fixed;
-  	}
+	z-index: 10000;
 
 	&:focus {
 		outline: none;
 	}
 	&:active {
 		outline: none;
+	}	
+}
+
+.nav-top {
+	&:after {
+		content: '';
+		display: block;
+		width: 100%;
+		height: 50px;
 	}
 }

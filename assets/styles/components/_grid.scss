@@ -1,9 +1,12 @@
 // Grid system
+.side-nav {
+	@include make-sm-column($side-nav-sm-columns);
+}
+
 .main {
-  @include make-sm-column($main-sm-columns - 2);
-  @include make-sm-column-offset(2);
+  @include make-sm-column($main-sm-columns - $side-nav-sm-columns);
   .sidebar-primary & {
-    @include make-sm-column($main-sm-columns - $sidebar-sm-columns);
+    @include make-sm-column($main-sm-columns - $sidebar-sm-columns - $side-nav-sm-columns);
   }
 }
 .sidebar {
