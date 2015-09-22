@@ -1,22 +1,25 @@
 .banner {
-	background-color: white;
-	color: black;
 }
 
 .main-logo {
+	@include make-sm-column(2);
 	position: fixed;
 	left: 0%;
 	top: 20%;
 	height: 60%;
+	padding-right: 0;
+	padding-left: 0;
 }
 
 .menu-button {
+	@include make-sm-column(2);
+	position:fixed;
+	left: 0%;
+	height: 50px;
+	
 	background-color: #52B488; 
 	color: white;
-	@include make-sm-column(2);
-	height: 50px;
-	position:fixed;
-	left: 0;
+
 	&:focus {
 		outline: none;
 	}
