@@ -18,8 +18,8 @@
 	@include make-sm-column($nav-side-sm-columns-on)
 }
 
-.main {
-  @include make-sm-column($main-sm-columns - $nav-side-sm-columns-on );
+.main-on {
+  @include make-sm-column($main-sm-columns - $nav-side-sm-columns-on);
   .sidebar-primary & {
     @include make-sm-column($main-sm-columns - $sidebar-sm-columns - $nav-side-sm-columns-on);
   }
