@@ -25,11 +25,9 @@
 }
 
 .header-left-on {
-
+	width: (100 / (($nav-side-sm-columns-on - $nav-side-sm-columns ) / $nav-side-sm-columns-on))%;
 }
 
 .header-right-on {
-	position: relative;
-	width: 100%;
-	height: 100%;
+	width: (100 / ($nav-side-sm-columns/$nav-side-sm-columns-on))%;
 }
