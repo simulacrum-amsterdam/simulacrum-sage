@@ -23,7 +23,7 @@ use Roots\Sage\Wrapper;
     <div class="wrap container-fluid" role="document">
       <div class="content row">
         <?php
-          get_template_part('templates/side-nav');
+          get_template_part('templates/nav-side');
         ?>
         <main class="main" role="main">
           <?php include Wrapper\template_path(); ?>
