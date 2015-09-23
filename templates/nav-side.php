@@ -1,4 +1,4 @@
-<aside class="side-nav" role="banner">
+<aside class="nav-side" role="banner">
     <div class="wrap-fixed">    
     <!-- this div contains the nav menu, and it out of view on standard sizes -->
       <div class="header-left">
