@@ -6,28 +6,16 @@
 
 .header-left {
 	position: absolute;
-	width: 100%;
-	left: -100%; 
+	width: 50%;
 	height: 100%;
 	background-color: $brand-primary;
-    transition: left 0.5s ease;
-	&.on {
-		width: 100%;
-		left: 0px;
-		@media (min-width: $screen-sm-min) {
-			width: 50%;
-		}
-	}
 }
 
 .header-right {
 	position: absolute;
-	width: 100%;
+	left: 50%;
+	width: 50%;
 	height: 100%;
-    transition: left 0.5s ease;
-	&.on {
-		left: 50%;
-	}
 }
 
 .main-logo {
