@@ -1,0 +1,11 @@
+.frontpage-header {
+	@include make-sm-column(12);
+}
+
+.frontpage-blog {
+	@include make-sm-column(6);
+}
+
+.frontpage-issue {
+	@include make-sm-column(6);
+}

@@ -2,7 +2,13 @@
     <div class="wrap-fixed">    
     <!-- this div contains the nav menu, and it out of view on standard sizes -->
       <div class="header-left">
-        
+        <nav class="nav-sidebar-off" role="navigation">
+	        <?php
+	        if (has_nav_menu('primary_navigation')) :
+	          wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']);
+	        endif;
+	        ?>
+      	</nav>
       </div>
      
       <!-- this div contains the logo and the login button -->
