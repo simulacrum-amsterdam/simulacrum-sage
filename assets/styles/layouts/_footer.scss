@@ -17,6 +17,16 @@
 	}
 }
 
+footer {
+	color: white;
+	caption {
+		color: white;
+	}
+	a {
+		color: white;
+	}
+}
+
 .footer-one, .footer-two, .footer-three {
   	@include make-sm-column($main-sm-columns/3);
 }

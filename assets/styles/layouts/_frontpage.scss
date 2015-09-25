@@ -1,9 +1,3 @@
-.frontpage-header {
-	width: 100%;
-	height: 300px;
-	background: black;
-}
-
 .frontpage-blog {
 	@include make-sm-column(4);
 	@include make-sm-column-offset(0);

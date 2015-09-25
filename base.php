@@ -16,26 +16,17 @@ use Roots\Sage\Wrapper;
     <![endif]-->
     
     <?php
-      do_action('get_header');
-      get_template_part('templates/header');
-    ?>
-
-    <?php
       get_template_part('templates/nav-side');
     ?>
   
-    <div class="main-wrapper">
-      <div class="frontpage-header"></div>
-      <div class="wrap container-fluid" role="document">
-          <main class="main content" role="main">
-            <?php include Wrapper\template_path(); ?>
-          </main><!-- /.main -->
-          <?php if (Config\display_sidebar()) : ?>
-            <aside class="sidebar" role="complementary">
-              <?php include Wrapper\sidebar_path(); ?>
-            </aside><!-- /.sidebar -->
-          <?php endif; ?>
-      </div><!-- /.wrap -->
+    <div class="main-wrapper" role="document">
+      <?php
+        do_action('get_header');
+        get_template_part('templates/header');
+      ?>
+      <main class="main container-fluid content" role="main">
+        <?php include Wrapper\template_path(); ?>
+      </main><!-- /.main -->
     </div>
     <?php
       do_action('get_footer');
