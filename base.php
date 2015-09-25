@@ -25,9 +25,9 @@ use Roots\Sage\Wrapper;
     ?>
   
     <div class="main-wrapper">
+      <div class="frontpage-header"></div>
       <div class="wrap container-fluid" role="document">
-        <div class="content row">
-          <main class="main" role="main">
+          <main class="main content" role="main">
             <?php include Wrapper\template_path(); ?>
           </main><!-- /.main -->
           <?php if (Config\display_sidebar()) : ?>
@@ -35,7 +35,6 @@ use Roots\Sage\Wrapper;
               <?php include Wrapper\sidebar_path(); ?>
             </aside><!-- /.sidebar -->
           <?php endif; ?>
-        </div><!-- /.content -->
       </div><!-- /.wrap -->
     </div>
     <?php

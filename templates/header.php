@@ -1,3 +1,3 @@
-<header class="nav-top">    
-      <button class="btn menu-button">MENU</button>
+<header class="nav-top">
+	<p class="menu-button">MENU</p>
 </header>

@@ -1,29 +1,43 @@
-.menu-button {
+.nav-top {
 	position: fixed;
 	left: 0%;
 	width: 100%;
 	height: 50px;
-	background-color: #52B488; 
+	background-color: $brand-primary; 
 	color: white;
 	z-index: 10000;
+    transition: all 1s ease;
+	transition-delay: 0.5s;
 
 	@media (min-width: $screen-sm-min) {
 		width: 20%;
 	}
 
 	&:focus {
+		color: white;
 		outline: none;
 	}
 	&:active {
+		color: white;
 		outline: none;
-	}	
-}
-
-.nav-top {
+	}
+	&:hover {
+		color: white;
+	}
 	&:after {
 		content: '';
 		display: block;
 		width: 100%;
 		height: 50px;
 	}
+	&.on {
+		width: 100%;
+		@media (min-width: $screen-sm-min) {
+			width: 40%;
+		}
+	}
+}
+
+.menu-button {
+
 }

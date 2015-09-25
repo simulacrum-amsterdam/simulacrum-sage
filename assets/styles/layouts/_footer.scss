@@ -1,0 +1,29 @@
+.footer-wrapper {
+	border-top:10px solid $brand-primary;
+	width: 100%;
+	margin-left: 0%;
+	margin-top: 50px;
+	padding-top: 50px;
+	background-color: black;
+    transition: all 0.5s ease;
+	
+	@media (min-width: $screen-sm-min) {
+		width: 80%;
+		margin-left: 20%;
+	}
+	&.on {
+		width: 60%;
+		margin-left: 40%;
+	}
+}
+
+.footer-one, .footer-two, .footer-three {
+  	@include make-sm-column($main-sm-columns/3);
+}
+
+.footer-end {
+  	@include make-sm-column($main-sm-columns);
+  	padding-top: 50px;
+	height: 100px;
+	text-align: center;
+}
