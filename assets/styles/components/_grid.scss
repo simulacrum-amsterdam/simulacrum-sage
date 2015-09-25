@@ -2,10 +2,12 @@
 
 .nav-side {
 	position: relative;
-	width: 40%;
-	left: -40%;
+	width: 60%;
+	left: -60%;
+	z-index: 1000;
     transition: all 0.5s ease;
 	@media (min-width: $screen-sm-min) {
+		width: 40%;
 		left: -20%;
 	}
 	&.on {
@@ -21,8 +23,10 @@
 		width: (100% - 20%);
 	}
 	&.on {
-		margin-left: 40%;
-		width: (100% - 40%);
+		@media (min-width: $screen-sm-min) {
+			margin-left: 40%;
+			width: (100% - 40%);		
+		}
 	}
 }
 
