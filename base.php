@@ -20,21 +20,24 @@ use Roots\Sage\Wrapper;
       get_template_part('templates/header');
     ?>
 
-    <div class="wrap container-fluid" role="document">
-      <div class="content row">
-        <?php
-          get_template_part('templates/nav-side');
-        ?>
-        <main class="main" role="main">
-          <?php include Wrapper\template_path(); ?>
-        </main><!-- /.main -->
-        <?php if (Config\display_sidebar()) : ?>
-          <aside class="sidebar" role="complementary">
-            <?php include Wrapper\sidebar_path(); ?>
-          </aside><!-- /.sidebar -->
-        <?php endif; ?>
-      </div><!-- /.content -->
-    </div><!-- /.wrap -->
+    <?php
+      get_template_part('templates/nav-side');
+    ?>
+  
+    <div class="main-wrapper">
+      <div class="wrap container-fluid" role="document">
+        <div class="content row">
+          <main class="main" role="main">
+            <?php include Wrapper\template_path(); ?>
+          </main><!-- /.main -->
+          <?php if (Config\display_sidebar()) : ?>
+            <aside class="sidebar" role="complementary">
+              <?php include Wrapper\sidebar_path(); ?>
+            </aside><!-- /.sidebar -->
+          <?php endif; ?>
+        </div><!-- /.content -->
+      </div><!-- /.wrap -->
+    </div>
     <?php
       do_action('get_footer');
       get_template_part('templates/footer');

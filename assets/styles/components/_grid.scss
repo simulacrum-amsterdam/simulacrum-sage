@@ -1,26 +1,35 @@
 // Grid system
 
 .nav-side {
-	@include make-sm-column($nav-side-sm-columns);
+	width: 0%;
+    transition: all 0.5s ease;
+	@media (min-width: $screen-sm-min) {
+		width: 20%;
+	}
+	&.on {
+		width: 40%;
+	}
+}
+
+.main-wrapper {
+	width: 100%;
+    transition: all 0.5s ease;
+	@media (min-width: $screen-sm-min) {
+		margin-left: 20%;
+		width: (100% - 20%);
+	}
+	&.on {
+		margin-left: 40%;
+		width: (100% - 40%);
+	}
 }
 
 .main {
-  @include make-sm-column($main-sm-columns - $nav-side-sm-columns);
+  @include make-sm-column($main-sm-columns);
   .sidebar-primary & {
-    @include make-sm-column($main-sm-columns - $sidebar-sm-columns - $nav-side-sm-columns);
+    @include make-sm-column($main-sm-columns - $sidebar-sm-columns);
   }
 }
 .sidebar {
   @include make-sm-column($sidebar-sm-columns);
-}
-
-.nav-side-on {
-	@include make-sm-column($nav-side-sm-columns-on)
-}
-
-.main-on {
-  @include make-sm-column($main-sm-columns - $nav-side-sm-columns-on);
-  .sidebar-primary & {
-    @include make-sm-column($main-sm-columns - $sidebar-sm-columns - $nav-side-sm-columns-on);
-  }
 }

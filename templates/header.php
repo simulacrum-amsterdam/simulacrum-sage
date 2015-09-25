@@ -1,5 +1,5 @@
 <header class="nav-top">    
-      <a href="<?= esc_url(home_url('/')); ?>"><button class="btn menu-button">MENU</button></a>
+      <button class="btn menu-button">MENU</button>
 </header>
 
 
