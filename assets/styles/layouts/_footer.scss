@@ -28,7 +28,15 @@ footer {
 }
 
 .footer-one, .footer-two, .footer-three {
-  	@include make-sm-column($main-sm-columns/3);
+  	@include make-sm-column($main-sm-columns/4);
+}
+
+.footer-two {
+  	@include make-sm-column-offset(1);
+}
+
+.footer-three {
+	@include make-sm-column-offset(1);
 }
 
 .footer-end {
