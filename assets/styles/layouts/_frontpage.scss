@@ -7,3 +7,7 @@
 	@include make-sm-column-offset(2);
 	@include make-sm-column(5);
 }
+
+.small-title {
+	color: silver;
+}

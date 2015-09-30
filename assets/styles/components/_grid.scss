@@ -1,8 +1,14 @@
 // Grid system
 
+html, body {
+	width: 100%;
+	overflow-x: hidden;
+}
+
 .nav-side {
-	position: relative;
+	position: absolute;
 	width: 60%;
+	height: 100%;
 	left: -60%;
 	z-index: 1000;
     transition: all 0.5s ease;
@@ -23,9 +29,9 @@
 		width: (100% - 20%);
 	}
 	&.on {
+		margin-left: 60%;
 		@media (min-width: $screen-sm-min) {
 			margin-left: 40%;
-			width: (100% - 40%);		
 		}
 	}
 }

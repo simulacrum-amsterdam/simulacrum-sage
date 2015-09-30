@@ -9,8 +9,9 @@
 	  <div class="footer-three">
 	    <?php dynamic_sidebar('sidebar-footer-three'); ?>
 	  </div>
-	  <div class="footer-end">
-	  	<p>2015 Simulacrum</p>
-	  </div>
 	</footer>
+</div>
+
+<div class="footer-end">
+  	<p>2015 Simulacrum</p>
 </div>
