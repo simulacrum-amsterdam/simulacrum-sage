@@ -1,0 +1,9 @@
+.single_post {
+	@include make-sm-column-offset(2);
+	@include make-sm-column(8);
+}
+
+.excerpt_class {
+	@include make-sm-column-offset(2);
+	@include make-sm-column(8);
+}
