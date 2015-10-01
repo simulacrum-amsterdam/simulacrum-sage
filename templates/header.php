@@ -4,7 +4,7 @@
 ?>
 
 <div class="main-header container-fluid">
-	<div class="main-heading-container">	
-		<h1>Simulacrum</h1>
+	<div class="main-heading-container">
+		<h4><a href="">readers</a> / <a href="">writers</a></h4>
 	</div>
 </div>
