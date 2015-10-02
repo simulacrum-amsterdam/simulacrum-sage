@@ -5,6 +5,6 @@
 
 <div class="main-header container-fluid">
 	<div class="main-heading-container">
-		<h4><a href="">readers</a> / <a href="">writers</a></h4>
+		<h4><a href="">About</a></h4>
 	</div>
 </div>
