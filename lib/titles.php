@@ -3,15 +3,28 @@
 namespace Roots\Sage\Titles;
 
 function debug_to_console( $data ) {
-
-    if ( is_array( $data ) )
-        $output = "<script>console.log( 'Debug Objects: " . implode( ',', $data) . "' );</script>";
-    else
-        $output = "<script>console.log( 'Debug Objects: " . $data . "' );</script>";
-
-    echo $output;
+  $output = '';
+  if ( is_array( $data ) ) {
+    $output .= "console.log( 'Debug Objects with Array.' ); 
+      console.log( '" . preg_replace( 
+        "/\n/", "\\n",
+        str_replace( "'", "\'", var_export( $data, TRUE ) )
+      ) . "' );";
+  } else if ( is_object( $data ) ) {
+    $data    = var_export( $data, TRUE );
+    $data    = explode( "\n", $data );
+    foreach( $data as $line ) {
+      if ( trim( $line ) ) {
+        $line    = addslashes( $line );
+        $output .= "console.log( '{$line}' );";
+      }
+    }
+    $output = "console.log( 'Debug Objects with Object.' ); $output";
+  } else {
+    $output .= "console.log( 'Debug Objects: {$data}' );";
+  }
+  echo '<script>' . $output . '</script>';
 }
-
 
 /**
  * Page titles
