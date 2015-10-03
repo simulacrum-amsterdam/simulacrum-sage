@@ -2,7 +2,7 @@
 
 <div class="frontpage-news">
 	<h5 class="small-title">Nieuws:</h5>
-	<?php $latest = new WP_Query('showposts=5&category_name=News'); ?>
+	<?php $latest = new WP_Query('showposts=5&category_name=nieuws'); ?>
 	<?php while ($latest->have_posts()) : $latest->the_post(); ?>
 	<?php get_template_part('templates/content-frontpage-sub-news', get_post_type() != 'post' ? get_post_type() : get_post_format()); ?>
 	<?php endwhile; ?>
