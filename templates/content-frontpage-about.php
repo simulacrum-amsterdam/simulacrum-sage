@@ -1,5 +1,5 @@
 <?php use Roots\Sage\Titles; ?>
 
-Hi!
+<div>Hi!</div>
 
 
