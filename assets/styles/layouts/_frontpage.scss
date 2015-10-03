@@ -45,7 +45,6 @@
 .frontpage-old-issues {
 	@include make-row();
 	margin-top: 20px;
-	margin-bottom: 50px;
 	padding-top: 100px;
 	.single-issue {
 		@include make-sm-column(10);

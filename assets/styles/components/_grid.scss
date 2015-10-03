@@ -27,6 +27,7 @@ body {
 
 .main-wrapper {
 	width: 100%;
+	padding-bottom: 50px;
 	min-height: 90%;
     transition: all 0.5s ease;
 	@media (min-width: $screen-sm-min) {
