@@ -28,13 +28,6 @@
 	<div class="single-issue">
 		<img class="issue-image" src="<?php bloginfo('template_directory'); ?>/dist/images/Cover-OEF.jpg"/>
 		<div class="single-issue-text">
-			<h4>OEF!</h4>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis voluptatem, fuga voluptas velit fugiat modi iusto inventore! Eligendi recusandae optio tenetur, blanditiis, voluptatibus sed quas ut enim similique nostrum explicabo.</p>
-		</div>
-	</div>
-	<div class="single-issue">
-		<img class="issue-image" src="<?php bloginfo('template_directory'); ?>/dist/images/Cover-OEF.jpg"/>
-		<div class="single-issue-text">
 			<h4>Let's get digital</h4>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis voluptatem, fuga voluptas velit fugiat modi iusto inventore! Eligendi recusandae optio tenetur, blanditiis, voluptatibus sed quas ut enim similique nostrum explicabo.</p>
 		</div>
