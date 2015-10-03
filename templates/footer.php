@@ -1,4 +1,4 @@
-<div class="footer-wrapper">
+<!-- <div class="footer-wrapper">
 	<footer class="content-info container-fluid" role="contentinfo">
 	  <div class="footer-one">
 	    <?php dynamic_sidebar('sidebar-footer-one'); ?>
@@ -10,7 +10,7 @@
 	    <?php dynamic_sidebar('sidebar-footer-three'); ?>
 	  </div>
 	</footer>
-</div>
+</div> -->
 
 <div class="footer-end">
   	<p>2015 Simulacrum</p>
