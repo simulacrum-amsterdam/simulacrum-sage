@@ -17,7 +17,7 @@
 	</div>
 	<div class="in-between"></div>
 	<div class="post-container">
-		<h5 class="small-title"> Artikelen: </h5>
+		<h5 class="small-title"> Inhoud: </h5>
 		<?php $latest = new WP_Query('showposts=5&tag=jrg23-4'); ?>
 		<?php while ($latest->have_posts()) : $latest->the_post(); ?>
 		<?php get_template_part('templates/content-frontpage-sub-issue', get_post_type() != 'post' ? get_post_type() : get_post_format()); ?>
