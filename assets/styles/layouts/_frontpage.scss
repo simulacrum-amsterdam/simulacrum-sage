@@ -12,7 +12,6 @@
 	}
 	.small-title {
 		margin-left: $grid-gutter-width / 2 ;
-		color: silver;
 	}
 }
 
@@ -21,7 +20,7 @@
 	@include make-row();
 	.frontpage-current-issue {
 		@include make-sm-column(6);
-		img {
+		.issue-image{
 			width: 50%;
 		}
 	}
@@ -38,7 +37,29 @@
 }
 
 .frontpage-old-issues {
+	@include make-row();
+	margin-top: 20px;
+	padding-top: 100px;
+	.single-issue {
+		@include make-sm-column(10);
+		margin-bottom: 20px;
 
+		.issue-image{
+			display: block;
+			width: 10%;
+			float: left;
+		}
+		.single-issue-text {
+			display: block;
+			width: 90%;
+			padding-left: $grid-gutter-width / 2;
+			float: left;
+		}
+
+	}
+	.small-title {
+		margin-left: $grid-gutter-width / 2 ;
+	}
 }
 
 .small-title {
