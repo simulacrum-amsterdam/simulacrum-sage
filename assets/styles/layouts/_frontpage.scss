@@ -1,11 +1,39 @@
-.frontpage-blog {
-	@include make-sm-column(4);
-	@include make-sm-column-offset(0);
+.frontpage-news {
+	@include make-row();
+	.post {
+		@include make-sm-column(3);
+		
+		&:nth-child(3) {
+			@include make-sm-column-offset(1);
+		}
+		&:nth-child(4) {
+			@include make-sm-column-offset(1);
+		}
+	}
+	.small-title {
+		margin-left: $grid-gutter-width / 2 ;
+		color: silver;
+	}
 }
 
 .frontpage-issue {
-	@include make-sm-column-offset(2);
-	@include make-sm-column(5);
+	margin-top: 100px;
+	@include make-row();
+	.frontpage-current-issue {
+		@include make-sm-column(6);
+		img {
+			width: 50%;
+		}
+	}
+	
+	.post-container {
+		@include make-sm-column-offset(1);
+		@include make-sm-column(4);
+	}
+
+	.post {
+		
+	}
 }
 
 .small-title {
