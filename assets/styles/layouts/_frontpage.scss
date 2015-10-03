@@ -27,6 +27,7 @@
 	}
 	
 	.post-container {
+		border-left: solid black 5px;
 		@include make-sm-column-offset(1);
 		@include make-sm-column(4);
 	}
@@ -34,6 +35,10 @@
 	.post {
 		
 	}
+}
+
+.frontpage-old-issues {
+
 }
 
 .small-title {
