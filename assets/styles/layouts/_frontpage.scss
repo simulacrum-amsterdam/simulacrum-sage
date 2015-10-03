@@ -19,14 +19,20 @@
 	margin-top: 100px;
 	@include make-row();
 	.frontpage-current-issue {
-		@include make-sm-column(6);
+		@include make-sm-column(5);
 		.issue-image{
 			width: 50%;
 		}
 	}
+
+	.in-between {
+		@include make-sm-column(1);
+		height: 200px;
+		border-right: solid black 5px;
+	}
 	
 	.post-container {
-		border-left: solid black 5px;
+
 		@include make-sm-column-offset(1);
 		@include make-sm-column(4);
 	}

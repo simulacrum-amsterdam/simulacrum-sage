@@ -15,6 +15,7 @@
 		<p> Dit geweldige nieuwe nummer verkent Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa deserunt adipisci tenetur nostrum a libero, et fugit magnam cum. Sunt odio numquam quas earum beatae quaerat commodi, accusamus ducimus velit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad nisi obcaecati molestiae dignissimos, assumenda nemo fuga tempore enim deleniti consequatur animi fugiat doloremque sit natus ullam adipisci perferendis nam incidunt.</p>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis voluptatem, fuga voluptas velit fugiat modi iusto inventore! Eligendi recusandae optio tenetur, blanditiis, voluptatibus sed quas ut enim similique nostrum explicabo.</p>
 	</div>
+	<div class="in-between"></div>
 	<div class="post-container">
 		<h5 class="small-title"> Artikelen: </h5>
 		<?php $latest = new WP_Query('showposts=5&tag=jrg23-4'); ?>
