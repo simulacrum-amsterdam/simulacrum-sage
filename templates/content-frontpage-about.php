@@ -11,11 +11,11 @@
 		<h3>Onderwerpen:</h3>
 		<h4>Call for papers</h4>
 		<h4>Gids voor auteurs</h4>
-		<h4>Wetenschappelijke proces</h4>
+		<h4>Wetenschappelijke process</h4>
 		<h4>Contact informatie</h4>
 		<h4>Advertentie beleid</h4>
 		<h4>Privacy beleid</h4>
-		<h4>Open Access / Licensies</h4>
+		<h4>Open Access / Licenties</h4>
 	</div>
 </div>
 <div class="about-people-row">
