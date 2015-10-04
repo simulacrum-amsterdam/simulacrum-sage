@@ -1,3 +1,8 @@
+.single_post {
+	@include make-sm-column-offset(1);
+	@include make-sm-column(6);
+}
+
 .side-bar {
 	@include make-sm-column-offset(1);
 	@include make-sm-column(4);
@@ -10,7 +15,7 @@
 
 .license {
 	img {
-		width: 60%;
+		width: 40%;
 	}
 }
 
@@ -21,7 +26,10 @@
 	}
 }
 
-.single_post {
+.similar-posts {
+	margin-top: 40px;
+	padding-top: 40px;
+	border-top: 5px solid black;
 	@include make-sm-column-offset(1);
 	@include make-sm-column(6);
 }

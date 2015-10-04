@@ -47,7 +47,13 @@
         <img class="social-img" src="<?php bloginfo('template_directory'); ?>/dist/images/print.png"/> 
         <img class="social-img" src="<?php bloginfo('template_directory'); ?>/dist/images/pdf.jpg"/>
         <img class="social-img" src="<?php bloginfo('template_directory'); ?>/dist/images/mail.png"/> 
-
     </div>
+  </div>
+  <div class="similar-posts">
+    <h3>Similar posts:</h3>
+    <p>Post title</p>
+    <p>Post title</p>
+    <p>Post title</p>
+    <p>Post title</p>
   </div>
 <?php endwhile; ?>
