@@ -8,7 +8,7 @@
 		<p>Interesse? Zoek ons op in de boekhandel, word abonnee, schrijf een bijdrage of verrijk de redactie!</p>
 	</div>
 	<div class="about-topics">
-		<h3>Onderwerpen:</h3>
+		<h3>Onderwerpen</h3>
 		<h4>Call for papers</h4>
 		<h4>Gids voor auteurs</h4>
 		<h4>Wetenschappelijke process</h4>
