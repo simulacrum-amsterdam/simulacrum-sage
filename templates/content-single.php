@@ -18,6 +18,9 @@
       <h4>Naam Auteur</h4>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis neque voluptas optio eveniet minima aut quis consequatur, temporibus enim. Error debitis maiores maxime fuga recusandae temporibus consequuntur, iste delectus sapiente.</p>
     </div>
+    <div class="editors">
+      <h5>Toetsende Redacteur</h5>
+    </div>
     <div class="version-info">
       <h5>Versie</h5>
       <p>Ingezonden: 10 september 2015</p>
