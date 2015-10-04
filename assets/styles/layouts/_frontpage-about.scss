@@ -7,7 +7,7 @@
 
 	.about-topics {
 		@include make-sm-column-offset(2);
-		@include make-sm-column(5);
+		@include make-sm-column(4);
 		h4 {
 			padding: 5px;
 			border-right: solid 5px black;
@@ -22,10 +22,18 @@
 
 	.about-current-staff {
 		@include make-sm-column(5);
-		.portret-current {
-			width: 23%;
-			padding: 1%;
-		}
+		.single-member {
+			@include clearfix;
+			padding: 10px;
+			img {
+				width: 23%;
+				padding: 1%;
+			}
+			.member-text {
+				float: right;
+				width: 75%
+			}
+		}	
 	}
 
 	.about-retired-staff {
