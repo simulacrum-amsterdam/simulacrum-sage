@@ -14,12 +14,12 @@
   </article>
   <div class="side-bar">
     <div class="author">
-      <h5>Auteur:</h5>
+      <h5>Auteur</h5>
       <h4>Naam Auteur</h4>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis neque voluptas optio eveniet minima aut quis consequatur, temporibus enim. Error debitis maiores maxime fuga recusandae temporibus consequuntur, iste delectus sapiente.</p>
     </div>
     <div class="version-info">
-      <h5>Versie:</h5>
+      <h5>Versie</h5>
       <p>Ingezonden: 10 september 2015</p>
       <p>Gepubliceerd: 30 oktober 2015</p>
       <p>Laatste verandering: 31 oktober 2015</p>
