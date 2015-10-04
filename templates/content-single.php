@@ -21,7 +21,7 @@
     <div class="version-info">
       <h5>Versie:</h5>
       <p>Ingezonden: 10 september 2015</p>
-      <p>Afgedrukt: 30 oktober 2015</p>
+      <p>Gepubliceerd: 30 oktober 2015</p>
       <p>Laatste verandering: 31 oktober 2015</p>
     </div>
     <div class="license">
