@@ -35,8 +35,16 @@
     </div>
     <div class="export-options">
         <h5>Share</h5>
-        
+        <img class="social-img" src="<?php bloginfo('template_directory'); ?>/dist/images/social/512x512/s-icons_social-media-icons_basic_round_set_gradient-color_512x512_0000_facebook.png"/>    
+        <img class="social-img" src="<?php bloginfo('template_directory'); ?>/dist/images/social/512x512/s-icons_social-media-icons_basic_round_set_gradient-color_512x512_0002_twitter.png"/>    
+        <img class="social-img" src="<?php bloginfo('template_directory'); ?>/dist/images/social/512x512/s-icons_social-media-icons_basic_round_set_gradient-color_512x512_0001_pinterest.png"/>    
+        <img class="social-img" src="<?php bloginfo('template_directory'); ?>/dist/images/social/512x512/s-icons_social-media-icons_basic_round_set_gradient-color_512x512_0003_google+.png"/>    
+        <img class="social-img" src="<?php bloginfo('template_directory'); ?>/dist/images/social/512x512/s-icons_social-media-icons_basic_round_set_gradient-color_512x512_0026_linkedin.png"/> 
         <h5>Export</h5>
+        <img class="social-img" src="<?php bloginfo('template_directory'); ?>/dist/images/print.png"/> 
+        <img class="social-img" src="<?php bloginfo('template_directory'); ?>/dist/images/pdf.jpg"/>
+        <img class="social-img" src="<?php bloginfo('template_directory'); ?>/dist/images/mail.png"/> 
+
     </div>
   </div>
 <?php endwhile; ?>
