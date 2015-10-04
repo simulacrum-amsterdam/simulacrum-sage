@@ -1,6 +1,22 @@
+.side-bar {
+	@include make-sm-column-offset(1);
+	@include make-sm-column(4);
+
+	h5 {
+		margin-top: 17px;
+		color: silver;
+	}
+}
+
+.license {
+	img {
+		width: 60%;
+	}
+}
+
 .single_post {
-	@include make-sm-column-offset(2);
-	@include make-sm-column(8);
+	@include make-sm-column-offset(1);
+	@include make-sm-column(6);
 }
 
 .excerpt_class {
