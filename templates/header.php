@@ -13,7 +13,7 @@
 		</div>
 		<ul class="nav navbar-nav navbar-right hidden-xs">
 			<li><a href="#">Contact</a></li>
-			<li><a href="#">About</a></li>
+			<li><a href="#">Over</a></li>
 		</ul>
 	</div>
 </nav>
