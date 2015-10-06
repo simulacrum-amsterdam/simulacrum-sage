@@ -2,16 +2,30 @@
 	@include make-row();
 	padding-top: 20px;
 	.post-container {
-		@include make-sm-column(6);
+		@include make-sm-column(8);
 	}
 	.post {
-		&:nth-child(1) {
-			background-color: red;
+		&:nth-child(-n+5) {
+			padding: 200px 0 0 0;
+			margin-bottom: 120px;
+			background-size: 100% 100%;
 		}
+	}
+	.inner-post-container {
+		position: relative;
+		top: 100px;
+		background: white;
+		width: 80%;
+		padding: 10px;
+		margin: 0 auto;
+		border-top: solid black 5px;
+		border-bottom: solid black 5px;
+		border-right: solid black 5px;
+
 	}
 	.frontpage-current-issue {
 		@include make-sm-column-offset(1);
-		@include make-sm-column(4);
+		@include make-sm-column(3);
 		.issue-image{
 			width: 50%;
 		}
