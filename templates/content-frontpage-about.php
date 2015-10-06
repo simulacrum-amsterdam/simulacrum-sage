@@ -1,5 +1,12 @@
 <?php use Roots\Sage\Titles; ?>
 
+<div class="about-news">
+	<h5 class="small-title">Bekendmakingen:</h5>
+	<?php $latest = new WP_Query('showposts=5&category_name=bekendmakingen'); ?>
+	<?php while ($latest->have_posts()) : $latest->the_post(); ?>
+	<?php get_template_part('templates/content-frontpage-sub-news', get_post_type() != 'post' ? get_post_type() : get_post_format()); ?>
+	<?php endwhile; ?>
+</div>
 <div class="about-top-row">
 	<div class="about">
 		<h3>Over Simulacrum</h3>
@@ -218,7 +225,6 @@
 		<img class="portret-retired" src="<?php bloginfo('template_directory'); ?>/dist/images/fotos/portret-querine.jpg"/>		
 		<img class="portret-retired" src="<?php bloginfo('template_directory'); ?>/dist/images/fotos/portret-sofia.jpg"/>		
 		<img class="portret-retired" src="<?php bloginfo('template_directory'); ?>/dist/images/fotos/portret-sofie.jpg"/>
-
 	</div>
 </div>
 

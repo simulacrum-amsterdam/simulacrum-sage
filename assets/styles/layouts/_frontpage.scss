@@ -1,44 +1,14 @@
-.frontpage-news {
-	@include make-row();
-	.post {
-		@include make-sm-column(3);
-		
-		&:nth-child(3) {
-			@include make-sm-column-offset(1);
-		}
-		&:nth-child(4) {
-			@include make-sm-column-offset(1);
-		}
-	}
-	.small-title {
-		margin-left: $grid-gutter-width / 2 ;
-	}
-}
-
 .frontpage-issue {
-	margin-top: 100px;
 	@include make-row();
+	.post-container {
+		@include make-sm-column(6);
+	}
 	.frontpage-current-issue {
-		@include make-sm-column(5);
+		@include make-sm-column-offset(1);
+		@include make-sm-column(4);
 		.issue-image{
 			width: 50%;
 		}
-	}
-
-	.in-between {
-		@include make-sm-column(1);
-		height: 200px;
-		border-right: solid black 5px;
-	}
-	
-	.post-container {
-
-		@include make-sm-column-offset(1);
-		@include make-sm-column(4);
-	}
-
-	.post {
-		
 	}
 }
 

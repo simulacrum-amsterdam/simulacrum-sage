@@ -1,3 +1,20 @@
+.about-news {
+	@include make-row();
+	.post {
+		@include make-sm-column(3);
+		
+		&:nth-child(3) {
+			@include make-sm-column-offset(1);
+		}
+		&:nth-child(4) {
+			@include make-sm-column-offset(1);
+		}
+	}
+	.small-title {
+		margin-left: $grid-gutter-width / 2 ;
+	}
+}
+
 .about-top-row {
 	@include make-row();
 
