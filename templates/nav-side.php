@@ -12,7 +12,7 @@
       </div>
       <!-- this div contains the logo and the login button -->
       <div class="header-right"> 
-        <div class="menu-button">MENU</div>
+        <!-- <div class="menu-button">MENU</div> -->
         <a href="<?= esc_url(home_url('/')); ?>"><img class="main-logo hidden-xs" src="<?php bloginfo('template_directory'); ?>/dist/images/logozwart-edged.svg"/></a>
       </div>
     </div>
