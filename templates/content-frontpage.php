@@ -12,7 +12,6 @@
 		<?php endwhile; ?>
 	</div>
 	<div class="frontpage-current-issue">
-		<h5 class="small-title"> Nieuwste nummer: </h5>
 		<img class="issue-image" src="<?php bloginfo('template_directory'); ?>/dist/images/Cover-OEF.jpg"/>
 	</div>
 </div>

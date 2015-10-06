@@ -1,10 +1,12 @@
 .frontpage-container {
 	@include make-row();
-	padding-top: 20px;
+
 	.post-container {
+		padding-top: 20px;
 		@include make-sm-column-offset(1);
 		@include make-sm-column(7);
 	}
+
 	.post {
 		&:nth-child(-n+5) {
 			padding: 200px 0 0 0;
@@ -27,10 +29,16 @@
 		border-bottom: solid black 5px;
 		border-right: solid black 5px;
 	}
+
 	.frontpage-current-issue {
+		padding-top: 20px;
+		background: black;
+		height: 1000px;
 		@include make-sm-column-offset(1);
 		@include make-sm-column(3);
 		.issue-image{
+			display: block;
+			margin: 0 auto;
 			width: 50%;
 		}
 	}
