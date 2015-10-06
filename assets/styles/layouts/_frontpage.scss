@@ -1,7 +1,13 @@
-.frontpage-issue {
+.frontpage-container {
 	@include make-row();
+	padding-top: 20px;
 	.post-container {
 		@include make-sm-column(6);
+	}
+	.post {
+		&:nth-child(1) {
+			background-color: red;
+		}
 	}
 	.frontpage-current-issue {
 		@include make-sm-column-offset(1);

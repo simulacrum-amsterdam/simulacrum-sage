@@ -1,8 +1,7 @@
 <?php use Roots\Sage\Titles; ?>
 
-<div class="frontpage-issue">
+<div class="frontpage-container">
 	<div class="post-container">
-		<h5 class="small-title"> Inhoud: </h5>
 		<?php $excludeCatID = get_cat_ID('bekendmakingen'); ?>
 		<?php $latest = new WP_Query( array( 
 			'showposts' => 10,	
