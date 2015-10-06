@@ -3,7 +3,11 @@
 <div class="frontpage-issue">
 	<div class="post-container">
 		<h5 class="small-title"> Inhoud: </h5>
-		<?php $latest = new WP_Query('showposts=10&cat=-bekendmakingen'); ?>
+		<?php $excludeCatID = get_cat_ID('bekendmakingen'); ?>
+		<?php $latest = new WP_Query( array( 
+			'showposts' => 10,	
+			'category__not_in' => $excludeCatID
+			)); ?>
 		<?php while ($latest->have_posts()) : $latest->the_post(); ?>
 		<?php get_template_part('templates/content-frontpage-post', get_post_type() != 'post' ? get_post_type() : get_post_format()); ?>
 		<?php endwhile; ?>
