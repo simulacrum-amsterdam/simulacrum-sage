@@ -1,4 +1,4 @@
-<?php $backgroundImageSrc = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
+<?php $backgroundImageSrc = wp_get_attachment_image_src(get_post_thumbnail_id( $post->ID), 'single-post-thumbnail');?>
 
 <article <?php post_class(); ?> style="background-image: url(<?php echo $backgroundImageSrc[0]; ?>);">
     <div class="inner-post-container">
