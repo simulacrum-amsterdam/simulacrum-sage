@@ -1,5 +1,26 @@
 .navbar-default {
+	@media (min-width: $screen-sm-min) {
+		height: 50px;
+	}
+	height: 110px;
+	background: white;
 	border: none;
+	border-bottom: 5px solid black;
+}
+
+.logo-container {
+	position: absolute;
+	left: 50%;
+}
+
+.small-logo {
+	@media (min-width: $screen-sm-min) {
+		height: 40px;
+	}
+	position: relative;
+	left: -50%;
+	top: 2.5px;
+	height: 100px;
 }
 
 
