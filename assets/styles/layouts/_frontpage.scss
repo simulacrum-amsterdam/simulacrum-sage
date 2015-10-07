@@ -8,23 +8,45 @@
 	}
 
 	.post {
+		@include clearfix();
 		&:nth-child(-n+5) {
-			padding: 200px 0 0 0;
-			margin-bottom: 120px;
-			background-size: 100% auto;
-			background-position: center center;
+			.post-tumbnail {
+				height: 200px;
+				width: 100%;
+				background-size: 100% auto;
+				background-repeat: no-repeat;
+				background-position: center center;
+			}
 			.inner-post-container {
 				position: relative;
-				top: 100px;
+				top: -75px;
+				margin-bottom: -65px;
 				background: white;
 			}
-		}	
+		}
+		&:nth-child(n+6) {
+			.post-tumbnail {
+				// position: relative;
+				// left: -20%;
+				float: left;
+				height: 100px;
+				width: 100px;
+				margin-top: 33.5px;
+				margin-right: -7.5%;
+				margin-bottom: 5px;
+				background-size: 100% 100%;
+				background-repeat: no-repeat;
+				background-position: center center;
+			}
+		}
 	}
 
 	.inner-post-container {
+		position: relative;
+		left: 10%;
+		margin: 10px 0;
 		width: 80%;
 		padding: 10px;
-		margin: 10px auto;
 		border-top: 5px solid black;
 		border-right: 5px solid black;
 		border-bottom: 5px solid black;
