@@ -2,7 +2,7 @@
 	@include make-row();
 
 	.post-container {
-		padding-top: 20px;
+		padding-top: 40px;
 		@include make-sm-column-offset(1);
 		@include make-sm-column(7);
 	}
@@ -18,21 +18,17 @@
 				top: 100px;
 				background: white;
 			}
-		}
-		
+		}	
 	}
+
 	.inner-post-container {
 		width: 80%;
 		padding: 10px;
 		margin: 10px auto;
-		border-top: solid black 5px;
-		border-bottom: solid black 5px;
-		border-right: solid black 5px;
 	}
 
 	.frontpage-current-issue {
-		padding-top: 20px;
-		background: black;
+		padding-top: 40px;
 		height: 1000px;
 		@include make-sm-column-offset(1);
 		@include make-sm-column(3);
@@ -44,31 +40,6 @@
 	}
 }
 
-.frontpage-old-issues {
-	@include make-row();
-	margin-top: 20px;
-	padding-top: 100px;
-	.single-issue {
-		@include make-sm-column(10);
-		margin-bottom: 20px;
-
-		.issue-image{
-			display: block;
-			width: 10%;
-			float: left;
-		}
-		.single-issue-text {
-			display: block;
-			width: 90%;
-			padding-left: $grid-gutter-width / 2;
-			float: left;
-		}
-
-	}
-	.small-title {
-		margin-left: $grid-gutter-width / 2 ;
-	}
-}
 
 .small-title {
 	color: silver;
