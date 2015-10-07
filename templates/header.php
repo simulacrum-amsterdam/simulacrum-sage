@@ -4,16 +4,26 @@
 ?>
 <nav class="navbar navbar-default">
 	<div class="container-fluid">
-		<ul class="nav navbar-nav hidden-xs">
-			<li><a href="#">Portaal</a></li>
-			<li><a href="#">Archief</a></li>
-		</ul>
+		<?php
+		if (has_nav_menu('header_navigation-left')) :
+        	wp_nav_menu([
+        		'theme_location' => 'header_navigation-left', 
+        		'menu_class' => 'nav navbar-nav hidden-xs',
+        		'container' => false
+        	]);
+      	endif;
+      	?>
 		<div class="logo-container">
 	        <a href="<?= esc_url(home_url('/')); ?>"><img class="small-logo" src="<?php bloginfo('template_directory'); ?>/dist/images/simulacrum-logo-small2.svg"/></a>
 		</div>
-		<ul class="nav navbar-nav navbar-right hidden-xs">
-			<li><a href="#">Contact</a></li>
-			<li><a href="#">Over</a></li>
-		</ul>
+		<?php
+		if (has_nav_menu('header_navigation-right')) :
+        	wp_nav_menu([
+        		'theme_location' => 'header_navigation-right', 
+        		'menu_class' => 'nav navbar-nav hidden-xs navbar-right',
+        		'container' => false
+             	]);
+      	endif;
+      	?>
 	</div>
 </nav>
