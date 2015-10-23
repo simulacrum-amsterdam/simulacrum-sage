@@ -3,7 +3,6 @@
 		height: 50px;
 	}
 	height: 110px;
-	background: white;
 	border: none;
 	border-bottom: 5px solid black;
 	margin-bottom: 0;
@@ -21,8 +20,9 @@
 	}
 	position: relative;
 	left: -50%;
-	top: 2.5px;
-	height: 100px;
+	height: 90px;
+	top: 7.5px;
+	overflow: hidden;
 }
 
 

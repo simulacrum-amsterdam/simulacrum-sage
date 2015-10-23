@@ -1,10 +1,9 @@
 <?php use Roots\Sage\Titles; ?>
 
 <div class="about-news">
-	<h5 class="small-title">Bekendmakingen:</h5>
 	<?php $latest = new WP_Query('showposts=5&category_name=bekendmakingen'); ?>
 	<?php while ($latest->have_posts()) : $latest->the_post(); ?>
-	<?php get_template_part('templates/about/content-frontpage-sub-news', get_post_type() != 'post' ? get_post_type() : get_post_format()); ?>
+	<?php get_template_part('templates/about/news-post', get_post_type() != 'post' ? get_post_type() : get_post_format()); ?>
 	<?php endwhile; ?>
 </div>
 <div class="about-top-row">

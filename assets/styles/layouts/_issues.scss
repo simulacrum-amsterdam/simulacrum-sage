@@ -1,0 +1,25 @@
+.issue-container {
+	height: 100px;
+	// border-bottom: 5px black solid;
+	background: hsla(0,0,0,1);
+	background: url('../../assets/images/Diagonal-Line-05.jpg');
+	background-size: 25% auto;
+	color: white;
+	// margin-top: 10px;
+	overflow: hidden;
+	h4 {
+		font-weight: 100;
+		letter-spacing: 5px;
+	}
+}
+
+.issue-image {
+	display: inline-block;
+	max-height: 100%;
+	margin: 0 20px;
+	padding: 0 5px 0 5px;
+	background: white;
+}
+.issue-membership-header {
+	display: inline-block;
+}

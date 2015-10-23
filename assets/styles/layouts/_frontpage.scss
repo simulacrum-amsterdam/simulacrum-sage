@@ -51,18 +51,6 @@
 		border-right: 5px solid black;
 		border-bottom: 5px solid black;
 	}
-
-	.frontpage-current-issue {
-		padding-top: 40px;
-		height: 1000px;
-		@include make-sm-column-offset(1);
-		@include make-sm-column(3);
-		.issue-image{
-			display: block;
-			margin: 0 auto;
-			width: 50%;
-		}
-	}
 }
 
 
