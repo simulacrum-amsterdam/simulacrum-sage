@@ -1,37 +1,31 @@
 .single_post {
-	@include make-sm-column-offset(1);
-	@include make-sm-column(6);
+	@include make-sm-column-offset(2);
+	@include make-sm-column(8);
+	padding-bottom: 40px;
+	border-bottom: 5px solid black;
 }
 
-.side-bar {
-	@include make-sm-column-offset(1);
-	@include make-sm-column(4);
-
-	h5 {
-		margin-top: 17px;
-		color: silver;
-	}
-}
-
-.license {
-	img {
-		width: 40%;
+.like-options {
+	.social-img {
+		width: 5%;
+		margin: 2% 4% 2% 0;
 	}
 }
 
 .export-options {
+	width: 20%;
+	margin: 0 auto;
+
 	.social-img {
-		width: 15%;
-		margin: 2%;
+		width: 25%;
+		margin: 5%;
 	}
 }
 
 .similar-posts {
 	margin-top: 40px;
-	padding-top: 40px;
-	border-top: 5px solid black;
-	@include make-sm-column-offset(1);
-	@include make-sm-column(6);
+	@include make-sm-column-offset(4);
+	@include make-sm-column(4);
 }
 
 .excerpt_class {

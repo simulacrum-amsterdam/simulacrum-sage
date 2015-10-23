@@ -2,24 +2,32 @@
 	height: 100px;
 	// border-bottom: 5px black solid;
 	background: hsla(0,0,0,1);
-	background: url('../../assets/images/Diagonal-Line-05.jpg');
-	background-size: 25% auto;
+	background: url('../../assets/images/569451211997604.jpg');
+	background-size: 200px auto;
 	color: white;
-	// margin-top: 10px;
+	margin-top: -40px;
 	overflow: hidden;
+	margin-bottom: 20px;
 	h4 {
-		font-weight: 100;
+		transform: rotate(-45deg);
+		font-weight: 200;
 		letter-spacing: 5px;
 	}
 }
 
 .issue-image {
+	filter: grayscale(100%);
 	display: inline-block;
 	max-height: 100%;
 	margin: 0 20px;
 	padding: 0 5px 0 5px;
-	background: white;
+	background: white;	
 }
-.issue-membership-header {
+
+.issue-membership-heading-container {
+	background: hsla(0,0,0,0.5);
+	padding: 30px;
 	display: inline-block;
+	z-index: -100;
+	transform: rotate(45deg);
 }

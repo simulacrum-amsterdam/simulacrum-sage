@@ -28,5 +28,6 @@
 
 	</div>
 </nav>
-
-<?php if (Titles\title() == "frontpage") : get_template_part('templates/issues'); endif; ?>
+<div class="issue-container">
+    <?php if (Titles\title() == "frontpage") : get_template_part('templates/issues'); endif; ?>
+</div>
