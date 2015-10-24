@@ -5,6 +5,8 @@ use Roots\Sage\Wrapper;
 
 ?>
 
+<?php $backgroundImageSrc = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'single-post-thumbnail');?>
+
 <!doctype html>
 <html class="no-js" <?php language_attributes(); ?>>
   <?php get_template_part('templates/head'); ?>
@@ -18,6 +20,9 @@ use Roots\Sage\Wrapper;
       do_action('get_header');
       get_template_part('templates/header');
     ?>
+    <div class="background-image-wrapper">
+      <img src="<?php echo $backgroundImageSrc[0]; ?>">
+    </div>
     <?php
       get_template_part('templates/nav-side');
     ?>
