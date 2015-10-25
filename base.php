@@ -21,11 +21,15 @@ use Roots\Sage\Wrapper;
       get_template_part('templates/header');
     ?>
 
-    <?php if ( is_single() ) { 
-      echo '<div class="background-image-wrapper">';
-      echo '<img src="<?php echo ' + $backgroundImageSrc[0]; + '">'; 
-      echo '</div>';
-    } ?>
+    <?php 
+      error_log( print_R(is_single(), TRUE));
+      if ( is_single() == 1 ) { 
+        $output = '<img src="' . $backgroundImageSrc[0] . '">';
+        echo '<div class="background-image-wrapper">';
+        echo $output;
+        echo '</div>';
+      } 
+    ?>
     
      
     
