@@ -20,9 +20,15 @@ use Roots\Sage\Wrapper;
       do_action('get_header');
       get_template_part('templates/header');
     ?>
-    <div class="background-image-wrapper">
-      <img src="<?php echo $backgroundImageSrc[0]; ?>">
-    </div>
+
+    <?php if ( is_single() ) { 
+      echo '<div class="background-image-wrapper">';
+      echo '<img src="<?php echo ' + $backgroundImageSrc[0]; + '">'; 
+      echo '</div>';
+    } ?>
+    
+     
+    
     <?php
       get_template_part('templates/nav-side');
     ?>

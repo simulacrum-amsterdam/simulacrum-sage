@@ -3,6 +3,7 @@
 	margin-bottom: 80px;
 	margin-top: -40px;
 	height: 100px;
+	// background: black;
 	// border-bottom: 5px black solid;
 	// background: url('../../assets/images/grid-without.png');
 	background-size: 200px auto;
@@ -16,16 +17,24 @@
 	max-height: 90px;
 	margin: 0 20px;
 	padding: 5px 5px 0 5px;
-	background: white;	
+	// background: white;	
+}
+
+.large-background {
+	position: absolute;
+	right: 0;
+	z-index: -100;
+	font-size: 100px;
+	color: hsla(0,0,0,1);
+	margin-top: 0;
 }
 
 .issue-membership-heading-container {
 	background: hsla(0, 0, 0, 1);
 	padding: 5px 20px;
 	float: left;
-	position: absolute;
-	bottom: -20px;
-	z-index: 100;
+	// position: absolute;
+	// bottom: -20px;
 	p {
 		margin: 0;
 	}
