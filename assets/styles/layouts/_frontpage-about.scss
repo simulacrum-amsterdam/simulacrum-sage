@@ -1,12 +1,13 @@
 .about-news {
+	padding: 0 0 40px 0;
 	@include make-row();
 	.post {
 		@include make-sm-column(3);
 		
-		&:nth-child(3) {
+		&:nth-child(2) {
 			@include make-sm-column-offset(1);
 		}
-		&:nth-child(4) {
+		&:nth-child(3) {
 			@include make-sm-column-offset(1);
 		}
 	}
@@ -37,29 +38,23 @@
 	padding-top: 50px;
 	@include make-row();
 
-	.about-current-staff {
+	.about-editorial {
 		@include make-sm-column(5);
-		.single-member {
-			@include clearfix;
-			padding: 10px;
-			img {
-				margin-top: 33px;
-				width: 23%;
-				padding: 1%;
-			}
-			.member-text {
-				float: right;
-				width: 75%
-			}
-		}	
+		.contact-gegevens {
+			width: 50%;
+			margin: 0 auto;
+			padding: 20px;
+		}
 	}
 
-	.about-retired-staff {
+	.about-staff {
 		@include make-sm-column-offset(2);
 		@include make-sm-column(4);
-		.portret-retired {
-			width: 10%;
-		}	
+
+		img {
+			width: 25%;
+			padding: 1%;
+		}
 	}
 }
 

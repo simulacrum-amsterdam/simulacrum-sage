@@ -1,35 +1,39 @@
 .issue-container {
+	position: relative;
+	margin-bottom: 60px;
+	margin-top: -40px;
 	height: 100px;
 	// border-bottom: 5px black solid;
 	background: hsla(0,0,0,1);
-	background: url('../../assets/images/569451211997604-without.png');
+	background: url('../../assets/images/grid-without.png');
 	background-size: 200px auto;
 	color: white;
-	margin-top: -40px;
-	overflow: hidden;
-	position: relative;
-	z-index: 1000;
-	margin-bottom: 60px;
-	h4 {
-		transform: rotate(-45deg);
-		font-weight: 200;
-		letter-spacing: 5px;
-	}
+	// overflow-x: hidden;
 }
 
 .issue-image {
 	filter: grayscale(100%);
-	display: inline-block;
-	max-height: 100%;
+	float: left;
+	max-height: 120px;
 	margin: 0 20px;
 	padding: 0 5px 0 5px;
 	background: white;	
 }
 
 .issue-membership-heading-container {
-	background: hsla(0,0,0,0.5);
-	padding: 30px;
-	display: inline-block;
-	z-index: -100;
-	transform: rotate(45deg);
+	background: hsla(0, 0, 0, 1);
+	padding: 5px 20px;
+	border-bottom: 5px solid black;
+	float: left;
+	position: absolute;
+	bottom: -20px;
+	z-index: 100;
+	p {
+		margin: 0;
+	}
+	&.lidworden {
+		float: right;
+		right: 0;
+
+	}
 }
