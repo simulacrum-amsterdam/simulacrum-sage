@@ -1,11 +1,10 @@
 .issue-container {
 	position: relative;
-	margin-bottom: 60px;
+	margin-bottom: 80px;
 	margin-top: -40px;
 	height: 100px;
 	// border-bottom: 5px black solid;
-	background: hsla(0,0,0,1);
-	background: url('../../assets/images/grid-without.png');
+	// background: url('../../assets/images/grid-without.png');
 	background-size: 200px auto;
 	color: white;
 	// overflow-x: hidden;
@@ -14,16 +13,15 @@
 .issue-image {
 	filter: grayscale(100%);
 	float: left;
-	max-height: 120px;
+	max-height: 90px;
 	margin: 0 20px;
-	padding: 0 5px 0 5px;
+	padding: 5px 5px 0 5px;
 	background: white;	
 }
 
 .issue-membership-heading-container {
 	background: hsla(0, 0, 0, 1);
 	padding: 5px 20px;
-	border-bottom: 5px solid black;
 	float: left;
 	position: absolute;
 	bottom: -20px;
@@ -34,6 +32,5 @@
 	&.lidworden {
 		float: right;
 		right: 0;
-
 	}
 }

@@ -1,5 +1,5 @@
 .about-news {
-	padding: 0 0 40px 0;
+	padding: 0 0 80px 0;
 	@include make-row();
 	.post {
 		@include make-sm-column(3);
@@ -35,7 +35,7 @@
 }
 
 .about-people-row {
-	padding-top: 50px;
+	padding-top: 80px;
 	@include make-row();
 
 	.about-editorial {
