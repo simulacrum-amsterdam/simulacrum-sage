@@ -7,6 +7,16 @@
 		@include make-sm-column(8);
 	}
 
+	.large-background-blog {
+		position: absolute;
+		left: -40px;
+		top:-50px;
+		z-index: -100;
+		font-size: 100px;
+		color: hsla(0,0,0,1);
+		margin-top: 0;
+	}
+
 	.post {
 		@include clearfix();
 		&:nth-child(-n+5) {
