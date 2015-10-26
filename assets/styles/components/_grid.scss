@@ -9,10 +9,18 @@ body {
 	overflow-x: hidden;
 }
 
+.all-wrapper {
+	min-height: 100%;
+	position:relative;
+}
+.middle-wrapper {
+	padding-bottom:330px;
+}
+
 .nav-side {
 	position: absolute;
 	width: 60%;
-	height: 100%;
+	min-height: 80%;
 	left: -60%;
 	z-index: 1000;
     transition: all 0.5s ease;

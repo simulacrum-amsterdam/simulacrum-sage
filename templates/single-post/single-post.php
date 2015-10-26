@@ -1,6 +1,6 @@
 <?php while (have_posts()) : the_post(); ?>
   <article <?php post_class("single_post"); ?>>
-    <button class="toggle-post"><span class="glyphicon glyphicon-menu-down"></span></button>
+    <button class="toggle-post"><span class="glyphicon glyphicon-menu-up"></span></button>
     <div class="like-options">
         <img class="social-img" src="<?php bloginfo('template_directory'); ?>/dist/images/social/512x512/s-icons_social-media-icons_basic_round_set_gradient-color_512x512_0000_facebook.png"/>    
         <img class="social-img" src="<?php bloginfo('template_directory'); ?>/dist/images/social/512x512/s-icons_social-media-icons_basic_round_set_gradient-color_512x512_0002_twitter.png"/>    

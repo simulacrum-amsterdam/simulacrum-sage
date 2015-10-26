@@ -1,6 +1,7 @@
 .single_post {
 	@include make-sm-column-offset(2);
 	@include make-sm-column(8);
+	margin-top: -75px;
 	padding-bottom: 40px;
 	border-right: 5px solid black;
 	border-top: 5px solid black;
@@ -38,15 +39,15 @@
 }
 
 .background-image-wrapper {
-	position: absolute;
+	position: relative;
 	z-index: -1000;
 	background-repeat: no-repeat;
-	margin-top: -100px;
 	border-bottom: 5px solid black;
 	width: 100%;
 	height: auto;
 
 	img {
+		margin-top: -100px;
 		width: 100%;
 	}
 }
