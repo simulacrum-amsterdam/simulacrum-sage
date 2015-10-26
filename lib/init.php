@@ -20,6 +20,7 @@ function setup() {
   // http://codex.wordpress.org/Function_Reference/register_nav_menus
   register_nav_menus([
     'sidebar_navigation' => __('Sidebar Navigation', 'sage'),
+    'about_navigation' => __('About Navigation', 'sage'),
     'header_navigation-left' => __('Header Navigation - Left side', 'sage'),
     'header_navigation-right' => __('Header Navigation - Right side', 'sage')
   ]);

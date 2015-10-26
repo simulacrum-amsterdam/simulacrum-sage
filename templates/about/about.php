@@ -15,13 +15,22 @@
 	</div>
 	<div class="about-topics">
 		<h3>Onderwerpen</h3>
-		<h4>Call for papers</h4>
+		<?php
+		if (has_nav_menu('about_navigation')) :
+            wp_nav_menu([
+                'theme_location' => 'about_navigation', 
+                'menu_class' => '',
+                'container' => false
+            ]);
+        endif;
+        ?>
+<!-- 		<h4>Call for papers</h4>
 		<h4>Gids voor auteurs</h4>
 		<h4>Wetenschappelijke process</h4>
 		<h4>Contact informatie</h4>
 		<h4>Advertentie beleid</h4>
 		<h4>Privacy beleid</h4>
-		<h4>Open Access / Licenties</h4>
+		<h4>Open Access / Licenties</h4> -->
 	</div>
 </div>
 <div class="about-people-row">
