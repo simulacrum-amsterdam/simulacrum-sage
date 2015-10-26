@@ -24,7 +24,7 @@ use Roots\Sage\Wrapper;
       ?>  
       <?php
         $backgroundImageSrc = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'single-post-thumbnail');
-        if (  has_post_thumbnail() == 1 ) { 
+        if ( is_single() && has_post_thumbnail() == 1 ) { 
           echo '<div class="background-image-wrapper">';
           echo '<img class="background-image" src="' . $backgroundImageSrc[0] . '">';
           echo '</div>';
