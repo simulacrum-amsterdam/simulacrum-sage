@@ -8,7 +8,7 @@ jQuery('.menu-button').click(function() {
   jQuery(selectClasses).toggleClass('on');
 });
 
-jQuery('body, .toggle-post').click(function(event) {
+jQuery('.toggle-post').click(function(event) {
 	if (!document.querySelector('.toggle-post')) { return;}
 	event.stopPropagation();
 	var postMargin = document.querySelector('.single_post').style.marginTop;
@@ -26,8 +26,8 @@ jQuery('body, .toggle-post').click(function(event) {
 
 });
 
-// jQuery('body').click(function(event) {
-// 	document.querySelector('.single_post').style.marginTop = '0px';
-// 	jQuery('.toggle-post > .glyphicon').detach();
-// 	jQuery('.toggle-post').append('<span class="glyphicon glyphicon-menu-down"></span>');
-// });
+jQuery('body').click(function(event) {
+	document.querySelector('.single_post').style.marginTop = '0px';
+	jQuery('.toggle-post > .glyphicon').detach();
+	jQuery('.toggle-post').append('<span class="glyphicon glyphicon-menu-down"></span>');
+});
