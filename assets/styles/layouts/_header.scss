@@ -1,11 +1,13 @@
 .navigation {
 	@media (min-width: $screen-sm-min) {
 		height: 75px;
+		margin-bottom: 40px;
+
 	}
 	height: 135px;
 	width: 100%;
 	overflow: hidden;
-	margin-bottom: 40px;
+	margin-bottom: 100px;
 	border-bottom: 30px solid black;
 	background: white;
 	position: relative;
@@ -28,6 +30,11 @@
 	position:absolute;
 	right: -10px;
 }
+
+// .menu-arrows {
+// 	color: black;
+// 	float: right;
+// }
 
 .logo-container {
 	position: absolute;

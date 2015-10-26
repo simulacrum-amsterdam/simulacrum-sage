@@ -9,6 +9,7 @@
                 'theme_location' => 'header_navigation-left', 
                 'menu_class' => 'navigation-left hidden-xs',
                 'container' => false
+                // 'after' => '<span class="glyphicon glyphicon-menu-left menu-arrows" aria-hidden="true"></span>'
             ]);
         endif;
         ?>
