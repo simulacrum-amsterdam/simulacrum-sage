@@ -28,7 +28,7 @@
         ?>
 </nav>
 
-    <?php if (Titles\title() == "frontpage" || Titles\title() == "frontpage-about") { 
+    <?php if (Titles\title() == "frontpage") { 
         echo '<div class="issue-container hidden-xs">';
         get_template_part('templates/issues'); 
         echo '</div>';

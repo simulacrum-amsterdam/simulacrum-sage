@@ -2,6 +2,7 @@
 	@include make-row();
 
 	.post-container {
+		margin-top: 140px;
 		padding-top: 20px;
 		@include make-sm-column-offset(2);
 		@include make-sm-column(8);
