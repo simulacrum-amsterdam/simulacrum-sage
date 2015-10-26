@@ -1,7 +1,7 @@
 .single_post {
 	@include make-sm-column-offset(2);
 	@include make-sm-column(8);
-	margin-top: -75px;
+	margin-top: 50px;
 	padding-bottom: 40px;
 	border-right: 5px solid black;
 	border-top: 5px solid black;
@@ -59,12 +59,6 @@
 		width: 35px;
 		margin: 5px;
 	}
-}
-
-.similar-posts {
-	margin-top: 40px;
-	@include make-sm-column-offset(4);
-	@include make-sm-column(4);
 }
 
 .excerpt_class {

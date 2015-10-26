@@ -9,7 +9,6 @@
 // });
 
 function togglePost(event){
-	if (!document.querySelector('.toggle-post')) { return;}
 	if (event) {event.stopPropagation();}
 	var postMargin = document.querySelector('.single_post').style.marginTop;
 	var bgImgHeight = jQuery('.background-image-wrapper').height();
@@ -25,8 +24,9 @@ function togglePost(event){
 	}
 }
 
-jQuery('.background-image, .toggle-post').click(togglePost);
-
 jQuery(document).ready(function(){
-	window.setTimeout(togglePost, 500);
+	if (document.querySelector('.toggle-post')) {
+		window.setTimeout(togglePost, 500);
+		jQuery('.background-image, .toggle-post').click(togglePost);
+	}
 });
