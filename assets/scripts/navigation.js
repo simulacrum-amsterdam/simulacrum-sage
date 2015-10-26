@@ -25,14 +25,7 @@ function togglePost(event){
 	}
 }
 
-jQuery('.toggle-post').click(togglePost);
-
-jQuery('body').click(function(event) {
-	var bgImgHeight = jQuery('.background-image-wrapper').height();
-	document.querySelector('.single_post').style.marginTop = (-bgImgHeight + 50) + 'px';
-	jQuery('.toggle-post > .glyphicon').detach();
-	jQuery('.toggle-post').append('<span class="glyphicon glyphicon-menu-down"></span>');
-});
+jQuery('.background-image, .toggle-post').click(togglePost);
 
 jQuery(document).ready(function(){
 	window.setTimeout(togglePost, 500);

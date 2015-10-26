@@ -40,13 +40,12 @@
 
 .background-image-wrapper {
 	position: relative;
-	z-index: -1000;
 	background-repeat: no-repeat;
 	border-bottom: 5px solid black;
 	width: 100%;
 	height: auto;
 
-	img {
+	.background-image {
 		margin-top: -100px;
 		width: 100%;
 	}

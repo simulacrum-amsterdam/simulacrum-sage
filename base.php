@@ -5,8 +5,6 @@ use Roots\Sage\Wrapper;
 
 ?>
 
-<?php $backgroundImageSrc = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'single-post-thumbnail');?>
-
 <!doctype html>
 <html class="no-js" <?php language_attributes(); ?>>
   <?php get_template_part('templates/head'); ?>
@@ -21,25 +19,20 @@ use Roots\Sage\Wrapper;
         do_action('get_header');
         get_template_part('templates/header');
       ?>
-      <div class="middle-wrapper">
-        <?php
-          get_template_part('templates/nav-side');
-        ?>  
-        <?php 
-          error_log( print_R(is_single(), TRUE));
-          if ( is_single() == 1 ) { 
-            echo '<div class="background-image-wrapper">';
-            echo '<img src="' . $backgroundImageSrc[0] . '">';
-            echo '</div>';
-          } 
-        ?>
-
-        <div class="main-wrapper" role="document">
-          <main class="main container-fluid content" role="main">
-            <?php include Wrapper\template_path(); ?>
-          </main><!-- /.main -->
-        </div>
-      </div>
+      <?php
+        get_template_part('templates/nav-side');
+      ?>  
+      <?php
+        $backgroundImageSrc = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'single-post-thumbnail');
+        if (  has_post_thumbnail() == 1 ) { 
+          echo '<div class="background-image-wrapper">';
+          echo '<img class="background-image" src="' . $backgroundImageSrc[0] . '">';
+          echo '</div>';
+        } 
+      ?>
+      <main class="main container-fluid content" role="main">
+        <?php include Wrapper\template_path(); ?>
+      </main>
       <?php
         do_action('get_footer');
         get_template_part('templates/footer');
