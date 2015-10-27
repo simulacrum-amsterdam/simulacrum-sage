@@ -29,7 +29,7 @@
 .like-options {
 	position: absolute;
 	right: 0;
-	top: 30px;
+	top: 62px;
 	img {
 		width: 35px;
 		padding: 5px;
@@ -50,6 +50,10 @@
 	}
 }
 
+.entry-meta {
+	margin-bottom: 20px;
+}
+
 .export-options {
 	width: 94px;
 	margin: 40px auto 0;
@@ -67,7 +71,7 @@
 	border-top: 5px solid black;
 	border-right: 5px solid black;
 	border-bottom: 5px solid black;
-	padding: 20px 60px 20px 60px;
+	padding: 40px 60px;
 	img {
 		width: 25%;
 		height: auto;

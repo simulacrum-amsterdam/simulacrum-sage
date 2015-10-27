@@ -1,7 +1,7 @@
 <?php while (have_posts()) : the_post(); ?>
   <article <?php post_class("single_post"); ?>>
     <?php 
-      if (  has_post_thumbnail() == 1 ) { 
+      if (  has_post_thumbnail() == 1 && !has_tag('no-background', $post->ID)) { 
         echo '<button class="toggle-post"><span class="glyphicon glyphicon-menu-up"></span></button>';
       } 
     ?>
@@ -20,10 +20,12 @@
     <div class="entry-content">
       <?php the_content(); ?>
     </div>
-    <div class="export-options">
-      <img class="social-img" src="<?php bloginfo('template_directory'); ?>/dist/images/print.png"/> 
-      <img class="social-img" src="<?php bloginfo('template_directory'); ?>/dist/images/pdf.jpg"/>
-    </div>
+    <?php if (!has_tag('no-export', $post->ID)){ ?>
+      <div class="export-options">
+        <img class="social-img" src="<?php bloginfo('template_directory'); ?>/dist/images/print.png"/> 
+        <img class="social-img" src="<?php bloginfo('template_directory'); ?>/dist/images/pdf.jpg"/>
+      </div>
+    <?php } ?>
     <footer>
       <?php wp_link_pages(['before' => '<nav class="page-nav"><p>' . __('Pages:', 'sage'), 'after' => '</p></nav>']); ?>
     </footer>
