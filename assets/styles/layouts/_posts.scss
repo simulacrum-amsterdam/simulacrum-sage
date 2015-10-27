@@ -63,16 +63,6 @@
 	margin-bottom: 10px;
 }
 
-.export-options {
-	width: 94px;
-	margin: 40px auto 0;
-
-	.social-img {
-		width: 35px;
-		margin: 5px;
-	}
-}
-
 .usercard {
 	@include make-sm-column-offset(2);
 	@include make-sm-column(8);

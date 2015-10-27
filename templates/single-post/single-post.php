@@ -9,7 +9,7 @@
         <?php do_action( 'addthis_widget', get_permalink(), get_the_title(), array(
           'type' => 'custom',
           'size' => '32', // size of the icons.  Either 16 or 32
-          'services' => 'facebook,twitter,google,email', // the services you want to always appear
+          'services' => 'facebook,twitter,google,email,print,pdfmyurl', // the services you want to always appear
           'preferred' => '0', // the number of auto personalized services
           'more' => false, // if you want to have a more button at the end
           'counter' => false // if you want a counter and the style of it
@@ -22,12 +22,6 @@
     <div class="entry-content">
       <?php the_content(); ?>
     </div>
-    <?php if (!has_tag('no-export', $post->ID)){ ?>
-      <div class="export-options">
-        <img class="social-img" src="<?php bloginfo('template_directory'); ?>/dist/images/print.png"/> 
-        <img class="social-img" src="<?php bloginfo('template_directory'); ?>/dist/images/pdf.jpg"/>
-      </div>
-    <?php } ?>
     <footer>
       <?php wp_link_pages(['before' => '<nav class="page-nav"><p>' . __('Pages:', 'sage'), 'after' => '</p></nav>']); ?>
     </footer>
