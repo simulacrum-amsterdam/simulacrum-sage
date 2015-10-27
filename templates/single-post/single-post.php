@@ -29,4 +29,11 @@
     </footer>
     <?php comments_template('/templates/comments.php'); ?>
   </article>
+  <div class="usercard">
+      <?= get_avatar( get_the_author_meta('ID'), 512); ?>
+      <div class="usercard-text">
+        <h4><a href="<?= get_author_posts_url(get_the_author_meta('ID')); ?>" rel="author" class="fn"><?= get_the_author(); ?></a></h4>
+        <p><?= the_author_meta( 'description', $userID ); ?></p>
+    </div>
+  </div>
 <?php endwhile; ?>

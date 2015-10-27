@@ -2,10 +2,9 @@
 	@include make-sm-column-offset(2);
 	@include make-sm-column(8);
 	margin-top: 50px;
-	padding-bottom: 40px;
 	border-right: 5px solid black;
 	border-top: 5px solid black;
-	padding: 50px 60px 20px 5%;
+	padding: 50px 60px 20px 60px;
 	background: white;
     transition: all 1s ease;
 }
@@ -58,6 +57,27 @@
 	.social-img {
 		width: 35px;
 		margin: 5px;
+	}
+}
+
+.usercard {
+	@include make-sm-column-offset(2);
+	@include make-sm-column(8);
+	margin-top: 50px;
+	border-top: 5px solid black;
+	border-right: 5px solid black;
+	border-bottom: 5px solid black;
+	padding: 20px 60px 20px 60px;
+	img {
+		width: 30%;
+		height: auto;
+		float: left;
+	}
+	.usercard-text {
+		width: 70%;
+		margin-left: 30%;
+		padding: 0 0 0 60px;
+		
 	}
 }
 
