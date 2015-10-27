@@ -6,13 +6,15 @@
       } 
     ?>
     <div class="like-options">
-        <img class="social-img" src="<?php bloginfo('template_directory'); ?>/dist/images/social/512x512/s-icons_social-media-icons_basic_round_set_gradient-color_512x512_0000_facebook.png"/>    
-        <img class="social-img" src="<?php bloginfo('template_directory'); ?>/dist/images/social/512x512/s-icons_social-media-icons_basic_round_set_gradient-color_512x512_0002_twitter.png"/>    
-        <img class="social-img" src="<?php bloginfo('template_directory'); ?>/dist/images/social/512x512/s-icons_social-media-icons_basic_round_set_gradient-color_512x512_0001_pinterest.png"/>    
-        <img class="social-img" src="<?php bloginfo('template_directory'); ?>/dist/images/social/512x512/s-icons_social-media-icons_basic_round_set_gradient-color_512x512_0003_google+.png"/>    
-        <img class="social-img" src="<?php bloginfo('template_directory'); ?>/dist/images/social/512x512/s-icons_social-media-icons_basic_round_set_gradient-color_512x512_0026_linkedin.png"/> 
-        <img class="social-img" src="<?php bloginfo('template_directory'); ?>/dist/images/mail.png"/> 
-    </div>
+        <?php do_action( 'addthis_widget', get_permalink(), get_the_title(), array(
+          'type' => 'custom',
+          'size' => '32', // size of the icons.  Either 16 or 32
+          'services' => 'facebook,twitter,google,email', // the services you want to always appear
+          'preferred' => '0', // the number of auto personalized services
+          'more' => false, // if you want to have a more button at the end
+          'counter' => false // if you want a counter and the style of it
+        )); ?>
+       </div>
     <header>
       <h1 class="entry-title"><?php the_title(); ?></h1>
       <?php get_template_part('templates/single-post/entry-meta'); ?>
@@ -41,4 +43,12 @@
         </div>
       </div>
   <?php } ?>
+ <!-- <img class="social-img" src="<?php bloginfo('template_directory'); ?>/dist/images/social/512x512/s-icons_social-media-icons_basic_round_set_gradient-color_512x512_0000_facebook.png"/>    
+        <img class="social-img" src="<?php bloginfo('template_directory'); ?>/dist/images/social/512x512/s-icons_social-media-icons_basic_round_set_gradient-color_512x512_0002_twitter.png"/>    
+        <img class="social-img" src="<?php bloginfo('template_directory'); ?>/dist/images/social/512x512/s-icons_social-media-icons_basic_round_set_gradient-color_512x512_0001_pinterest.png"/>    
+        <img class="social-img" src="<?php bloginfo('template_directory'); ?>/dist/images/social/512x512/s-icons_social-media-icons_basic_round_set_gradient-color_512x512_0003_google+.png"/>    
+        <img class="social-img" src="<?php bloginfo('template_directory'); ?>/dist/images/social/512x512/s-icons_social-media-icons_basic_round_set_gradient-color_512x512_0026_linkedin.png"/> 
+        <img class="social-img" src="<?php bloginfo('template_directory'); ?>/dist/images/mail.png"/> 
+     -->
+
 <?php endwhile; ?>
