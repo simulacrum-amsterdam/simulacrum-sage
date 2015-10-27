@@ -6,6 +6,7 @@
 	<?php get_template_part('templates/about/news-post', get_post_type() != 'post' ? get_post_type() : get_post_format()); ?>
 	<?php endwhile; ?>
 </div>
+
 <div class="about-top-row">
 	<div class="about">
 		<h3>Over Simulacrum</h3>

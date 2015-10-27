@@ -23,7 +23,7 @@ use Roots\Sage\Wrapper;
         get_template_part('templates/nav-side');
       ?>  
       <?php
-        if ( is_single() && has_post_thumbnail() == 1 && class_exists('Dynamic_Featured_Image') && !has_tag('no-background', $post->ID)) {
+        if ( (is_page('frontpage-about') || is_single()) && has_post_thumbnail() == 1 && class_exists('Dynamic_Featured_Image') && !has_tag('no-background', $post->ID)) {
           global $dynamic_featured_image;
           $featured_images = $dynamic_featured_image->get_featured_images($post->ID);
           if ($featured_images[0]){
