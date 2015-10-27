@@ -1,63 +1,112 @@
-.about-news {
-	padding: 0 0 80px 0;
-	@include make-row();
-	.post {
-		@include make-sm-column(3);
-		
-		&:nth-child(2) {
-			@include make-sm-column-offset(1);
-		}
-		&:nth-child(3) {
-			@include make-sm-column-offset(1);
-		}
-	}
-	.small-title {
-		margin-left: $grid-gutter-width / 2 ;
+.about-container {
+	position: relative;
+	@media (min-width: $screen-sm-min) {
+		margin-top: -700px;
 	}
 }
 
-.about-top-row {
-	@include make-row();
-
-	.about {
-		@include make-sm-column(5);
-	}
-
-	.about-topics {
-		@include make-sm-column-offset(2);
+.about-news {
+	background: white;
+	border-top: 5px solid black;
+	border-left: 5px solid black;
+	border-bottom: 5px solid black;
+	padding: 20px;
+	@include clearfix();
+	.post {
 		@include make-sm-column(4);
-		h4 {
+		&:nth-child(2) {
+			@include make-sm-column-offset(0);
+		}
+		&:nth-child(3) {
+			@include make-sm-column-offset(0);
+		}
+	}
+}
+
+.about-text {
+	background: white;
+	border-top: 5px solid black;
+	border-right: 5px solid black;
+	border-bottom: 5px solid black;
+	margin-top: 200px;
+	// messes with the grid!!  \/\/\/
+	margin-right: -10px;
+	// messes with the grid!!  /\/\/\
+	@include make-sm-column-offset(2);
+	@include make-sm-column(6);
+	padding: 20px;
+	padding-right: 30px;
+}
+
+.about-people {
+	background: white;
+	border-top: 5px solid black;
+	border-left: 5px solid black;
+	border-right: 5px solid black;
+	margin-top: -20px;
+	@include make-sm-column(3);
+	@include clearfix();
+	padding: 20px 0;
+	img {
+		width: 60%;
+		height: auto;
+		display: block;
+		margin: 0 auto;
+		padding-bottom: 10px;
+	}
+}
+
+.about-topics {
+	@include make-sm-column(6);
+	border-top: 5px solid black;
+	margin-top: -520px;
+	ul {
+		list-style: none;
+		padding: 4px 0 0 0;
+		li {
 			padding: 5px;
+			margin: 10px;
 			border-right: solid 5px black;
 			border-bottom: solid 5px black;
 		}
 	}
+
 }
 
-.about-people-row {
-	padding-top: 80px;
-	@include make-row();
 
-	.about-editorial {
-		@include make-sm-column(5);
-		.contact-gegevens {
-			width: 50%;
-			margin: 0 auto;
-			padding: 20px;
-		}
-	}
 
-	.about-staff {
-		@include make-sm-column-offset(2);
-		@include make-sm-column(4);
 
-		img {
-			width: 25%;
-			padding: 1%;
-		}
-	}
-}
 
-.small-title {
-	color: silver;
-}
+// .about-topics {
+// 	@include make-sm-column-offset(2);
+// 	@include make-sm-column(4);
+
+// }
+
+// .about-people-row {
+// 	padding-top: 80px;
+// 	@include make-row();
+
+// 	.about-editorial {
+// 		@include make-sm-column(5);
+// 		.contact-gegevens {
+// 			width: 50%;
+// 			margin: 0 auto;
+// 			padding: 20px;
+// 		}
+// 	}
+
+// 	.about-staff {
+// 		@include make-sm-column-offset(2);
+// 		@include make-sm-column(4);
+
+// 		img {
+// 			width: 25%;
+// 			padding: 1%;
+// 		}
+// 	}
+// }
+
+// .small-title {
+// 	color: silver;
+// }
