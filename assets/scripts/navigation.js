@@ -12,7 +12,6 @@ function togglePost(event){
 	if (event) {event.stopPropagation();}
 	var postMargin = document.querySelector('.single_post').style.marginTop;
 	var bgImgHeight = jQuery('.background-image-wrapper').height();
-	console.log(postMargin);
 	if (postMargin == '' || postMargin == '-75px') {
 		document.querySelector('.single_post').style.marginTop = (-bgImgHeight + 50) + 'px';
 		jQuery('.toggle-post > .glyphicon').detach();
@@ -22,11 +21,21 @@ function togglePost(event){
 		jQuery('.toggle-post > .glyphicon').detach();
 		jQuery('.toggle-post').append('<span class="glyphicon glyphicon-menu-up"></span>');
 	}
+
+
+
 }
 
 jQuery(document).ready(function(){
 	if (document.querySelector('.toggle-post')) {
-		window.setTimeout(togglePost, 500);
-		jQuery('.background-image, .toggle-post').click(togglePost);
+		console.log(jQuery('.background-image').height());
+		if (jQuery('.background-image').height() < 500){
+			console.log('smaller');
+			return;
+		} else {
+			console.log('larger');
+			window.setTimeout(togglePost, 500);
+			jQuery('.background-image, .toggle-post').click(togglePost);
+		}
 	}
 });

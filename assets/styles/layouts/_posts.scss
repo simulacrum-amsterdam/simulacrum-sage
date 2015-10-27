@@ -54,8 +54,13 @@
 	height: auto;
 
 	.background-image {
-		margin-top: -100px;
+		margin-top: 0px;
 		width: 100%;
+	}
+	@media (min-width: $screen-sm-min) {
+		.background-image {
+			margin-top: -100px;
+		}
 	}
 }
 
@@ -72,16 +77,28 @@
 	border-bottom: 5px solid black;
 	padding: 40px 60px;
 	img {
-		width: 25%;
+		display: block;
+		width: 75%;
 		height: auto;
-		float: left;
+		padding-bottom: 10px;
 	}
 	.usercard-text {
-		width: 75%;
-		margin-left: 25%;
-		padding: 0 0 0 60px;
-		
+		width: 100%;
+		padding: 0;
 	}
+	@media (min-width: $screen-sm-min) {
+		img {
+			width: 25%;
+			float: left;
+			margin: 0;
+		}
+		.usercard-text {
+			width: 75%;
+			margin-left: 25%;
+			padding: 0 0 0 60px;
+		}
+	}
+
 }
 
 .excerpt_class {
