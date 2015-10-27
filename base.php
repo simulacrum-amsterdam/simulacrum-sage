@@ -29,7 +29,6 @@ use Roots\Sage\Wrapper;
             $featured_images = $dynamic_featured_image->get_featured_images($post->ID);
             if ($featured_images[0]){
               $backgroundImageSrc = $featured_images[0]['full'];
-              error_log(print_R('RUN',TRUE));
             } else {
               $backgroundImage = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'single-post-thumbnail');
               $backgroundImageSrc = $backgroundImage[0];

@@ -30,9 +30,7 @@
     <?php comments_template('/templates/comments.php'); ?>
   </article>
   <?php
-    $cat = get_the_category();
-    error_log(print_R($cat, TRUE));
-    if(TRUE){ ?>
+    if(!has_tag('no-author', $post->ID)){ ?>
       <div class="usercard">
           <?= get_avatar( get_the_author_meta('ID'), 512); ?>
           <div class="usercard-text">
