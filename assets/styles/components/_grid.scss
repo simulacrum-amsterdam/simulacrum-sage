@@ -14,20 +14,11 @@ body {
 	position: relative;
 }
 
-.nav-side {
+.simulacrum-side {
 	position: absolute;
-	width: 60%;
+	width: 20%;
 	min-height: 80%;
-	left: -60%;
 	z-index: 1000;
-    transition: all 0.5s ease;
-	@media (min-width: $screen-sm-min) {
-		width: 40%;
-		left: -20%;
-	}
-	&.on {
-		left: 0%;
-	}
 }
 
 .main {

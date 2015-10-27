@@ -1,19 +1,3 @@
-<aside class="nav-side" role="banner">
-    <div class="wrap-fixed">  
-    <!-- this div contains the nav menu, and it out of view on standard sizes -->
-      <div class="header-left">
-        <nav class="navbar navbar-default" role="navigation">
-          <?php
-          if (has_nav_menu('sidebar_navigation')) :
-            wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']);
-          endif;
-          ?>
-      	</nav>
-      </div>
-      <!-- this div contains the logo and the login button -->
-      <div class="header-right"> 
-        <!-- <div class="menu-button">MENU</div> -->
-        <a href="<?= esc_url(home_url('/')); ?>"><img class="main-logo hidden-xs" src="<?php bloginfo('template_directory'); ?>/dist/images/logozwart-edged.svg"/></a>
-      </div>
-    </div>
+<aside class="simulacrum-side" role="banner">
+  <a href="<?= esc_url(home_url('/')); ?>"><img class="main-logo hidden-xs" src="<?php bloginfo('template_directory'); ?>/dist/images/logozwart-edged.svg"/></a>
 </aside>
