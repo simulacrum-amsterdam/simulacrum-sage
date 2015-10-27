@@ -9,8 +9,8 @@
 		<?php wp_reset_query(); ?>
 	</div>
 	<div class="about-text">
-		<h3>Over Simulacrum</h3>
-		<?= the_content();?>
+		<h3><?= the_title(); ?></h3>
+		<?= the_content(); ?>
 	</div>
 	<div class="about-people">
   		<img src="<?php bloginfo('template_directory'); ?>/dist/images/fotos/portret-anne.jpg"/>
