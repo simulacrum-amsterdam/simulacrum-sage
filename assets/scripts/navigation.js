@@ -25,12 +25,12 @@ function togglePost(event){
 
 jQuery(document).ready(function(){
 	if (document.querySelector('.toggle-post')) {
-		console.log(jQuery('.background-image').height());
+		// console.log(jQuery('.background-image').height());
 		if (jQuery('.background-image').height() < 500){
-			console.log('smaller');
+			// console.log('smaller');
 			return;
 		} else {
-			console.log('larger');
+			// console.log('larger');
 			window.setTimeout(togglePost, 500);
 			jQuery('.background-image, .toggle-post').click(togglePost);
 		}
