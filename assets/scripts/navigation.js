@@ -21,9 +21,6 @@ function togglePost(event){
 		jQuery('.toggle-post > .glyphicon').detach();
 		jQuery('.toggle-post').append('<span class="glyphicon glyphicon-menu-up"></span>');
 	}
-
-
-
 }
 
 jQuery(document).ready(function(){
@@ -37,5 +34,9 @@ jQuery(document).ready(function(){
 			window.setTimeout(togglePost, 500);
 			jQuery('.background-image, .toggle-post').click(togglePost);
 		}
+	}
+	if (document.querySelector('.about-container')) {
+		var offset = (-jQuery('.background-image').height() + 100);
+		document.querySelector('.about-container').style.marginTop = offset + 'px';
 	}
 });

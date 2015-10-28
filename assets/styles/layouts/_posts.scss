@@ -7,6 +7,8 @@
 	padding: 50px 60px 20px 60px;
 	background: white;
     transition: all 1s ease;
+    min-height: 386px;
+    @include clearfix();
 }
 
 .toggle-post {
