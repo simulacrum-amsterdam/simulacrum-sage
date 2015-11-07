@@ -6,6 +6,7 @@
 }
 
 .about-news {
+	margin-top: 20px;
 	background: white;
 	border-top: 5px solid black;
 	border-left: 5px solid black;
@@ -24,13 +25,17 @@
 }
 
 .about-text {
+	@media (min-width: $screen-sm-min) {
+		margin-top: 200px;
+		margin-right: -10px;
+	}
 	background: white;
 	border-top: 5px solid black;
 	border-right: 5px solid black;
 	border-bottom: 5px solid black;
-	margin-top: 200px;
+	margin-top: 20px;
 	// messes with the grid!!  \/\/\/
-	margin-right: -10px;
+	margin-right: 0px;
 	// messes with the grid!!  /\/\/\
 	@include make-sm-column-offset(2);
 	@include make-sm-column(6);
@@ -39,27 +44,40 @@
 }
 
 .about-people {
+
+	padding: 20px 0;
+	margin-top: 20px;
 	background: white;
 	border-top: 5px solid black;
 	border-left: 5px solid black;
 	border-right: 5px solid black;
-	margin-top: -20px;
-	@include make-sm-column(3);
+	@include make-sm-column(2);
 	@include clearfix();
-	padding: 20px 0;
 	img {
-		width: 60%;
+		width: 50%;
 		height: auto;
 		display: block;
-		margin: 0 auto;
-		padding-bottom: 10px;
+		padding: 20px;
+		float: left;
+	}
+	@media (min-width: $screen-sm-min) {
+		img {
+			width: 80%;
+			height: auto;
+			display: block;
+			padding: 0 0 10px 0;
+			margin: 0 auto;
+			float: none;
+		}
 	}
 }
 
 .about-topics {
 	@include make-sm-column(6);
+	
+	margin-top: 20px;
 	border-top: 5px solid black;
-	margin-top: -520px;
+	background-color: white;
 	ul {
 		list-style: none;
 		padding: 4px 0 0 0;
@@ -70,43 +88,16 @@
 			border-bottom: solid 5px black;
 		}
 	}
-
+	@media (min-width: $screen-sm-min) {
+		margin-top: 20px;
+	}
+	@media (min-width: $screen-md-min) {
+		margin-top: -200px;
+	}
+	@media (min-width: $screen-lg-min) {
+		margin-top: -400px;
+	}
+	@media (min-width: 1400px) {
+		margin-top: -600px;
+	}
 }
-
-
-
-
-
-// .about-topics {
-// 	@include make-sm-column-offset(2);
-// 	@include make-sm-column(4);
-
-// }
-
-// .about-people-row {
-// 	padding-top: 80px;
-// 	@include make-row();
-
-// 	.about-editorial {
-// 		@include make-sm-column(5);
-// 		.contact-gegevens {
-// 			width: 50%;
-// 			margin: 0 auto;
-// 			padding: 20px;
-// 		}
-// 	}
-
-// 	.about-staff {
-// 		@include make-sm-column-offset(2);
-// 		@include make-sm-column(4);
-
-// 		img {
-// 			width: 25%;
-// 			padding: 1%;
-// 		}
-// 	}
-// }
-
-// .small-title {
-// 	color: silver;
-// }

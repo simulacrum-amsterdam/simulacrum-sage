@@ -26,8 +26,12 @@ imagesLoaded(bgContainer, function(){
 	}
 	// Seperate handler for about
 	if (document.querySelector('.about-container')) {
-		var offset = (-jQuery('.background-image').height() + 100);
-		document.querySelector('.about-container').style.marginTop = offset + 'px';
+		if (jQuery('.background-image').height() < 500){
+			return;
+		} else {
+			var offset = (-jQuery('.background-image').height() + 100);
+			document.querySelector('.about-container').style.marginTop = offset + 'px';
+		}
 	}
 	
 });
