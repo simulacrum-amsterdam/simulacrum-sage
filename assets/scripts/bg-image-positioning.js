@@ -13,7 +13,8 @@ function togglePost(event){
 	}
 }
 
-jQuery(document).ready(function(){
+var bgContainer = document.querySelector('.background-image-wrapper');
+imagesLoaded(bgContainer, function(){
 	// Setting of event listeners for post scrolling
 	if (document.querySelector('.toggle-post')) {
 		if (jQuery('.background-image').height() < 500){
@@ -28,4 +29,5 @@ jQuery(document).ready(function(){
 		var offset = (-jQuery('.background-image').height() + 100);
 		document.querySelector('.about-container').style.marginTop = offset + 'px';
 	}
+	
 });

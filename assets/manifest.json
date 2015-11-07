@@ -23,6 +23,9 @@
     },
     "modernizr.js": {
       "bower": ["modernizr"]
+    },
+    "imagesloaded.js": {
+      "bower": ["imagesloaded"]
     }
   },
   "config": {
