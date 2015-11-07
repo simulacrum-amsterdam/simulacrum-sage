@@ -14,17 +14,16 @@ function togglePost(event){
 }
 
 jQuery(document).ready(function(){
+	// Setting of event listeners for post scrolling
 	if (document.querySelector('.toggle-post')) {
-		// console.log(jQuery('.background-image').height());
 		if (jQuery('.background-image').height() < 500){
-			// console.log('smaller');
 			return;
 		} else {
-			// console.log('larger');
 			window.setTimeout(togglePost, 500);
 			jQuery('.background-image, .toggle-post').click(togglePost);
 		}
 	}
+	// Seperate handler for about
 	if (document.querySelector('.about-container')) {
 		var offset = (-jQuery('.background-image').height() + 100);
 		document.querySelector('.about-container').style.marginTop = offset + 'px';
