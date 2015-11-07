@@ -1,13 +1,3 @@
-// jQuery('.menu-button').click(function() {
-
-//   var selectClasses = [
-//     '.main-wrapper',
-//     '.nav-side'
-//   ].join(', ');
-
-//   jQuery(selectClasses).toggleClass('on');
-// });
-
 function togglePost(event){
 	if (event) {event.stopPropagation();}
 	var postMargin = document.querySelector('.single_post').style.marginTop;
