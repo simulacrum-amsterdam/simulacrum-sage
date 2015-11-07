@@ -1,6 +1,6 @@
 <?php $backgroundImageSrc = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'single-post-thumbnail');?>
 
-<article <?php post_class(); ?> >
+<article <?php post_class('post-first-five'); ?> >
     <div class="post-tumbnail" style="background-image: url(<?php echo $backgroundImageSrc[0]; ?>);"></div>
     <div class="inner-post-container">
     	<header>
