@@ -39,12 +39,10 @@
 	// messes with the grid!!  /\/\/\
 	@include make-sm-column-offset(2);
 	@include make-sm-column(6);
-	padding: 20px;
-	padding-right: 30px;
+	padding: 10px 20px 20px 30px;
 }
 
 .about-people {
-
 	padding: 20px 0;
 	margin-top: 20px;
 	background: white;
