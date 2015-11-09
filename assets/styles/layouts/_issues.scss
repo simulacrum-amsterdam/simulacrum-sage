@@ -2,22 +2,27 @@
 	position: relative;
 	margin-top: -100px;
 	height: 100px;
-	background-size: 200px auto;
-	color: white;
-}
 
-.issue-image {
-	filter: grayscale(100%);
-	float: right;
-	max-height: 90px;
-	margin: 70px 20px 0;
-	padding: 5px 5px 0 5px;
+	.issue-image {
+		filter: grayscale(100%);
+		float: right;
+		max-height: 90px;
+		margin: 70px 20px 0;
+		padding: 5px 5px 0 5px;
+	}
+
+	a:nth-of-type(2) {
+		.issue-image {
+			filter: none;
+			max-height: 120px;
+		}
+	}
 }
 
 .large-background {
 	position: absolute;
 	right: 0;
-	top:-40px;
+	top: -35px;
 	z-index: -100;
 	font-size: 100px;
 	color: hsla(0,0,0,1);

@@ -14,20 +14,20 @@
 		list-style-type: none;
 		margin: 0;
 		padding: 0;
-		font-size: 70px;
-		line-height: 0.8;
+		font-size: 47px;
+		line-height: 1;
 		font-weight: 100;
 	}
 }
 
 .navigation-left {
 	position:absolute;
-	left: -10px;
+	left: 5px;
 }
 
 .navigation-right {
 	position:absolute;
-	right: -10px;
+	right: 5px;
 }
 
 // .menu-arrows {
@@ -42,8 +42,8 @@
 
 .small-logo {
 	@media (min-width: $screen-sm-min) {
-		height: 25px;
-		top: 10px;
+		height: 42px;
+		top: 2px;
 	}
 	position: relative;
 	left: -50%;
