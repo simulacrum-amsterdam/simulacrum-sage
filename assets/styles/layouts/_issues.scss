@@ -9,6 +9,11 @@
 		max-height: 90px;
 		margin: 70px 20px 0;
 		padding: 5px 5px 0 5px;
+		transition: all 0.5s ease;
+		&:hover {
+			filter: none;
+			max-height: 120px;
+		}
 	}
 
 	a:nth-of-type(2) {
