@@ -1,15 +1,12 @@
 .navigation {
 	@media (min-width: $screen-sm-min) {
-		height: 75px;
 		margin-bottom: 100px;
 	}
-	height: 135px;
+	display: flex;
+	justify-content: space-between;
 	width: 100%;
-	overflow: hidden;
-	margin-bottom: 0px;
-	border-bottom: 30px solid black;
-	background: white;
-	position: relative;
+	border-bottom: solid 30px black;
+	height: 80px;
 	ul {
 		list-style-type: none;
 		margin: 0;
@@ -17,50 +14,40 @@
 		font-size: 47px;
 		line-height: 1;
 		font-weight: 100;
+		li {
+			margin: 0 10px;
+		}
 	}
 }
 
 .navigation-left {
-	position:absolute;
-	left: 5px;
+ 	* {
+ 		float: left;
+ 	}
 }
 
 .navigation-right {
-	position:absolute;
-	right: 5px;
+	* { 
+		float: left
+	}
 }
 
-// .menu-arrows {
-// 	color: black;
-// 	float: right;
-// }
-
 .logo-container {
-	position: absolute;
-	left: 50%;
+	border-bottom: solid 30px black;
+	height: 100px;
+	background: white;
+	h4 {
+		font-weight: 200;
+		padding: 0 10px;
+	}
 }
 
 .small-logo {
 	@media (min-width: $screen-sm-min) {
 		height: 42px;
-		top: 2px;
 	}
-	position: relative;
-	left: -50%;
+	padding: 5px 0 0 0;
 	height: 90px;
-	top: 7.5px;
-	overflow: hidden;
-}
-
-.main-header {
-	position: relative;
-	width: 100%;
-	height: 100px;
-	border-bottom: solid 5px black; 
-	
-	h4 {
-		width: 100%;
-		margin-top: 35px;
-		text-align: right;
-	}
+	display: block;
+	margin: 0 auto;
 }

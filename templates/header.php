@@ -13,9 +13,11 @@
             ]);
         endif;
         ?>
-
 		<div class="logo-container">
-	        <a href="<?= esc_url(home_url('/')); ?>"><img class="small-logo" src="<?php bloginfo('template_directory'); ?>/dist/images/simulacrum-logo-small2.svg"/></a>
+            <a href="<?= esc_url(home_url('/')); ?>">
+                <img class="small-logo" src="<?php bloginfo('template_directory'); ?>/dist/images/simulacrum-logo-small2.svg"/>
+            </a>
+            <h4 class="identificatie-simu">Wetenschappelijk tijdschrift voor kunst en cultuur</h4>
 		</div>
 		<?php
 		if (has_nav_menu('header_navigation-right')) :
