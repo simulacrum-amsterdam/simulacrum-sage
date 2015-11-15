@@ -23,15 +23,9 @@ use Roots\Sage\Wrapper;
         get_template_part('templates/nav-side');
       ?>  
       <?php
-        if ( (is_page('frontpage-about') || is_single()) && has_post_thumbnail() == 1 && class_exists('Dynamic_Featured_Image') && !has_tag('no-background', $post->ID)) {
-          global $dynamic_featured_image;
-          $featured_images = $dynamic_featured_image->get_featured_images($post->ID);
-          if ($featured_images[0]){
-            $backgroundImageSrc = $featured_images[0]['full'];
-          } else {
-            $backgroundImage = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'single-post-thumbnail');
-            $backgroundImageSrc = $backgroundImage[0];
-          }
+        if ( (is_page('frontpage-about') || is_single()) && has_post_thumbnail() == 1 && !has_tag('no-background', $post->ID)) {
+          $backgroundImage = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'single-post-thumbnail');
+          $backgroundImageSrc = $backgroundImage[0];
           echo '<div class="background-image-wrapper">';
           echo '<img class="background-image" src="' . $backgroundImageSrc . '">';
           echo '</div>';

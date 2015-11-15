@@ -28,9 +28,3 @@ foreach ($sage_includes as $file) {
   require_once $filepath;
 }
 unset($file, $filepath);
-
-// function custom_excerpt_length($length) {
-//   return 20;
-// }
-
-// add_filter('excerpt_length', 'custom_excerpt_length', 999);

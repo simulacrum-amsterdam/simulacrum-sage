@@ -1,27 +1,16 @@
 .issue-container {
-	margin-top: -70px;
-	margin-right: -15px;
+	margin: 0 -15px 0 0;
 	height: 150px;
 	@media (min-width: $screen-sm-min) {
-		border-right: 30px solid black;
-	}
-	@media (min-width: $screen-md-min) {
-		border-right: 100px solid black;
-	}
-	@media (min-width: $screen-lg-min) {
 		border-right: 150px solid black;
 	}
-	transition: all 0.5s ease-in-out;
-	
+	border-right: 30px solid black;
+
 	.issue-image {
 		height: 150px;
 		float: right;
 		padding: 0 10px;
-
-		@media (min-width: $screen-md-min) {
-			border-left: 30px solid black;
-		}
-		border-right: 30px solid black;
+		border-left: 30px solid black;
 
 		filter: grayscale(100%);
 		transition: all 0.5s ease-in-out;
@@ -31,18 +20,26 @@
 	}
 }
 
-.call-for-papers-text {
-	float: right;
-	-webkit-writing-mode: vertical-rl;
+.issue-nav {
 	height: 150px;
-	padding: 0 10px;
-	text-align: center;
+	-webkit-writing-mode: vertical-rl;
 	transform: rotate(180deg);
-	h3 {
+	text-align: left;
+	float: right;
+
+	padding: 0;
+	margin: 0;
+
+	border-right: 30px solid black;
+	list-style: none;
+
+	li {
+		padding: 0 5px;
 		margin: 0;
 		font-size: 17px;
-	}
-	.call-papers {
-		letter-spacing: 3px;
+		border-left: 2px dashed black;
+		&:last-child {
+			border-left: none;
+		}
 	}
 }

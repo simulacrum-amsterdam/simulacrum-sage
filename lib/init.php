@@ -22,7 +22,8 @@ function setup() {
     'sidebar_navigation' => __('Sidebar Navigation', 'sage'),
     'about_navigation' => __('About Navigation', 'sage'),
     'header_navigation-left' => __('Header Navigation - Left side', 'sage'),
-    'header_navigation-right' => __('Header Navigation - Right side', 'sage')
+    'header_navigation-right' => __('Header Navigation - Right side', 'sage'),
+    'issue_navigation' => __('Issue Navigation', 'sage')
   ]);
 
   // Add post thumbnails

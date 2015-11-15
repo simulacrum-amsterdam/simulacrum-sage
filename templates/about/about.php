@@ -2,6 +2,13 @@
 <?php $page = get_post($post->ID); ?>
 <div class="about-container">
 	<div class="about-news">
+		<?php 
+			function custom_excerpt_length($length) {
+			  return 20;
+			}
+
+			add_filter('excerpt_length', 'custom_excerpt_length', 999);
+		?>
 		<?php $latest = new WP_Query('showposts=5&category_name=bekendmakingen'); ?>
 		<?php while ($latest->have_posts()) : $latest->the_post(); ?>
 		<?php get_template_part('templates/about/news-post', get_post_type() != 'post' ? get_post_type() : get_post_format()); ?>
