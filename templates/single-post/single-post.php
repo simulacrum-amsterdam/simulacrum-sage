@@ -2,7 +2,7 @@
   <article <?php post_class("single_post"); ?>>
     <?php 
       if (  has_post_thumbnail() == 1 && !has_tag('no-background', $post->ID)) { 
-        echo '<button class="toggle-post"><span class="glyphicon glyphicon-menu-up"></span></button>';
+        echo '<button class="toggle-post hidden-xs"><span class="glyphicon glyphicon-menu-up"></span></button>';
       } 
     ?>
     <div class="like-options">

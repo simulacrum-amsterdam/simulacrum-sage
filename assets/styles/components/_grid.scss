@@ -23,9 +23,10 @@ body {
 
 .main {
 	width: 100%;
-	padding-bottom: 450px;
+	padding-bottom: 300px;
 	@media (min-width: $screen-sm-min) {
 		width: 80%;
 		margin-left: 20%;
+		padding-bottom: 450px;
 	}
 }

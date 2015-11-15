@@ -2,14 +2,25 @@
 	margin-top: -70px;
 	margin-right: -15px;
 	height: 150px;
-	border-right: 200px solid black;
-
+	@media (min-width: $screen-sm-min) {
+		border-right: 30px solid black;
+	}
+	@media (min-width: $screen-md-min) {
+		border-right: 100px solid black;
+	}
+	@media (min-width: $screen-lg-min) {
+		border-right: 150px solid black;
+	}
+	transition: all 0.5s ease-in-out;
+	
 	.issue-image {
 		height: 150px;
 		float: right;
 		padding: 0 10px;
 
-		border-left: 30px solid black;
+		@media (min-width: $screen-md-min) {
+			border-left: 30px solid black;
+		}
 		border-right: 30px solid black;
 
 		filter: grayscale(100%);
