@@ -9,7 +9,6 @@
                 'theme_location' => 'header_navigation-left', 
                 'menu_class' => 'navigation-left hidden-xs',
                 'container' => false
-                // 'after' => '<span class="glyphicon glyphicon-menu-left menu-arrows" aria-hidden="true"></span>'
             ]);
         endif;
         ?>
@@ -30,8 +29,3 @@
         ?>
 </nav>
 
-<?php if (Titles\title() == "frontpage") { 
-    echo '<div class="issue-container hidden-xs">';
-    get_template_part('templates/frontpage/issues'); 
-    echo '</div>';
-} ?>

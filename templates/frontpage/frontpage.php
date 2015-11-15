@@ -1,5 +1,7 @@
 <?php use Roots\Sage\Titles; ?>
 
+<?php get_template_part('templates/frontpage/issues');?>
+
 <div class="frontpage-container">
 	<div class="post-container">
 		<?php $excludeCatID = get_cat_ID('bekendmakingen'); ?>
