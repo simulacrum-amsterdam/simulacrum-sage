@@ -4,18 +4,26 @@
 
 <div class="frontpage-container">
 	<div class="post-container">
+		<?php $paged = ( get_query_var('page') ) ? get_query_var('page') : 1; ?>
+
 		<?php $excludeCatID = get_cat_ID('nieuws'); ?>
 		<?php $excludeCatIDTwo = get_cat_ID('nummers'); ?>
 		<?php $excludeCatIDThree = get_cat_ID('call-for-papers'); ?>
 
 		<?php $latest = new WP_Query(array(
-            'showposts' => 10,
+            'posts_per_page' => 10,
+            'paged' => $paged,
             'category__not_in' => array($excludeCatID, $excludeCatIDTwo, $excludeCatIDThree)
         )); ?>
 		<h1 class="large-background-blog">BLOG</h1>
+			
 		<?php while ($latest->have_posts()) : $latest->the_post(); ?>
 		<?php get_template_part('templates/frontpage/post', get_post_type() != 'post' ? get_post_type() : get_post_format()); ?>
 		<?php endwhile; ?>
+		<?php if ($paged !== 1){ ?>
+			<a href="?page=1"><h6 class="oudere-posts"><- Nieuwere posts</h6></a>
+		<?php } ?>
+		<a href="?page=2"><h6 class="oudere-posts">Oudere posts -></h6></a>
 	</div>
 </div>
 
