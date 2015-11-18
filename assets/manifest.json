@@ -3,7 +3,8 @@
     "main.js": {
       "files": [
         "scripts/main.js",
-        "scripts/bg-image-positioning.js"
+        "scripts/bg-image-positioning.js",
+        "scripts/navbar.js"
       ],
       "main": true
     },

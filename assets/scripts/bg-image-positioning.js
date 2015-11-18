@@ -30,16 +30,19 @@ function toggleAbout(event) {
 }
 
 var bgContainer = document.querySelector('.background-image-wrapper');
-imagesLoaded(bgContainer, function(){
+
+if (bgContainer){
+	imagesLoaded(bgContainer, function(){
 	// Setting of event listeners for post scrolling
-	if (document.querySelector('.toggle-post')) {
-		window.setTimeout(togglePost, 500);
-		jQuery('.background-image, .toggle-post').click(togglePost);
-		jQuery(window).resize(togglePost);
-	}
-	// Seperate handler for about
-	if (document.querySelector('.about-container')) {
-		toggleAbout();
-		jQuery(window).resize(toggleAbout);
-	}
-});
+		if (document.querySelector('.toggle-post')) {
+			window.setTimeout(togglePost, 500);
+			jQuery('.background-image, .toggle-post').click(togglePost);
+			jQuery(window).resize(togglePost);
+		}
+		// Seperate handler for about
+		if (document.querySelector('.about-container')) {
+			toggleAbout();
+			jQuery(window).resize(toggleAbout);
+		}
+	});
+}

@@ -18,27 +18,3 @@
 		}
 	}
 }
-
-.issue-nav {
-	height: 150px;
-	-webkit-writing-mode: vertical-rl;
-	transform: rotate(180deg);
-	text-align: left;
-	float: right;
-
-	padding: 0;
-	margin: 0;
-
-	border-right: 30px solid black;
-	list-style: none;
-
-	li {
-		padding: 0 5px;
-		margin: 0;
-		font-size: 17px;
-		border-left: 1px solid black;
-		&:last-child {
-			border-left: none;
-		}
-	}
-}

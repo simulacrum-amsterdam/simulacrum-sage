@@ -19,6 +19,17 @@
                 <img class="small-logo" src="<?php bloginfo('template_directory'); ?>/dist/images/simulacrum-logo-small2.svg"/>
             </a>
             <h4 class="identificatie-simu">Wetenschappelijk&nbsp;tijdschrift&nbsp;voor&nbsp;kunst&nbsp;en&nbsp;cultuur</h4>
+            <nav>
+                <?php 
+                if (has_nav_menu('issue_navigation')) {
+                        wp_nav_menu([
+                        'theme_location' => 'issue_navigation', 
+                        'menu_class' => 'center-nav',
+                        'container' => false
+                    ]);
+                } 
+                ?>
+            </nav>
 		</div>
 		<div class="nav-item hidden-xs"> 
             <?php
