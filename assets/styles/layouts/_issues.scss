@@ -13,8 +13,8 @@
 
 		filter: grayscale(100%);
 		transition: all 0.5s ease-in-out;
-		&:hover {
-			// filter: none;
-		}
+	}
+	.abonneren {
+		-webkit-writing-mode: vertical-lr;
 	}
 }
