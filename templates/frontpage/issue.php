@@ -2,5 +2,4 @@
 
 <a href="<?= the_permalink(); ?>">
 	<img class="issue-image" src="<?php echo $issue_image[0]; ?>"/>
-	<h4 class="abonneren">Abonneren</h4>
 </a>
