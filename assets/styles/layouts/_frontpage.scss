@@ -21,6 +21,10 @@
 	filter: grayscale(100%) url(#monochrome);
 }
 
+.filter-for-images {
+	display: none;
+}
+
 .oudere-posts {
 	margin-top: 20px;
 	text-align: right;

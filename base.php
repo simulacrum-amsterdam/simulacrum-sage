@@ -9,7 +9,7 @@ use Roots\Sage\Wrapper;
 <html class="no-js" <?php language_attributes(); ?>>
   <?php get_template_part('templates/head'); ?>
   <body <?php body_class(); ?>>
-    <svg class="defs-only">
+    <svg class="filter-for-images">
       <filter id="monochrome" color-interpolation-filters="sRGB"
               x="0" y="0" height="100%" width="100%">
         <feColorMatrix type="matrix"
