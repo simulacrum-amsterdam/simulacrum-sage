@@ -1,6 +1,9 @@
 <?php use Roots\Sage\Titles; ?>
 <div class="frontpage-header">
-	<h1 class="simulacrum-logo">[S]</h1>		
+	<img class="simulacrum-logo" src="<?php bloginfo('template_directory'); ?>/dist/images/logo-sim-designers.svg" alt="">
+</div>
+<div>
+	<h1 class="simulacrum-issue">De Tourist</h1>		
 </div>
 <div class="post-container">
 	<!-- Pages need to increase trough query var -->
@@ -24,11 +27,13 @@
 	<?php endwhile; ?>
 
 	<!-- Post links -->
-	<?php if ($paged !== 1){ ?>
-		<a href="?page=1"><h6 class="oudere-posts"><- Nieuwere posts</h6></a>
-	<?php } ?>
+	<h6>
+		<?php if ($paged !== 1){ ?>
+			<a href="?page=1"><- Nieuwere posts</a>
+		<?php } ?>
 
-	<a href="?page=2"><h6 class="oudere-posts">Oudere posts -></h6></a>
+		<a href="?page=2" ><span class="oudere-posts">Oudere posts -></span></a>
+	</h6>
 </div>
 
 

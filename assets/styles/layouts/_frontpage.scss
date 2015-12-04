@@ -7,27 +7,45 @@
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-	height: 80vh;
+	margin-top: 5vh;
+	height: 60vh;
 }
 
 .simulacrum-logo {
+	display: block;
+	height: 100%;
+	max-width:100%;
+}
+
+.simulacrum-issue {
+	display: block;
 	margin: 0;
-	font-size: $font-size-h1 * 5;
- 	vertical-align: middle;
+	@include make-sm-column-offset(1);
+	@include make-sm-column(10);
+	text-align: right;
+	font-size: $font-size-h1;
+	color: $brand-primary;
+	margin-bottom: 10vh;
 }
 
 .post-container {
-	@include make-sm-column-offset(1);
-	@include make-sm-column(10);
+	@media (min-width: $screen-sm-min) {
+		@include make-sm-column-offset(1);
+		@include make-sm-column(10);
+	}
 }
 
 .post {
-	margin-bottom: 50px;
+	margin-bottom: 100px;
 	@include clearfix();
 }
 
+.author {
+	color: $brand-primary;
+}
+
 .post-tumbnail {
-	height: 300px;
+	height: 40vh;
 	width: 100%;
 	background-size: 100% auto;
 	background-repeat: no-repeat;
@@ -41,6 +59,5 @@
 }
 
 .oudere-posts {
-	margin-top: 20px;
-	text-align: right;
+	float: right;
 }
