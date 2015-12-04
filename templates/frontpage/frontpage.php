@@ -1,7 +1,8 @@
 <?php use Roots\Sage\Titles; ?>
-
+<div class="frontpage-header">
+	<h1 class="simulacrum-logo">[S]</h1>		
+</div>
 <div class="post-container">
-
 	<!-- Pages need to increase trough query var -->
 	<?php $paged = ( get_query_var('page') ) ? get_query_var('page') : 1; ?>
 

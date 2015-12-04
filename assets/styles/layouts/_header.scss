@@ -7,16 +7,20 @@
 .nav-item {
 	width: 50%;
 	flex-shrink: 1;
-	margin: 4px 0 0;
 }
 
 .nav-item ul {
-	padding: 5px 10px;
+	padding: 5px 10px 0px;
 	margin: 0;
 	
 	list-style-type: none;
+	font-size: $font-size-h2;
 
 	@include clearfix;
+}
+
+.short-description {
+	padding: 0px 10px;
 }
 
 .nav-right li {

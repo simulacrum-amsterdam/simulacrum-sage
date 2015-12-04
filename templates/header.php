@@ -26,4 +26,6 @@
         ?>
     </div>
 </nav>
+<!-- <p class="short-description">Wetenschappelijk tijdschrift voor kunst en cultuur</p> -->
+
 
