@@ -19,19 +19,7 @@ use Roots\Sage\Wrapper;
         do_action('get_header');
         get_template_part('templates/header');
       ?>
-      <?php
-        get_template_part('templates/nav-side');
-      ?>  
-      <?php
-        if ( (is_page('frontpage-about') || is_single()) && has_post_thumbnail() == 1 && !has_tag('no-background', $post->ID)) {
-          $backgroundImage = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'single-post-thumbnail');
-          $backgroundImageSrc = $backgroundImage[0];
-          echo '<div class="background-image-wrapper">';
-          echo '<img class="background-image" src="' . $backgroundImageSrc . '">';
-          echo '</div>';
-        } 
-      ?>
-      <main class="main container-fluid content" role="main">
+      <main class="main content" role="main">
         <?php include Wrapper\template_path(); ?>
       </main>
       <?php

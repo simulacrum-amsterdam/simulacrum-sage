@@ -1,49 +1,24 @@
 .frontpage-container {
 	@include make-row();
+}
 
-	.post-container {
-		margin-top: 100px;
-		padding-top: 20px;
-		@include make-sm-column-offset(2);
-		@include make-sm-column(8);
-	}
+.post-container {
+	@include make-sm-column-offset(1);
+	@include make-sm-column(10);
+}
 
-	.large-background-blog {
-		position: absolute;
-		left: -40px;
-		top:-50px;
-		z-index: -100;
-		font-size: 100px;
-		color: hsla(0,0,0,1);
-		margin-top: 0;
-	}
+.post {
+	@include clearfix();
+}
 
-	.post {
-		@include clearfix();
-	}
-
-	.post-first-five{
-		.post-tumbnail {
-			height: 300px;
-			width: 100%;
-			background-size: 100% auto;
-			background-repeat: no-repeat;
-			background-position: center center;
-			display: block;
-		}
-		.inner-post-container {
-			position: relative;
-			top: -75px;
-			left: 10%;
-			width: 80%;
-			margin: 10px 0 -65px 0;
-			padding: 10px;
-			background: white;
-			border-top: 5px solid black;
-			border-right: 5px solid black;
-			border-bottom: 5px solid black;
-		}
-	}
+.post-tumbnail {
+	height: 300px;
+	width: 100%;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: center center;
+	display: block;
+	filter: grayscale(100%) hue-rotate(90deg);
 }
 
 .oudere-posts {

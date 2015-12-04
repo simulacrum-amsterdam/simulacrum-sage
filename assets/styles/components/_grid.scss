@@ -5,28 +5,13 @@ html, body {
 	height: 100%;
 }
 
-body {
-	overflow-x: hidden;
-}
-
 .all-wrapper {
 	min-height: 100%;
 	position: relative;
 }
 
-.simulacrum-side {
-	position: absolute;
-	width: 20%;
-	min-height: 80%;
-	z-index: 1000;
-}
-
 .main {
 	width: 100%;
 	padding-bottom: 300px;
-	@media (min-width: $screen-sm-min) {
-		width: 80%;
-		margin-left: 20%;
-		padding-bottom: 450px;
-	}
+	@include clearfix();
 }
