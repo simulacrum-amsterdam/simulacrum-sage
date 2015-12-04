@@ -18,7 +18,7 @@
 	background-repeat: no-repeat;
 	background-position: center center;
 	display: block;
-	filter: grayscale(100%) hue-rotate(90deg);
+	filter: grayscale(100%) url(#monochrome);
 }
 
 .oudere-posts {

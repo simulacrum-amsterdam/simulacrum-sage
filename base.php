@@ -9,6 +9,16 @@ use Roots\Sage\Wrapper;
 <html class="no-js" <?php language_attributes(); ?>>
   <?php get_template_part('templates/head'); ?>
   <body <?php body_class(); ?>>
+    <svg class="defs-only">
+      <filter id="monochrome" color-interpolation-filters="sRGB"
+              x="0" y="0" height="100%" width="100%">
+        <feColorMatrix type="matrix"
+          values="0.5137 0 0 0  0 
+                  0.6235 0 0 0  0  
+                  1.0000 0 0 0  0 
+                    0  0 0 1  0" />
+      </filter>
+    </svg>
     <div class="all-wrapper">
       <!--[if lt IE 9]>
         <div class="alert alert-warning">
