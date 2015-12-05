@@ -1,0 +1,19 @@
+.background-image-wrapper {
+	position: relative;
+	z-index: -1;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	max-height: 90vh;
+	filter: grayscale(100%) url(#monochrome);
+	overflow: hidden;
+}
+
+.background-image-wrapper img {
+	width: 100%;
+}
+
+.no-background {
+	height: 20vh;
+	width: 100%;
+}
