@@ -2,7 +2,9 @@
   <?php
     $backgroundImageSrc = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'single-post-thumbnail');
     if (  has_post_thumbnail() == 1 && !has_tag('no-background', $post->ID)) { ?> 
-      <div class="background-image-wrapper" style="background-image: url(<?php echo $backgroundImageSrc[0]; ?>);"></div>
+      <div class="background-image-wrapper">
+          <img src="<?php echo $backgroundImageSrc[0]; ?>" alt="">
+      </div>
   <?php } ?>
   <div class="like-options">
     <?php do_action( 'addthis_widget', get_permalink(), get_the_title(), array(
