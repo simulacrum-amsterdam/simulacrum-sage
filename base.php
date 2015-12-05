@@ -19,7 +19,7 @@ use Roots\Sage\Wrapper;
                     0  0 0 1  0" />
         <animate
           id            = "slideAnim"
-          attributeName = "dx"
+          attributeName = "values"
           from          = "1000"
           to            = "0"
           begin         = "0s"
@@ -28,7 +28,7 @@ use Roots\Sage\Wrapper;
           values        = "1000;0;-20;10;0"
           keyTimes      = "0;0.8;0.85;0.9;1"
           xlink:href    = "#slideEffect"
-      />
+        />
       </filter>
 
     </svg>
