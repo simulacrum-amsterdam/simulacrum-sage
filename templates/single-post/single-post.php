@@ -5,6 +5,8 @@
       <div class="background-image-wrapper">
           <img src="<?php echo $backgroundImageSrc[0]; ?>" alt="">
       </div>
+  <?php } else { ?>
+      <div class="no-background"></div>
   <?php } ?>
   <div class="like-options">
     <?php do_action( 'addthis_widget', get_permalink(), get_the_title(), array(
