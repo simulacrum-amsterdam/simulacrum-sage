@@ -14,13 +14,14 @@
 	@include make-sm-column(4);
 	@include make-sm-column-offset(1);
 }
+.about-people-container {
+	@include clearfix();
+}
 
 .about-people {
 	padding-top: 50px;
 	@include make-sm-column(10);
 	@include make-sm-column-offset(1);
-	@include clearfix();
-
 }
 
 .about-people img {
@@ -37,15 +38,11 @@
 .about-bottom-container {
 	padding-top: 100px;
 	@include clearfix();
-	
+
 }
 
 .about-write {
-	@include make-sm-column(4);
-	@include make-sm-column-offset(1);
+	@include make-sm-column(6);
+	@include make-sm-column-offset(3);
 }
 
-.about-ads {
-	@include make-sm-column(4);
-	@include make-sm-column-offset(2);
-}
