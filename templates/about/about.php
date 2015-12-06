@@ -6,13 +6,13 @@
 	  	</div>
 <?php } ?>
 
-<div class="about-container">
-	<div class="about-left">
-		<div class="about-left__description">
+<div class="about">
+	<div class="about__left">
+		<div class="description">
 			<h3><?= the_title(); ?></h3>
 			<?= the_content(); ?>
 		</div>
-		<div class="about-left__people">
+		<div class="people">
 			<h3> Redactie </h3>
 			<img class="person" src="<?php bloginfo('template_directory'); ?>/dist/images/fotos/portret-anne.jpg"/>
 			<img class="person" src="<?php bloginfo('template_directory'); ?>/dist/images/fotos/portret-franziska.jpg"/>
@@ -26,8 +26,8 @@
 			<img class="person" src="<?php bloginfo('template_directory'); ?>/dist/images/fotos/portret-sofie.jpg"/>
 		</div>
 	</div>
-	<div class="about-right"></div>
-		<div class="about-right__news">
+	<div class="about__right"></div>
+		<div class="news">
 			<h3> Nieuws </h3>
 			<?php 
 				function custom_excerpt_length($length) {
@@ -42,7 +42,7 @@
 			<?php endwhile; ?>
 			<?php wp_reset_query(); ?>
 		</div>
-		<div class="about-right__write">
+		<div class="write">
 			<h3><?= get_post_custom_values('second_page_header')[0]; ?></h3>
 			<?= get_post_custom_values('second_page_content')[0]; ?>
 		</div>
