@@ -12,11 +12,12 @@ use Roots\Sage\Wrapper;
     <svg class="filter-for-images">
       <filter id="monochrome" color-interpolation-filters="sRGB"
               x="0" y="0" height="100%" width="100%">
-        <!-- current color = rgb(0,133,202) -->
+        
+        <!-- current matrix = #0081C3 = rgb(0 129 195) = [0 * 255][0.50588235 * 255][0.7647059 * 255] -->
         <feColorMatrix type="matrix"
           values="0 0 0 0  0 
-                  0.5215 0 0 0  0  
-                  0.7921 0 0 0  0 
+                  0.5058824 0 0 0  0  
+                  0.7647059 0 0 0  0 
                     0  0 0 1  0" />
       </filter>
 

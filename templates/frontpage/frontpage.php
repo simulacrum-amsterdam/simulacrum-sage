@@ -2,7 +2,7 @@
 <h6 class="short-description">Wetenschappelijk tijdschrift<br>voor kunst en cultuur</h6>
 
 <div class="frontpage-header">
-	<img class="simulacrum-logo" src="<?php bloginfo('template_directory'); ?>/dist/images/logo-sim-designers.svg" alt="">
+	<img class="simulacrum-logo" src="<?php bloginfo('template_directory'); ?>/dist/images/simulacrum-toerist-web.svg" alt="">
 </div>
 
 <div>
