@@ -1,7 +1,10 @@
 <?php use Roots\Sage\Titles; ?>
+<h6 class="short-description">Wetenschappelijk tijdschrift<br>voor kunst en cultuur</h6>
+
 <div class="frontpage-header">
 	<img class="simulacrum-logo" src="<?php bloginfo('template_directory'); ?>/dist/images/logo-sim-designers.svg" alt="">
 </div>
+
 <div>
 	<?php $includeCatID = get_cat_ID('nummers'); ?>
 	<?php $latest = new WP_Query(array(
@@ -10,9 +13,12 @@
 	)); 
 	?>
 	<?php while ($latest->have_posts()) : $latest->the_post(); ?>
-		<a href="<?= the_permalink(); ?>"><h1 class="simulacrum-issue"><?= the_title(); ?></h1></a>		
+		<h6 class="simulacrum-issue-subtext">Jaargang 24 nr. 1</h6>
+		<a href="<?= the_permalink(); ?>"><h4 class="simulacrum-issue"><?= the_title(); ?></h4></a>		
 	<?php endwhile; ?>
 </div>
+
+
 <div class="post-container">
 	<!-- Pages need to increase trough query var -->
 	<?php $paged = ( get_query_var('page') ) ? get_query_var('page') : 1; ?>

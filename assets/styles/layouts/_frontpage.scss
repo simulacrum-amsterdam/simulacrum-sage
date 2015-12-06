@@ -9,6 +9,7 @@
 	width: 100%;
 	margin-top: 5vh;
 	height: 60vh;
+	// ^^ important
 }
 
 .simulacrum-logo {
@@ -17,21 +18,34 @@
 	max-width:100%;
 }
 
+.simulacrum-issue-subtext {
+	color: $brand-primary;
+	padding: 0 40px;
+	text-align: right;
+	margin: 0px;
+	margin-bottom: 0px;
+
+}
+
 .simulacrum-issue {
 	display: block;
 	margin: 0;
-	@include make-sm-column-offset(1);
-	@include make-sm-column(10);
-	text-align: right;
-	font-size: $font-size-h1;
-	color: $brand-primary;
+
+	padding: 0 40px;
 	margin-bottom: 10vh;
+
+	
+	text-align: right;
+	font-family: $font-family-sans-serif;
+	color: $brand-primary;
 }
 
+
+
 .post-container {
-	@media (min-width: $screen-sm-min) {
-		@include make-sm-column-offset(1);
-		@include make-sm-column(10);
+	.post-content {
+		padding: 0 40px;
+		margin-bottom: 100px;
 	}
 }
 
@@ -42,16 +56,26 @@
 
 .author {
 	color: $brand-primary;
+	font-family: $font-family-sans-serif;
+	// important ^^^
 }
 
 .post-tumbnail {
+	img {
+		display: block;
+		margin: 0 auto;
+	}
+
 	height: 40vh;
 	width: 100%;
+	
+
+	overflow: hidden;
 	background-size: 100% auto;
 	background-repeat: no-repeat;
 	background-position: center center;
 	display: block;
-	filter: grayscale(100%) url(#monochrome);
+	filter: grayscale(100%) brightness(1.1) url(#monochrome);
 }
 
 .filter-for-images {

@@ -13,6 +13,19 @@
 	<div class="about-description">
 		<h3><?= the_title(); ?></h3>
 		<?= the_content(); ?>
+		<div class="about-people">
+			<h3> Redactie </h3>
+			<img src="<?php bloginfo('template_directory'); ?>/dist/images/fotos/portret-anne.jpg"/>
+			<img src="<?php bloginfo('template_directory'); ?>/dist/images/fotos/portret-franziska.jpg"/>
+			<img src="<?php bloginfo('template_directory'); ?>/dist/images/fotos/portret-frederike.jpg"/>
+			<img src="<?php bloginfo('template_directory'); ?>/dist/images/fotos/portret-julia.jpg"/>
+			<img src="<?php bloginfo('template_directory'); ?>/dist/images/fotos/portret-lindy.jpg"/>
+			<img src="<?php bloginfo('template_directory'); ?>/dist/images/fotos/portret-maartje.jpg"/>
+			<img src="<?php bloginfo('template_directory'); ?>/dist/images/fotos/portret-mylene.jpg"/>
+			<img src="<?php bloginfo('template_directory'); ?>/dist/images/fotos/portret-querine.jpg"/>
+			<img src="<?php bloginfo('template_directory'); ?>/dist/images/fotos/portret-sofia.jpg"/>
+			<img src="<?php bloginfo('template_directory'); ?>/dist/images/fotos/portret-sofie.jpg"/>
+		</div>
 	</div>
 	<div class="about-news">
 		<h3> Nieuws </h3>
@@ -29,33 +42,21 @@
 		<?php get_template_part('templates/about/news-post', get_post_type() != 'post' ? get_post_type() : get_post_format()); ?>
 		<?php endwhile; ?>
 		<?php wp_reset_query(); ?>
+		<div class="about-write">
+			<h3> Schrijven </h3>
+			<p>De redactie van Simulacrum bestaat uit gemotiveerde studenten en net-afgestudeerden die zich vrijwillig inzetten voor het tijdschrift. Maak hieronder kennis met onze redactieleden door op de foto’s te klikken.</p>
+			<p>Heb jij ook spannende ideeën voor de invulling van onze nummers, een passie voor kunst en taal en wil jij een netwerk opbouwen in de Amsterdamse kunstwereld? Stuur dan je CV en motivatie naar info@simulacrum.nl.</p>
+			<h4>Contact</h4>
+			<div class="contact-gegevens">
+				<p>Stichting Simulacrum</p>
+				<p>Turfdraagsterpad 9</p>
+				<p>1012 XT Amsterdam</p>
+		</div>
+	</div>
 	</div>
 </div>
 <div class="about-people-container">
-	<div class="about-people">
-		<h3> Redactie </h3>
-		<img src="<?php bloginfo('template_directory'); ?>/dist/images/fotos/portret-anne.jpg"/>
-		<img src="<?php bloginfo('template_directory'); ?>/dist/images/fotos/portret-franziska.jpg"/>
-		<img src="<?php bloginfo('template_directory'); ?>/dist/images/fotos/portret-frederike.jpg"/>
-		<img src="<?php bloginfo('template_directory'); ?>/dist/images/fotos/portret-julia.jpg"/>
-		<img src="<?php bloginfo('template_directory'); ?>/dist/images/fotos/portret-lindy.jpg"/>
-		<img src="<?php bloginfo('template_directory'); ?>/dist/images/fotos/portret-maartje.jpg"/>
-		<img src="<?php bloginfo('template_directory'); ?>/dist/images/fotos/portret-mylene.jpg"/>
-		<img src="<?php bloginfo('template_directory'); ?>/dist/images/fotos/portret-querine.jpg"/>
-		<img src="<?php bloginfo('template_directory'); ?>/dist/images/fotos/portret-sofia.jpg"/>
-		<img src="<?php bloginfo('template_directory'); ?>/dist/images/fotos/portret-sofie.jpg"/>
-	</div>
+	
+
 </div>
-<div class="about-bottom-container">
-	<div class="about-write">
-		<h3> Schrijven </h3>
-		<p>De redactie van Simulacrum bestaat uit gemotiveerde studenten en net-afgestudeerden die zich vrijwillig inzetten voor het tijdschrift. Maak hieronder kennis met onze redactieleden door op de foto’s te klikken.</p>
-		<p>Heb jij ook spannende ideeën voor de invulling van onze nummers, een passie voor kunst en taal en wil jij een netwerk opbouwen in de Amsterdamse kunstwereld? Stuur dan je CV en motivatie naar info@simulacrum.nl.</p>
-		<h4>Contact</h4>
-		<div class="contact-gegevens">
-			<p>Stichting Simulacrum</p>
-			<p>Turfdraagsterpad 9</p>
-			<p>1012 XT Amsterdam</p>
-		</div>
-	</div>
-</div>
+	

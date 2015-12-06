@@ -2,6 +2,8 @@
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
+	padding: 15px 40px 0;
+	font-family: $font-family-serif;
 }
 
 .nav-item {
@@ -10,9 +12,9 @@
 }
 
 .nav-item ul {
-	padding: 5px 10px 0px;
 	margin: 0;
-	
+	padding: 0;
+
 	list-style-type: none;
 	font-size: $font-size-h4;
 	
@@ -20,7 +22,8 @@
 }
 
 .short-description {
-	padding: 0px 10px;
+	margin-top: 4px;
+	padding: 0px 40px;
 }
 
 .nav-right li {
