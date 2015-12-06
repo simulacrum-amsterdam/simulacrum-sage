@@ -43,16 +43,10 @@
 		<?php endwhile; ?>
 		<?php wp_reset_query(); ?>
 		<div class="about-write">
-			<h3> Schrijven </h3>
-			<p>De redactie van Simulacrum bestaat uit gemotiveerde studenten en net-afgestudeerden die zich vrijwillig inzetten voor het tijdschrift. Maak hieronder kennis met onze redactieleden door op de foto’s te klikken.</p>
-			<p>Heb jij ook spannende ideeën voor de invulling van onze nummers, een passie voor kunst en taal en wil jij een netwerk opbouwen in de Amsterdamse kunstwereld? Stuur dan je CV en motivatie naar info@simulacrum.nl.</p>
-			<h4>Contact</h4>
-			<div class="contact-gegevens">
-				<p>Stichting Simulacrum</p>
-				<p>Turfdraagsterpad 9</p>
-				<p>1012 XT Amsterdam</p>
+			<?= get_post_custom_values('second_page_header')[0]; ?>
+			<?= get_post_custom_values('second_page_content')[0]; ?>
+
 		</div>
-	</div>
 	</div>
 </div>
 <div class="about-people-container">
