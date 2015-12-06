@@ -25,6 +25,5 @@
 	<meta name="msapplication-TileImage" content="<?php bloginfo('template_directory'); ?>/dist/images/favicons/mstile-144x144.png">
 	<meta name="theme-color" content="#ffffff">
 
-
   <?php wp_head(); ?>
 </head>
