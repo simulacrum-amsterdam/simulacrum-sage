@@ -6,12 +6,15 @@
 	font-family: $font-family-serif;
 }
 
-.nav-item {
-	width: 50%;
+.nav__item-left {
+	flex-grow: 1;
+}
+
+.nav__item-right {
 	flex-shrink: 1;
 }
 
-.nav-item ul {
+.nav__item ul {
 	margin: 0;
 	padding: 0;
 
