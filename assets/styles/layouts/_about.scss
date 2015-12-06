@@ -1,0 +1,37 @@
+.about-container {
+	margin-top: -40px;
+	@include clearfix();
+}
+
+.about-left {
+
+}
+
+.about-left__description {
+	background: white;
+}
+
+.about-left__people {
+	padding-top: 50px;
+	@include clearfix();
+}
+
+.about-left__people .person {
+	display: block;
+
+	width: 200px;
+	height: 200px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+
+	float:left;
+}
+
+.about-right__news {
+	background: white;
+}
+
+.about-right__write {
+	padding-top: 50px;
+}
+
