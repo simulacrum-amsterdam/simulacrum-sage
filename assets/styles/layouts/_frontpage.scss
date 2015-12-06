@@ -43,6 +43,20 @@
 	@include clearfix();
 }
 
+.post-thumbnail {
+	height: 40vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	filter: grayscale(100%) brightness(1.1) url(#monochrome);
+}
+
+.post-thumbnail__img {
+	display: block;
+}
+
 .frontpage-post-content {
 	padding: 0 40px;
 }
@@ -58,20 +72,7 @@
 	// important ^^^
 }
 
-.post-thumbnail {
-	height: 40vh;
-	width: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	overflow: hidden;
-	filter: grayscale(100%) brightness(1.1) url(#monochrome);
-}
 
-.post-thumbnail__img {
-	display: block;
-	margin: 0 auto;
-}
 
 .frontpage-post-nav {
 	padding: 0 40px;

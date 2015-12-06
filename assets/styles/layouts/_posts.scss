@@ -1,4 +1,8 @@
-.single_post {
+.singular-post {
+	padding: 0 40px;
+}
+
+.singular-post__contents {
 	@include make-sm-column-offset(2);
 	@include make-sm-column(8);
 	@include make-md-column-offset(3);
@@ -9,12 +13,9 @@
 		transition: all 0.5s ease;
 		filter: grayscale(100%) url(#monochrome);
 	}
-	img:hover {
-		// filter: none;
-	}
 }
 
-.single_post figcaption {
+.singular-post__figcaption {
 	margin-top: 10px;
 }
 
