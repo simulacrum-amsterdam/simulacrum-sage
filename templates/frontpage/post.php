@@ -2,8 +2,8 @@
 
 <article <?php post_class('post'); ?> >
     <a href="<?php the_permalink(); ?>">
-    	<div class="post-tumbnail">
-    		<img src="<?php echo $backgroundImageSrc[0]; ?>">
+    	<div class="post-thumbnail">
+    		<img class="post-thumbnail__image" src="<?php echo $backgroundImageSrc[0]; ?>">
     	</div>
     </a>
     <div class="frontpage-post-content">
