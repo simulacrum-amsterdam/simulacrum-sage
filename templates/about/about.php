@@ -14,19 +14,32 @@
 		</div>
 		<div class="people">
 			<h3> Redactie </h3>
-			<img class="person" src="<?php bloginfo('template_directory'); ?>/dist/images/fotos/portret-anne.jpg"/>
-			<img class="person" src="<?php bloginfo('template_directory'); ?>/dist/images/fotos/portret-franziska.jpg"/>
-			<img class="person" src="<?php bloginfo('template_directory'); ?>/dist/images/fotos/portret-frederike.jpg"/>
-			<img class="person" src="<?php bloginfo('template_directory'); ?>/dist/images/fotos/portret-julia.jpg"/>
-			<img class="person" src="<?php bloginfo('template_directory'); ?>/dist/images/fotos/portret-lindy.jpg"/>
-			<img class="person" src="<?php bloginfo('template_directory'); ?>/dist/images/fotos/portret-maartje.jpg"/>
-			<img class="person" src="<?php bloginfo('template_directory'); ?>/dist/images/fotos/portret-mylene.jpg"/>
-			<img class="person" src="<?php bloginfo('template_directory'); ?>/dist/images/fotos/portret-querine.jpg"/>
-			<img class="person" src="<?php bloginfo('template_directory'); ?>/dist/images/fotos/portret-sofia.jpg"/>
-			<img class="person" src="<?php bloginfo('template_directory'); ?>/dist/images/fotos/portret-sofie.jpg"/>
+			<div class="people__people-container">
+				<div class="people__person-container">
+					<img class="people__person" src="<?php bloginfo('template_directory'); ?>/dist/images/fotos/portret-anne.jpg"/>
+				</div><div class="people__person-container">
+					<img class="people__person" src="<?php bloginfo('template_directory'); ?>/dist/images/fotos/portret-franziska.jpg"/>
+				</div><div class="people__person-container">
+					<img class="people__person" src="<?php bloginfo('template_directory'); ?>/dist/images/fotos/portret-frederike.jpg"/>
+				</div><div class="people__person-container">
+					<img class="people__person" src="<?php bloginfo('template_directory'); ?>/dist/images/fotos/portret-julia.jpg"/>
+				</div><div class="people__person-container">
+					<img class="people__person" src="<?php bloginfo('template_directory'); ?>/dist/images/fotos/portret-lindy.jpg"/>
+				</div><div class="people__person-container">
+					<img class="people__person" src="<?php bloginfo('template_directory'); ?>/dist/images/fotos/portret-maartje.jpg"/>
+				</div><div class="people__person-container">
+					<img class="people__person" src="<?php bloginfo('template_directory'); ?>/dist/images/fotos/portret-mylene.jpg"/>
+				</div><div class="people__person-container">
+					<img class="people__person" src="<?php bloginfo('template_directory'); ?>/dist/images/fotos/portret-querine.jpg"/>
+				</div><div class="people__person-container">
+					<img class="people__person" src="<?php bloginfo('template_directory'); ?>/dist/images/fotos/portret-sofia.jpg"/>
+				</div><div class="people__person-container">
+					<img class="people__person" src="<?php bloginfo('template_directory'); ?>/dist/images/fotos/portret-sofie.jpg"/>
+				</div>
+			</div>
 		</div>
 	</div>
-	<div class="about__right"></div>
+	<div class="about__right">
 		<div class="news">
 			<h3> Nieuws </h3>
 			<?php 

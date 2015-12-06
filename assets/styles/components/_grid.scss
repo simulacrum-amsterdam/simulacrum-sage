@@ -8,6 +8,7 @@ html, body {
 .all-wrapper {
 	min-height: 100%;
 	position: relative;
+	@include clearfix();
 }
 
 .main {
