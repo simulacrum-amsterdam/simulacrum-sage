@@ -24,7 +24,6 @@
 	text-align: right;
 	margin: 0px;
 	margin-bottom: 0px;
-
 }
 
 .simulacrum-issue {
@@ -33,28 +32,27 @@
 
 	padding: 0 40px;
 	margin-bottom: 10vh;
-
 	
 	text-align: right;
 	font-family: $font-family-sans-serif;
 	color: $brand-primary;
 }
 
-
-
-.post-container {
-	.post-content {
-		padding: 0 40px;
-		margin-bottom: 100px;
-	}
-}
-
-.fontpage-container .post {
+.frontpage-post-container .post {
 	margin-bottom: 100px;
 	@include clearfix();
 }
 
+.frontpage-post-content {
+	padding: 0 40px;
+}
+
+.frontpage-post-container h4 {
+	margin-bottom: 0;
+}
+
 .author {
+	margin-top: 4px;
 	color: $brand-primary;
 	font-family: $font-family-sans-serif;
 	// important ^^^
@@ -78,10 +76,16 @@
 	filter: grayscale(100%) brightness(1.1) url(#monochrome);
 }
 
-.filter-for-images {
-	display: none;
+.frontpage-post-nav {
+	padding: 0 40px;
 }
 
 .oudere-posts {
 	float: right;
 }
+
+// disable showing of SVG filter
+.filter-for-images {
+	display: none;
+}
+

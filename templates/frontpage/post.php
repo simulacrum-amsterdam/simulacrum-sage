@@ -6,7 +6,7 @@
     		<img src="<?php echo $backgroundImageSrc[0]; ?>">
     	</div>
     </a>
-    <div class="post-content">
+    <div class="frontpage-post-content">
     	<header>
       		<h4 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
     		<h6 class="byline author vcard"><?= __('', 'sage'); ?><?= get_the_author(); ?></h6>

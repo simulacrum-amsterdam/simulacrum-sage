@@ -19,7 +19,7 @@
 </div>
 
 
-<div class="post-container">
+<div class="frontpage-post-container">
 	<!-- Pages need to increase trough query var -->
 	<?php $paged = ( get_query_var('page') ) ? get_query_var('page') : 1; ?>
 
@@ -44,7 +44,7 @@
 	<?php endwhile; ?>
 
 	<!-- Post links -->
-	<h6>
+	<h6 class="frontpage-post-nav">
 		<?php if ($paged !== 1){ ?>
 			<a href="?page=<?php echo $paged - 1; ?>"><- Nieuwere posts</a>
 		<?php } ?>

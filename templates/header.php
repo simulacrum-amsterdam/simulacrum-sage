@@ -14,7 +14,6 @@
         endif;
         ?>
     </div>
-    <!-- <h6>Wetenschappelijk tijdschrift voor kunst en cultuur</h6> -->
 	<div class="nav-item"> 
         <?php
 		if (has_nav_menu('header_navigation-right')) :

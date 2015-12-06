@@ -3,8 +3,7 @@
 	@include make-sm-column(8);
 	@include make-md-column-offset(3);
 	@include make-md-column(6);
-	margin-top: -50px;
-	padding-top: 10px;
+	margin-top: -40px;
 	background: white;
 	img {
 		transition: all 0.5s ease;
@@ -15,8 +14,19 @@
 	}
 }
 
+.single_post {
+	figcaption {
+		margin-top: 10px;
+	}
+} 
+
+.entry-meta {
+	margin-bottom: 10px;
+}
+
 .like-options {
 	position: absolute;
+	margin-top: 50px;
 	padding: 5px;
 
 	.addthis_toolbox {
@@ -24,52 +34,16 @@
 			padding: 0;
 			span {
 				margin-right: 10px;
-				filter: grayscale(100%);
+				filter: grayscale(100%) ;
 			}
 		}
 	}
 	
 }
 
-.entry-meta {
-	margin-bottom: 10px;
-}
-
 .post-updated {
 	float: right;
 	margin-top: 50px;
-}
-
-.usercard {
-	@include make-sm-column-offset(2);
-	@include make-sm-column(8);
-	@include make-md-column-offset(3);
-	@include make-md-column(6);
-	margin-top: 50px;
-	padding: 40px 60px;
-	img {
-		display: block;
-		width: 75%;
-		height: auto;
-		padding-bottom: 10px;
-	}
-	.usercard-text {
-		width: 100%;
-		padding: 0;
-	}
-	@media (min-width: $screen-sm-min) {
-		img {
-			width: 25%;
-			float: left;
-			margin: 0;
-		}
-		.usercard-text {
-			width: 75%;
-			margin-left: 25%;
-			padding: 0 0 0 60px;
-		}
-	}
-
 }
 
 .excerpt_class {
