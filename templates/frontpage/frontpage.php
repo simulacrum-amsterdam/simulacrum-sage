@@ -6,10 +6,9 @@
 </div>
 
 <div>
-	<?php $includeCatID = get_cat_ID('nummers'); ?>
 	<?php $latest = new WP_Query(array(
 	    'showposts' => 1,
-	    'cat' => $includeCatID
+	    'tag_slug__in' => "on-issue"
 	)); 
 	?>
 	<?php while ($latest->have_posts()) : $latest->the_post(); ?>
@@ -23,17 +22,11 @@
 	<!-- Pages need to increase trough query var -->
 	<?php $paged = ( get_query_var('page') ) ? get_query_var('page') : 1; ?>
 
-	<!-- Here the Wordpress Loop is initiated -->
-	<!-- Refactor to include tag, instead of exclude categories -->
-	<?php $excludeCatID = get_cat_ID('nieuws'); ?>
-	<?php $excludeCatIDTwo = get_cat_ID('nummers'); ?>
-	<?php $excludeCatIDThree = get_cat_ID('call-for-papers'); ?>
-
 	<?php 
 		$latest = new WP_Query(array(
 	        'posts_per_page' => 10,
 	        'paged' => $paged,
-	        'category__not_in' => array($excludeCatID, $excludeCatIDTwo, $excludeCatIDThree)
+	        'tag_slug__in' => "on-frontpage"
 	    ));
 	    $max_pages = $latest->max_num_pages;
     ?>

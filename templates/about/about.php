@@ -49,7 +49,11 @@
 
 				add_filter('excerpt_length', 'custom_excerpt_length', 999);
 			?>
-			<?php $latest = new WP_Query('showposts=3&category_name=bekendmakingen'); ?>
+			<?php $latest = new WP_Query(array(
+		        'posts_per_page' => 3,
+		        'tag_slug__in' => "on-about"
+	    	)); ?>
+
 			<?php while ($latest->have_posts()) : $latest->the_post(); ?>
 			<?php get_template_part('templates/about/news-post', get_post_type() != 'post' ? get_post_type() : get_post_format()); ?>
 			<?php endwhile; ?>
