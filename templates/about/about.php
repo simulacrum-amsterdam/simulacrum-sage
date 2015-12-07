@@ -15,10 +15,8 @@
 		<div class="people">
 			<h3> Redactie </h3>
 			<div class="people__people-container">
-				$user_query = new WP_User_Query( array( 'role' => 'Administrator' ) );
-				<?php while ($latest->have_posts()) : $latest->the_post(); ?>
-					<?php get_template_part('templates/about/news-post', get_post_type() != 'post' ? get_post_type() : get_post_format()); ?>
-				<?php endwhile; ?>
+				
+
 				<div class="people__person-container">
 					<img class="people__person" src="<?php bloginfo('template_directory'); ?>/dist/images/fotos/portret-anne.jpg"/>
 				</div><div class="people__person-container">
