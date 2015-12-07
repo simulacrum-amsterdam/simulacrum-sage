@@ -8,7 +8,7 @@ Live deploy is visible on [Digital Ocean](http://http://95.85.1.182/)
 
 # Manual:
 
-In this theme are two special templates. The one for the frontpage and the about page. Those pages have special field associated with them. Also the post-view has a custom field. Next to that there are several meaningfull tags:
+In this theme are two special templates. The one for the frontpage and the about page. Those pages have special field associated with them. Also the post-view has a custom field. Next to that there are several meaningful tags:
 
 Meaningful tags: no-background, no-filter, on-frontpage, on-about and on-issue.
 Meaningful fields: frontpage__tagline, about-second__headline, about-second__content, post-page__caption
