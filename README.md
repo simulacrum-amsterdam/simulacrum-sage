@@ -10,5 +10,5 @@ Live deploy is visible on [Digital Ocean](http://http://95.85.1.182/)
 
 In this theme are two special templates. The one for the frontpage and the about page. Those pages have special field associated with them. Also the post-view has a custom field. Next to that there are several meaningfull tags:
 
-Meaningfull tags: no-background, no-filter, on-frontpage, on-about and on-issue.
-Meaningfull fields: frontpage__tagline, about-second__headline, about-second__content, post-page__caption
+Meaningful tags: no-background, no-filter, on-frontpage, on-about and on-issue.
+Meaningful fields: frontpage__tagline, about-second__headline, about-second__content, post-page__caption
