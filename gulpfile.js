@@ -19,6 +19,31 @@ var runSequence  = require('run-sequence');
 var sass         = require('gulp-sass');
 var sourcemaps   = require('gulp-sourcemaps');
 var uglify       = require('gulp-uglify');
+var fs           = require('fs');
+var GulpSSH      = require('gulp-ssh');
+var sshPass      = require('./auth.js');
+
+// Deployment over ssh
+var SSHConfig = {
+  host: '95.85.1.182',
+  port: 22,
+  username: 'root',
+  password: sshPass.password,
+  privateKey: fs.readFileSync('/Users/Robert-Jan/.ssh/digitalocean')
+}
+
+var gulpSSH = new GulpSSH({
+  ignoreErrors: false,
+  sshConfig: SSHConfig
+})
+
+gulp.task('deploy', function () {
+  console.log(SSHConfig.password);
+
+  return gulp
+    .src(['index.php'])
+    .pipe(gulpSSH.dest('/var/www'))
+})
 
 // See https://github.com/austinpray/asset-builder
 var manifest = require('asset-builder')('./assets/manifest.json');
