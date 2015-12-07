@@ -1,5 +1,5 @@
 <?php use Roots\Sage\Titles; ?>
-<h6 class="short-description">Wetenschappelijk tijdschrift<br>voor kunst en cultuur</h6>
+<h6 class="short-description"><?= get_post_custom_values('frontpage-headline')[0]; ?></h6>
 
 <div class="frontpage-header">
 	<img class="simulacrum-logo" src="<?php bloginfo('template_directory'); ?>/dist/images/simulacrum-toerist-web.svg" alt="">
