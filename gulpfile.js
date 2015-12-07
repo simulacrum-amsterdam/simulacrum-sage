@@ -28,8 +28,7 @@ var SSHConfig = {
   host: '95.85.1.182',
   port: 22,
   username: 'root',
-  password: sshPass.password,
-  privateKey: fs.readFileSync('/Users/Robert-Jan/.ssh/digitalocean')
+  password: sshPass.password
 }
 
 var gulpSSH = new GulpSSH({
@@ -37,12 +36,18 @@ var gulpSSH = new GulpSSH({
   sshConfig: SSHConfig
 })
 
+gulp.task('deploy-all', function () {
+  console.log(SSHConfig.password);
+  return gulp
+    .src(['../../.././**/*.*', '!**/node_modules/**', '!**/bower_components/**', '!**/.git/**'])
+    .pipe(gulpSSH.dest('/var/www/html/'))
+})
+
 gulp.task('deploy', function () {
   console.log(SSHConfig.password);
-
   return gulp
-    .src(['index.php'])
-    .pipe(gulpSSH.dest('/var/www'))
+    .src(['../../.././**/*.*', '!**/node_modules/**', '!**/bower_components/**', '!**/.git/**'])
+    .pipe(gulpSSH.dest('/var/www/html/wp-content/themes/simulacrum-sage'))
 })
 
 // See https://github.com/austinpray/asset-builder
