@@ -60,8 +60,8 @@
 			<?php wp_reset_query(); ?>
 		</div>
 		<div class="write">
-			<h3><?= get_post_custom_values('second_page_header')[0]; ?></h3>
-			<?= get_post_custom_values('second_page_content')[0]; ?>
+			<h3><?= get_post_custom_values('about-second__header')[0]; ?></h3>
+			<?= get_post_custom_values('about-second__content')[0]; ?>
 		</div>
 	</div>
 </div>

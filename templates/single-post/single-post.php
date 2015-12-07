@@ -11,7 +11,7 @@
     <div class="singular-post">
       <article <?php post_class("singular-post__contents"); ?>>
         <header>
-          <figcaption class="singular-post__figcaption"><?= get_post_custom_values('caption')[0]; ?> </figcaption>
+          <figcaption class="singular-post__figcaption"><?= get_post_custom_values('post-page__caption')[0]; ?> </figcaption>
           <h2 class="entry-title"><?php the_title(); ?></h2>
           <?php get_template_part('templates/single-post/entry-meta'); ?>
         </header>
