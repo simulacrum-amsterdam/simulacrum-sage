@@ -39,7 +39,7 @@ var gulpSSH = new GulpSSH({
 gulp.task('deploy-all', function () {
   console.log(SSHConfig.password);
   return gulp
-    .src(['../../.././**/*.*', '!**/node_modules/**', '!**/bower_components/**', '!**/.git/**'])
+    .src(['../../.././**/*.*', '!**/node_modules/**', '!**/bower_components/**', '!**/.git/**', '!**/wp-content/**'])
     .pipe(gulpSSH.dest('/var/www/html/'))
 })
 

@@ -15,8 +15,29 @@
 		<div class="people">
 			<h3> Redactie </h3>
 			<div class="people__people-container">
-				
+				<?php
+					$wp_user_query = new WP_User_Query(array ('role' => 'author'));
+					$authors = $wp_user_query->get_results();
 
+					// Check for results
+					if (!empty($authors)) {
+						foreach ($authors as $author)
+					    {
+					        // get all the user's data
+					        $author_info = get_userdata($author->ID);
+				
+					        echo "<div class=\"people__person-container\">";
+					        	echo avatar_manager_get_custom_avatar($author->ID);
+					        echo "</div>";
+				?>
+							
+
+				<?php 
+						}
+					} else {
+					    echo 'No authors found';
+					}
+				?>
 				<div class="people__person-container">
 					<img class="people__person" src="<?php bloginfo('template_directory'); ?>/dist/images/fotos/portret-anne.jpg"/>
 				</div><div class="people__person-container">
