@@ -46,7 +46,7 @@ gulp.task('deploy-all', function () {
 gulp.task('deploy', function () {
   console.log(SSHConfig.password);
   return gulp
-    .src(['../../.././**/*.*', '!**/node_modules/**', '!**/bower_components/**', '!**/.git/**'])
+    .src(['./**/*.*', '!**/node_modules/**', '!**/bower_components/**', '!**/.git/**'])
     .pipe(gulpSSH.dest('/var/www/html/wp-content/themes/simulacrum-sage'))
 })
 
