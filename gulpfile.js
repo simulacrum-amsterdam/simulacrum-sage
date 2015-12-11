@@ -22,13 +22,15 @@ var uglify       = require('gulp-uglify');
 var fs           = require('fs');
 var GulpSSH      = require('gulp-ssh');
 var sshPass      = require('./auth.js');
+var gutil = require( 'gulp-util' );
+var ftp = require( 'vinyl-ftp' );
 
-// Deployment over ssh
+// Deployment over ssh -> staging
 var SSHConfig = {
   host: '95.85.1.182',
   port: 22,
   username: 'root',
-  password: sshPass.password
+  password: sshPass.sshPassword
 }
 
 var gulpSSH = new GulpSSH({
@@ -36,19 +38,32 @@ var gulpSSH = new GulpSSH({
   sshConfig: SSHConfig
 })
 
-gulp.task('deploy-all', function () {
-  console.log(SSHConfig.password);
-  return gulp
-    .src(['../../.././**/*.*', '!**/node_modules/**', '!**/bower_components/**', '!**/.git/**', '!**/wp-content/**'])
-    .pipe(gulpSSH.dest('/var/www/html/'))
-})
+// Deployment over ftp -> production
 
-gulp.task('deploy', function () {
-  console.log(SSHConfig.password);
-  return gulp
-    .src(['./**/*.*', '!**/node_modules/**', '!**/bower_components/**', '!**/.git/**'])
-    .pipe(gulpSSH.dest('/var/www/html/wp-content/themes/simulacrum-sage'))
-})
+gulp.task( 'deploy-production', function () {
+
+    var conn = ftp.create( {
+        host:     'ftp.simulacrum.nl',
+        user:     sshPass.ftpUser,
+        password: sshPass.ftpPassword,
+        parallel: 10,
+        log:      gutil.log
+    } );
+
+    var globs = [
+        '.',
+        '!./node_modules',
+        '!./bower_components',
+        '!./.git'
+    ];
+
+    // using base = '.' will transfer everything to /public_html correctly
+    // turn off buffering in gulp.src for best performance
+
+    return gulp.src( globs, { base: '.', buffer: false } )
+        .pipe( conn.newer( '/wp-content/themes/simulacrum-sage' ) ) // only upload newer files
+        .pipe( conn.dest( '/wp-content/themes/simulacrum-sage' ) );
+} );
 
 // See https://github.com/austinpray/asset-builder
 var manifest = require('asset-builder')('./assets/manifest.json');
@@ -185,7 +200,7 @@ var jsTasks = function(filename) {
 var writeToManifest = function(directory) {
   return lazypipe()
     .pipe(gulp.dest, path.dist + directory)
-    .pipe(browserSync.stream, {match: '**/*.{js,css}'})
+    .pipe(browserSync.stream, {match: '**.{js,css}'})
     .pipe(rev.manifest, revManifest, {
       base: path.dist,
       merge: true
