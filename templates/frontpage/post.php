@@ -11,8 +11,5 @@
       		<h4 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
     		<h6 class="byline author vcard"><?= __('', 'sage'); ?><?= get_the_author(); ?></h6>
     	</header>
-        <div class="entry-summary">
-           <!-- <?php echo the_excerpt(); ?> -->
-        </div>
     </div>
 </article>
