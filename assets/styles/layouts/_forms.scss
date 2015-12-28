@@ -1,16 +1,14 @@
-.page-header {
-	text-align: center;
-	border-bottom: 0;
+.submit-wrap {
+  display: flex;
 }
 
-.page__container {
-  @include make-sm-column-offset(2);
-  @include make-sm-column(8);
-  @include make-md-column-offset(3);
-  @include make-md-column(6);  
+input[type=submit] {
+  border: 2px solid $brand-primary;
+  padding: 10px 20px;
+  border-radius: 50px;
+  background: white;
 }
 
-.page-404 {
-  padding-top: 200px;
-  text-align: center;
+input[type=submit]:hover {
+  background: rgba( $brand-primary, .1 );
 }
