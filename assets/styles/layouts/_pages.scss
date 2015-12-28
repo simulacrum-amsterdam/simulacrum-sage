@@ -4,7 +4,10 @@
 }
 
 .page__container {
-  padding: 0 40px;
+  @include make-sm-column-offset(2);
+  @include make-sm-column(8);
+  @include make-md-column-offset(3);
+  @include make-md-column(6);  
 }
 
 .page-404 {
