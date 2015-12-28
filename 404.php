@@ -1,7 +1,7 @@
-<?php get_template_part('templates/page', 'header'); ?>
+<div class="page__container">
 
-<div class="alert alert-warning">
-  <?php _e('Sorry, but the page you were trying to view does not exist.', 'sage'); ?>
+  <div class="page-404">
+    <h2>Helaas, deze pagina bestaat niet</h2>
+  </div>
+
 </div>
-
-<?php get_search_form(); ?>
