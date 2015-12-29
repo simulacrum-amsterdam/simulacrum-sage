@@ -25,42 +25,30 @@ var sshPass      = require('./auth.js');
 var gutil = require( 'gulp-util' );
 var ftp = require( 'vinyl-ftp' );
 
-// Deployment over ssh -> staging
-var SSHConfig = {
-  host: '95.85.1.182',
-  port: 22,
-  username: 'root',
-  password: sshPass.sshPassword
-}
-
-var gulpSSH = new GulpSSH({
-  ignoreErrors: false,
-  sshConfig: SSHConfig
-})
+var deployGlobs = [
+  '!./auth.js',
+  '!./node_modules',
+  '!./node_modules/**',
+  '!./bower_components',
+  '!./bower_components/**',
+  '!./.git',
+  '!./.git/**',
+  '**'
+];
 
 // Deployment over ftp -> production
 
-gulp.task( 'deploy-production', function () {
+gulp.task('deploy-production', function () {
 
     var conn = ftp.create( {
         host:     'ftp.simulacrum.nl',
         user:     sshPass.ftpUser,
         password: sshPass.ftpPassword,
-        parallel: 10,
+        parallel: 1,
         log:      gutil.log
     } );
 
-    var globs = [
-        '.',
-        '!./node_modules',
-        '!./bower_components',
-        '!./.git'
-    ];
-
-    // using base = '.' will transfer everything to /public_html correctly
-    // turn off buffering in gulp.src for best performance
-
-    return gulp.src( globs, { base: '.', buffer: false } )
+    return gulp.src( deployGlobs, { base: '.', buffer: false } )
         .pipe( conn.newer( '/wp-content/themes/simulacrum-sage' ) ) // only upload newer files
         .pipe( conn.dest( '/wp-content/themes/simulacrum-sage' ) );
 } );
