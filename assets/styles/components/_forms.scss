@@ -1,0 +1,14 @@
+.submit-wrap {
+  display: flex;
+}
+
+input[type=submit] {
+  border: 2px solid $brand-primary;
+  padding: 10px 20px;
+  border-radius: 50px;
+  background: white;
+}
+
+input[type=submit]:hover {
+  background: rgba( $brand-primary, .1 );
+}

@@ -53,8 +53,9 @@
 	filter: grayscale(100%) brightness(1.1) url(#monochrome);
 }
 
-.post-thumbnail__img {
+.post-thumbnail__image {
 	display: block;
+	width: 100%;
 }
 
 .frontpage-post-content {
