@@ -2,7 +2,7 @@
 <h6 class="short-description"><?= get_post_custom_values('frontpage__headline')[0]; ?></h6>
 
 <div class="frontpage-header">
-	<img class="simulacrum-logo" src="<?php bloginfo('template_directory'); ?>/dist/images/simulacrum-toerist-web.svg" alt="">
+	<img class="simulacrum-logo" src="<?php bloginfo('template_directory'); ?>/dist/images/simulacrum-gif.gif" alt="">
 </div>
 
 <div>

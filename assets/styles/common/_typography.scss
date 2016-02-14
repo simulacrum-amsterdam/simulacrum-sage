@@ -20,6 +20,18 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Lunch';
+  src: url('../fonts/lunch-webfont.eot');
+  src: url('../fonts/lunch-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/lunch-webfont.woff2') format('woff2'),
+       url('../fonts/lunch-webfont.woff') format('woff'),
+       url('../fonts/lunch-webfont.ttf') format('truetype'),
+       url('../fonts/lunch-webfont.svg#Academica') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 $text-color:            black !default;
 
 //** Global textual link color.
@@ -33,7 +45,7 @@ $link-hover-decoration: underline !default;
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-$font-family-sans-serif:  Lars-regular, Helvetica, Arial, sans-serif !default;
+$font-family-sans-serif:  Lunch, Helvetica, Arial, sans-serif !default;
 $font-family-serif:       Academica, "Times New Roman", Times, serif !default;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
