@@ -12,7 +12,7 @@
 	)); 
 	?>
 	<?php while ($latest->have_posts()) : $latest->the_post(); ?>
-		<h6 class="simulacrum-issue-subtext">Jaargang 24 nr. 1</h6>
+		<h6 class="simulacrum-issue-subtext">Jaargang 24 nr. 2</h6>
 		<a href="<?= the_permalink(); ?>"><h4 class="simulacrum-issue"><?= the_title(); ?></h4></a>		
 	<?php endwhile; ?>
 </div>
