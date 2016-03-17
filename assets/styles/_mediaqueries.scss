@@ -1,0 +1,42 @@
+$breakpoint-xs : 400px;
+$breakpoint-sm : 600px;
+$breakpoint-md : 800px;
+$breakpoint-lg : 1000px;
+$breakpoint-xl : 1200px;
+$breakpoint-xxl : 1600px;
+
+@media (min-width: $breakpoint-xs){
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: $breakpoint-sm){
+  html {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: $breakpoint-md){
+  html {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: $breakpoint-lg){
+  html {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: $breakpoint-xl){
+  html {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: $breakpoint-xxl){
+  html {
+    font-size: 26px;
+  }
+}

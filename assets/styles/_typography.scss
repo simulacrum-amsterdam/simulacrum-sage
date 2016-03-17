@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'Lars-Regular';
+  src: url('../fonts/Lars-Regular.eot');
+  src: url('../fonts/Lars-Regular.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Lars-Regular.woff2') format('woff2'),
+       url('../fonts/Lars-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Academica';
+  src: url('../fonts/Academica.eot');
+  src: url('../fonts/Academica.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Academica.woff2') format('woff2'),
+       url('../fonts/Academica.woff') format('woff'),
+       url('../fonts/Academica.ttf') format('truetype'),
+       url('../fonts/Academica.svg#Academica') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lunch';
+  src: url('../fonts/lunch-webfont.eot');
+  src: url('../fonts/lunch-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/lunch-webfont.woff2') format('woff2'),
+       url('../fonts/lunch-webfont.woff') format('woff'),
+       url('../fonts/lunch-webfont.ttf') format('truetype'),
+       url('../fonts/lunch-webfont.svg#Academica') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$titleFont: 'Lunch';
+$baseFont: 'Academica';

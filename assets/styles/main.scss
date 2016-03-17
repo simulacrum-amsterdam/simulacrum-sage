@@ -1,16 +1,7 @@
-@import "common/_variables";
-@import "common/_typography";
+@import "_typography";
+@import "_mixins";
+@import "_colors";
 
-@import "common/_global";
-@import "components/_buttons";
-@import "components/_comments";
-@import "components/_forms";
-@import "components/_grid";
-@import "components/_wp-classes";
-@import "layouts/_header";
-@import "layouts/_footer";
-@import "layouts/_pages";
-@import "layouts/_posts";
-@import "layouts/_frontpage";
-@import "layouts/_about";
-
+@import "_helpers";
+@import "_base";
+@import "_layout";
