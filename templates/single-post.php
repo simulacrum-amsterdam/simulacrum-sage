@@ -1,18 +1,16 @@
 <?php while (have_posts()) : the_post(); ?>
-  <?php
-  $backgroundImageSrc = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'single-post-thumbnail');
-  if ( has_post_thumbnail() == 1 && !has_tag('no-background', $post->ID)) { 
-  ?>
-  <img class="sp-header__image <?php if (has_tag('no-filter', $post->ID)){echo 'no-filter';} ?>" src="<?php echo $backgroundImageSrc[0]; ?>" alt="">
-  <?php } else { ?>
-  <div class="sp-header__no-image"></div>
-  <?php } ?>
+  
+  <?php get_template_part('templates/single-post-header'); ?>
 
-  <article <?php post_class("singular-post__contents"); ?>>
+  <article <?php post_class("single-post"); ?>>
     <header>
       <figcaption class="singular-post__figcaption"><?= get_post_custom_values('post-page__caption')[0]; ?> </figcaption>
       <h2 class="entry-title"><?php the_title(); ?></h2>
-      <?php get_template_part('templates/single-post/entry-meta'); ?>
+      <div class="entry-meta">
+        <?php if(!has_tag('no-author', $post->ID)){ ?>
+          <p class="byline author vcard"><?= get_the_author(); ?></p>
+        <?php } ?>
+      </div>
     </header>
     <div class="entry-content">
       <?php the_content(); ?>
@@ -31,6 +29,6 @@
       <time class="updated post-updated" datetime="<?= get_post_time('c', true); ?>"><?= get_the_date(); ?></time>
       <?php wp_link_pages(['before' => '<nav class="page-nav"><p>' . __('Pages:', 'sage'), 'after' => '</p></nav>']); ?>
     </footer>
-    <?php comments_template('/templates/comments.php'); ?>
   </article>
+
 <?php endwhile; ?>

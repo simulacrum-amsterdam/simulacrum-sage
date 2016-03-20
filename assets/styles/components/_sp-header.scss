@@ -1,4 +1,8 @@
+.sp-header__title {
+  padding: 2rem;
+}
+
 .sp-header__image {
-  width: 100vw;
-  height: auto;
+  flex-grow: 1;
+  width: 100%;
 }
