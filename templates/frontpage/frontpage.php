@@ -1,15 +1,6 @@
 <?php use Roots\Sage\Titles; ?>
 
-<div class="layout__frontpage-header">
-	<!-- persentational logo -->
-	<div class="fp-logo-image" style="background-image: url( <?php bloginfo('template_directory'); ?>/dist/images/simulacrum-gif.gif ); background-repeat: no-repeat; background-size: contain; background-position: center center;"></div>
-	<h1 class="fp-logo-heading"><?= the_title(); ?></h1>
-	<div class="fp-logo-description"><?php the_content(); ?></div>
-	<!-- navigation -->
-	<?php
-	  get_template_part('templates/navigation');
-	?>
-</div>
+<?php get_template_part('templates/header'); ?>
 
 <div class="layout__main">
 	<!-- determine current page number -->
@@ -33,10 +24,9 @@
 			<a href="?page=<?php echo $paged - 1; ?>"><- Nieuwere posts</a>
 		<?php } ?>
 		<?php if ($paged && $paged < $max_pages){ ?>
-			<a href="?page=<?php echo $paged + 1; ?> " ><span class="fp-pagination__old">Oudere posts -></span></a>
+			<a href="?page=<?php echo $paged + 1; ?> " >Oudere posts -></a>
 		<?php } ?>
 	</h6>
-
 </div>
 
 
