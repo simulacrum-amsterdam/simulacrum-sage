@@ -55,6 +55,10 @@ ul, ol {
 }
 
 a {
-  color: $baseColor;
+  color: $inverseColor;
   text-decoration: none;
+}
+
+a:hover {
+  color: $themeColor;
 }

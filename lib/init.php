@@ -19,11 +19,7 @@ function setup() {
   // Register wp_nav_menu() menus
   // http://codex.wordpress.org/Function_Reference/register_nav_menus
   register_nav_menus([
-    'sidebar_navigation' => __('Sidebar Navigation', 'sage'),
-    'about_navigation' => __('About Navigation', 'sage'),
-    'header_navigation-left' => __('Header Navigation - Left side', 'sage'),
-    'header_navigation-right' => __('Header Navigation - Right side', 'sage'),
-    'issue_navigation' => __('Issue Navigation', 'sage')
+    'main-nav' => __('main-nav', 'sage')
   ]);
 
   // Add post thumbnails

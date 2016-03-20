@@ -1,14 +1,11 @@
-.layout__body {
-  display: flex;
-}
-
-.layout__navigation {
-  width: 100%;
-}
-
 .layout__frontpage-header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.layout__navigation {
   width: 100%;
 }

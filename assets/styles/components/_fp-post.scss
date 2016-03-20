@@ -1,0 +1,27 @@
+.fp-post {
+  width: 100%; 
+}
+
+.fp-post__image-container {
+  display: flex;
+  height: 40vh;
+  align-items: center;
+  overflow: hidden;
+}
+
+.fp-post__image {
+  width: 100%;
+  filter: grayscale(100%) brightness(1.1) url(#monochrome);
+}
+
+.fp-post__meta {
+  padding: 2rem;
+}
+
+.fp-post__title {
+
+}
+
+.fp-post__author {
+  color: $themeColor;
+}
