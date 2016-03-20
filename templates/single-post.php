@@ -1,18 +1,19 @@
+<?php get_template_part('templates/single-post-header'); ?>
+
 <?php while (have_posts()) : the_post(); ?>
   
-  <?php get_template_part('templates/single-post-header'); ?>
+  <article <?php post_class("sp"); ?>>
+    <div class="sp__meta">
+      <h2 class="sp__title"><?php the_title(); ?></h2>
+      <?php if(!has_tag('no-author', $post->ID)){ ?>
+        <h6 class="sp__author"><?= get_the_author(); ?></h6>
+      <?php } else { ?>
+        <h6 class="sp__author">Redactie</h6>
+      <?php } ?>
+    </div>
 
-  <article <?php post_class("single-post"); ?>>
-    <header>
-      <figcaption class="singular-post__figcaption"><?= get_post_custom_values('post-page__caption')[0]; ?> </figcaption>
-      <h2 class="entry-title"><?php the_title(); ?></h2>
-      <div class="entry-meta">
-        <?php if(!has_tag('no-author', $post->ID)){ ?>
-          <p class="byline author vcard"><?= get_the_author(); ?></p>
-        <?php } ?>
-      </div>
-    </header>
-    <div class="entry-content">
+    <figcaption class="sp__caption"><?= get_post_custom_values('post-page__caption')[0]; ?> </figcaption>
+    <div class="sp__content-container">
       <?php the_content(); ?>
     </div>
     <footer>

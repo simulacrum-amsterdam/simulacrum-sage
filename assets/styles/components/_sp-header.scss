@@ -1,8 +1,27 @@
-.sp-header__title {
-  padding: 2rem;
-}
-
 .sp-header__image {
   flex-grow: 1;
+  display: flex;
+  align-items: flex-end;
+  width: 100vw;
+  height: 100vh
+}
+
+.sp-header__meta {
+  display: block;
   width: 100%;
+  padding: 1rem 10%;
+  margin-bottom: 3rem;
+
+  background: white;
+}
+
+.sp-header__title {
+  width: 100%;
+  border-bottom: 5px solid $themeColor;
+  padding-bottom: 0.5rem;
+}
+
+.sp-header__author {
+  padding-top: 0.5rem;
+  color: $themeColor;
 }

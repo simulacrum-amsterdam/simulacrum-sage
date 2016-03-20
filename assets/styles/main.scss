@@ -5,12 +5,15 @@
 @import "_helpers";
 @import "_base";
 @import "_layout";
+@import "_mediaqueries";
 
 // components
 @import "components/_svg-filter";
 @import "components/_main-nav";
 @import "components/_main-footer";
 @import "components/_main-header";
+@import "components/_fp-header";
 @import "components/_fp-post";
 @import "components/_fp-pagination";
 @import "components/_sp-header";
+@import "components/_sp";
