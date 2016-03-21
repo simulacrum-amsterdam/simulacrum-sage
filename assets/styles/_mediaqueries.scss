@@ -19,24 +19,24 @@ $breakpoint-xxl : 1600px;
 
 @media (min-width: $breakpoint-md){
   html {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
 @media (min-width: $breakpoint-lg){
   html {
-    font-size: 22px;
+    font-size: 20px;
   }
 }
 
 @media (min-width: $breakpoint-xl){
   html {
-    font-size: 26px;
+    font-size: 24px;
   }
 }
 
 @media (min-width: $breakpoint-xxl){
   html {
-    font-size: 30px;
+    font-size: 28px;
   }
 }
