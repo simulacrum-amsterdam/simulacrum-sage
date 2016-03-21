@@ -1,1 +1,1 @@
-<?php get_template_part('templates/single-post', get_post_type()); ?>
+<?php get_template_part('templates/sp', get_post_type()); ?>

@@ -1,20 +1,17 @@
 <?php while (have_posts()) : the_post(); ?>
-<article <?php post_class("sp"); ?>>
 
-  <?php get_template_part('templates/single-post-header'); ?>
+<?php get_template_part('templates/main-header-feature'); ?>
 
-  <figcaption class="sp__caption">
-    <?= get_post_custom_values('post-page__caption')[0]; ?> 
-  </figcaption>
+<article <?php post_class("s-column-content"); ?>>
 
-  <div class="sp__meta">
+  <header class="sp__meta">
     <h2 class="sp__title"><?php the_title(); ?></h2>
     <?php if(!has_tag('no-author', $post->ID)){ ?>
       <h6 class="sp__author"><?= get_the_author(); ?></h6>
     <?php } else { ?>
       <h6 class="sp__author">Redactie</h6>
     <?php } ?>
-  </div>
+  </header>
   
   <div class="sp__content-container">
     <?php the_content(); ?>

@@ -1,12 +1,6 @@
-<?php
-	$backgroundImageSrc = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'single-post-thumbnail');
-	if (  has_post_thumbnail() == 1 && !has_tag('no-background', $post->ID)) { ?> 
-	  	<div class="background-image-wrapper">
-	      	<img src="<?php echo $backgroundImageSrc[0]; ?>" alt="">
-	  	</div>
-<?php } ?>
+<?php get_template_part('templates/main-header-feature'); ?>
 
-<div class="about">
+<div class="s-column-content">
 	<div class="about__left">
 		<div class="description">
 			<h3><?= the_title(); ?></h3>

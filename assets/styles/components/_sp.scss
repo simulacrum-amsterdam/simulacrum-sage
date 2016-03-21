@@ -1,21 +1,5 @@
-.sp {
-  width: 100%;
-}
-
-
-.sp__caption {
-  width: 30rem;
-  max-width: 80%;
-  padding: 1rem 0;
-  margin: 0 auto;
-  font-size: 0.75rem;
-}
-
 .sp__meta {
-  width: 30rem;
-  max-width: 80%;
   padding: 2rem 0 1.4rem 0;
-  margin: 0 auto;
 }
 
 .sp__title {
@@ -28,9 +12,6 @@
 }
 
 .sp__content-container {
-  width: 30rem;
-  max-width: 80%;
-  margin: 0 auto;
 }
 
 .sp__content-container > p {
@@ -40,8 +21,5 @@
 .sp__footer {
   display: flex;
   justify-content: space-between;
-  width: 30rem;
-  max-width: 80%;
-  margin: 0 auto;
   padding: 3rem 0;
 }

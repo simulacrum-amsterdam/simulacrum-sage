@@ -1,0 +1,14 @@
+.featured-image {
+  flex-grow: 1;
+  width: 100vw;
+  height: 100vh
+}
+
+.featured-image__caption {
+  width: 30rem;
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 1rem 0;
+  
+  font-size: 0.75rem;
+}
