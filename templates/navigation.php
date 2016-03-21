@@ -3,7 +3,7 @@
     if (has_nav_menu('main-nav')) :
         wp_nav_menu([
             'theme_location' => 'main-nav', 
-            'menu_class' => 'main-nav',
+            'menu_class' => 'nav',
             'container' => false
         ]);
     endif;

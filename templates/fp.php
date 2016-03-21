@@ -19,7 +19,7 @@
 	<?php endwhile; ?>
 
 	<!-- pagination -->
-	<h6 class="fp-pagination">
+	<h6 class="pagination">
 		<?php if ($paged !== 1){ ?>
 			<a href="?page=<?php echo $paged - 1; ?>"><- Nieuwere posts</a>
 		<?php } ?>

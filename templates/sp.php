@@ -1,23 +1,23 @@
 <?php while (have_posts()) : the_post(); ?>
 
-<?php get_template_part('templates/main-header-feature'); ?>
+<?php get_template_part('templates/header-feature'); ?>
 
-<article <?php post_class("s-column-content"); ?>>
+<article <?php post_class("sc-content"); ?>>
 
-  <header class="sp__meta">
-    <h2 class="sp__title"><?php the_title(); ?></h2>
+  <header class="sc-content__meta">
+    <h2 class="sc-content__title"><?php the_title(); ?></h2>
     <?php if(!has_tag('no-author', $post->ID)){ ?>
-      <h6 class="sp__author"><?= get_the_author(); ?></h6>
+      <h6 class="sc-content__author"><?= get_the_author(); ?></h6>
     <?php } else { ?>
-      <h6 class="sp__author">Redactie</h6>
+      <h6 class="sc-content__author">Redactie</h6>
     <?php } ?>
   </header>
   
-  <div class="sp__content-container">
+  <div class="sc-content__content-container">
     <?php the_content(); ?>
   </div>
 
-  <footer class="sp__footer">
+  <footer class="sc-content__footer">
     <div class="social-media-bar">
       <?php do_action( 'addthis_widget', get_permalink(), get_the_title(), array(
         'type' => 'custom',
@@ -28,8 +28,7 @@
         'counter' => false // if you want a counter and the style of it
       )); ?>
     </div>
-    <time class="updated post-updated" datetime="<?= get_post_time('c', true); ?>"><?= get_the_date(); ?></time>
-    <?php wp_link_pages(['before' => '<nav class="page-nav"><p>' . __('Pages:', 'sage'), 'after' => '</p></nav>']); ?>
+    <time datetime="<?= get_post_time('c', true); ?>"><?= get_the_date(); ?></time>
   </footer>
 
 </article>

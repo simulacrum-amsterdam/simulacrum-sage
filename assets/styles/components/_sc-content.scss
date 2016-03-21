@@ -1,0 +1,34 @@
+// single column
+.sc-content {
+  width: 30rem;
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+.sc-content__meta {
+  padding: 1rem 0 1.4rem 0;
+}
+
+.sc-content__title {
+
+}
+
+.sc-content__author {
+  padding-top: 0.5rem;
+  color: $themeColor;
+}
+
+.sc-content__content-container {
+  
+}
+
+.sc-content__content-container > p {
+  padding-bottom: 1.4rem;
+}
+
+.sc-content__footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 0;
+}

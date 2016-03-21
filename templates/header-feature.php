@@ -1,6 +1,6 @@
 <div class="layout__header">
   <!-- main header -->
-  <?php get_template_part('templates/main-header');?>
+  <?php get_template_part('templates/header');?>
 
   <!-- post and page header -->
   <?php
