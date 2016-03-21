@@ -20,8 +20,8 @@
     <?php the_content(); ?>
   </div>
 
-  <footer>
-    <div class="like-options">
+  <footer class="sp__footer">
+    <div class="social-media-bar">
       <?php do_action( 'addthis_widget', get_permalink(), get_the_title(), array(
         'type' => 'custom',
         'size' => '32', // size of the icons.  Either 16 or 32
