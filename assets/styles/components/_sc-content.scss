@@ -11,16 +11,25 @@
 }
 
 .sc-content__title {
-
+  border-bottom: 5px solid $themeColor;
+  margin: 0.3rem 0 ;
 }
 
 .sc-content__author {
-  padding-top: 0.5rem;
   color: $themeColor;
 }
 
 .sc-content__content-container {
-  
+  padding: 1rem 0;
+}
+
+.sc-content__content-container > h1,
+.sc-content__content-container > h2,
+.sc-content__content-container > h3,
+.sc-content__content-container > h4,
+.sc-content__content-container > h5,
+.sc-content__content-container > h6 {
+  padding-bottom: 0rem;
 }
 
 .sc-content__content-container > p {

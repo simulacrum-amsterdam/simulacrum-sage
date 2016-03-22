@@ -10,6 +10,6 @@
 		<a href="<?php the_permalink(); ?>">
       <h3 class="fp-post__title"><?php the_title(); ?></h3>
     </a>
-		<p class="fp-post__author"><?= get_the_author(); ?></p>
+		<h6 class="fp-post__author"><?= get_the_author(); ?></h6>
   </div>
 </article>

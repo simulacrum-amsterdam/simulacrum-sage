@@ -1,10 +1,3 @@
-<?php get_template_part('templates/header-feature'); ?>
-
-<div class="sc-content">
-	<h3><?= the_title(); ?></h3>
-	<?= the_content(); ?>
-</div>
-
 <div class="sc-content">
 	<h3>Redactie</h3>
 	<div class="redactie__container">
@@ -43,29 +36,4 @@
 			}
 		?>
 	</div>
-</div>	
-
-<div class="sc-content">
-	<h3> Nieuws </h3>
-	<?php 
-		function custom_excerpt_length($length) {
-		  return 20;
-		}
-
-		add_filter('excerpt_length', 'custom_excerpt_length', 999);
-	?>
-	<?php $latest = new WP_Query(array(
-        'posts_per_page' => 3,
-        'tag_slug__in' => "on-about"
-  	)); ?>
-
-	<?php while ($latest->have_posts()) : $latest->the_post(); ?>
-	<?php get_template_part('templates/about/news-post', get_post_type() != 'post' ? get_post_type() : get_post_format()); ?>
-	<?php endwhile; ?>
-	<?php wp_reset_query(); ?>
-</div>
-
-<div class="sc-content write">
-	<h3><?= get_post_custom_values('about-second__header')[0]; ?></h3>
-	<?= get_post_custom_values('about-second__content')[0]; ?>
 </div>
