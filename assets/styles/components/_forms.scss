@@ -2,6 +2,10 @@ input[type="checkbox"] {
   display: none;
 }
 
+input[type="checkbox"] + label:hover {
+  cursor: pointer;
+}
+
 input[type="checkbox"] + label:before {
   content: "";
   display: inline-block;
@@ -56,14 +60,13 @@ input[type=submit] {
 
   border: 0.1rem solid $themeColor;
 
-  // border-image: url(../../assets/images/empty-checkbox.png) 100% round;
-
   font-size: 1rem;
   font-family: $baseFont;
   background: white;
 }
 
 input[type=submit]:hover {
+  cursor: pointer;
   background: rgba( $themeColor, .2 );
 }
 
@@ -77,4 +80,8 @@ input[type=submit]:hover {
 
 .field-wrap {
   margin-bottom: 1.5rem !important;
+}
+
+.ninja-forms-response-msg {
+  padding: 1rem 0;
 }

@@ -1,18 +1,17 @@
 .redactie__container {
   display: flex;
   flex-wrap: wrap;
+  padding: 1rem 0;
 }
 
 .redactie__img-container {
   width: 25%;
 }
 
-.redactie__img-container {
-  .avatar {
-    width: 100%;
-    height: auto;
-    padding: 0 5px 5px 0;
-    filter: brightness(130%) grayscale(100%) url(#monochrome);
-  }
+.redactie__img-container .avatar {
+  width: 100%;
+  height: auto;
+  padding: 0 1rem 1rem 0;
+  filter: grayscale(100%) ;
 }
 

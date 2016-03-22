@@ -2,7 +2,7 @@
 
 <?php get_template_part('templates/header-fp'); ?>
 
-<div class="layout__main">
+<main class="layout__main">
 	<!-- determine current page number -->
 	<?php $paged = ( get_query_var('page') ) ? get_query_var('page') : 1; ?>
 	<!-- query content -->
@@ -27,4 +27,4 @@
 			<a href="?page=<?php echo $paged + 1; ?> " >Oudere posts -></a>
 		<?php } ?>
 	</h6>
-</div>
+</main>

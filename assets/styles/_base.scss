@@ -12,8 +12,9 @@ html {
   outline: 0;
 }
 
-*:selection {
-  background-color: $themeColor;  
+::selection {
+  background-color: $themeColor;
+  color: white; 
 }
 
 h1, h2, h3, h4 ,h5, h6 {

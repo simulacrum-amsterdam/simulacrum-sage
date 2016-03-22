@@ -1,5 +1,5 @@
 <div class="sc">
-	<h3>Redactie</h3>
+	<h1 class="sc__title">Redactie</h1>
 	<div class="redactie__container">
 		<?php
 			global $wpdb;

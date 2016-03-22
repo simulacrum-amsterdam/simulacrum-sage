@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: About Front Page
+ * Template Name: About Page
  */
 ?>
 

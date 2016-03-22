@@ -1,11 +1,15 @@
-.social-media-bar {
-  .addthis_toolbox {
-    a {
-      padding: 0;
-      span {
-        margin-right: 10px;
-        filter: grayscale(100%);
-      }
-    }
-  }
+.social-media-bar .addthis_toolbox a {
+  padding: 0;
+}
+
+.social-media-bar .addthis_toolbox a span {
+  margin-right: 10px;
+  filter: grayscale(100%);
+  // width: 2rem !important;
+  // height: 2rem !important;
+}
+
+.social-media-bar .addthis_toolbox a span svg {
+  // width: 2rem !important;
+  // height: 2rem !important;
 }
