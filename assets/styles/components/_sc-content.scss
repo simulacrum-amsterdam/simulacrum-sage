@@ -7,12 +7,14 @@
 }
 
 .sc__meta {
-  padding: 1rem 0 1.4rem 0;
+  padding: 1rem 0 0rem 0;
 }
 
 .sc__title {
-  border-bottom: 5px solid $themeColor;
+  display: inline-block;
   margin: 0.3rem 0 ;
+  
+  border-bottom: 5px solid $themeColor;
 }
 
 .sc__author {
@@ -21,15 +23,6 @@
 
 .sc__content-container {
   padding: 1rem 0;
-}
-
-.sc__content-container > h1,
-.sc__content-container > h2,
-.sc__content-container > h3,
-.sc__content-container > h4,
-.sc__content-container > h5,
-.sc__content-container > h6 {
-  padding-bottom: 0rem;
 }
 
 .sc__content-container > p {

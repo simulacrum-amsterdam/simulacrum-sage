@@ -12,7 +12,7 @@
     width: 100%;
     height: auto;
     padding: 0 5px 5px 0;
-    filter: grayscale(100%);
+    filter: brightness(130%) grayscale(100%) url(#monochrome);
   }
 }
 
