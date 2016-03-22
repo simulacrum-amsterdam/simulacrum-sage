@@ -2,22 +2,22 @@
 
 <?php get_template_part('templates/header-feature'); ?>
 
-<article <?php post_class("sc-content"); ?>>
+<article <?php post_class("sc"); ?>>
 
-  <header class="sc-content__meta">
-    <h2 class="sc-content__title"><?php the_title(); ?></h2>
+  <header class="sc__meta">
+    <h2 class="sc__title"><?php the_title(); ?></h2>
     <?php if(!has_tag('no-author', $post->ID)){ ?>
-      <h6 class="sc-content__author"><?= get_the_author(); ?></h6>
+      <h6 class="sc__author"><?= get_the_author(); ?></h6>
     <?php } else { ?>
-      <h6 class="sc-content__author">Redactie</h6>
+      <h6 class="sc__author">Redactie</h6>
     <?php } ?>
   </header>
   
-  <div class="sc-content__content-container">
+  <div class="sc__content-container">
     <?php the_content(); ?>
   </div>
 
-  <footer class="sc-content__footer">
+  <footer class="sc__footer">
     <div class="social-media-bar">
       <?php do_action( 'addthis_widget', get_permalink(), get_the_title(), array(
         'type' => 'custom',

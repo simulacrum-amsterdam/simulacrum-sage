@@ -1,13 +1,13 @@
 <?php get_template_part('templates/header-feature'); ?>
 
-<div class="sc-content">
-	<h3 class="sc-content__title"><?= the_title(); ?></h3>
-	<div class="sc-content__content-container"><?= the_content(); ?></div>
+<div class="sc">
+	<h1 class="sc__title"><?= the_title(); ?></h1>
+	<div class="sc__content-container"><?= the_content(); ?></div>
 </div>
 
 <?php get_template_part('templates/redactie'); ?>
 
-<div class="sc-content">
+<div class="sc">
 	<h3> Nieuws </h3>
 	<?php 
 		function custom_excerpt_length($length) {
@@ -27,7 +27,7 @@
 	<?php wp_reset_query(); ?>
 </div>
 
-<div class="sc-content write">
+<div class="sc write">
 	<h3><?= get_post_custom_values('about-second__header')[0]; ?></h3>
-	<div class="sc-content__content-container"><?= get_post_custom_values('about-second__content')[0]; ?></div>
+	<div class="sc__content-container"><?= get_post_custom_values('about-second__content')[0]; ?></div>
 </div>

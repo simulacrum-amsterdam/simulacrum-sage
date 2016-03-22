@@ -1,4 +1,4 @@
-<div class="sc-content">
+<div class="sc">
 	<h3>Redactie</h3>
 	<div class="redactie__container">
 		<?php

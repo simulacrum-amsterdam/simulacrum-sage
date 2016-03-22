@@ -1,42 +1,42 @@
 // single column
-.sc-content {
+.sc {
   width: 30rem;
   max-width: 80%;
   margin: 0 auto;
   padding: 1rem 0;
 }
 
-.sc-content__meta {
+.sc__meta {
   padding: 1rem 0 1.4rem 0;
 }
 
-.sc-content__title {
+.sc__title {
   border-bottom: 5px solid $themeColor;
   margin: 0.3rem 0 ;
 }
 
-.sc-content__author {
+.sc__author {
   color: $themeColor;
 }
 
-.sc-content__content-container {
+.sc__content-container {
   padding: 1rem 0;
 }
 
-.sc-content__content-container > h1,
-.sc-content__content-container > h2,
-.sc-content__content-container > h3,
-.sc-content__content-container > h4,
-.sc-content__content-container > h5,
-.sc-content__content-container > h6 {
+.sc__content-container > h1,
+.sc__content-container > h2,
+.sc__content-container > h3,
+.sc__content-container > h4,
+.sc__content-container > h5,
+.sc__content-container > h6 {
   padding-bottom: 0rem;
 }
 
-.sc-content__content-container > p {
+.sc__content-container > p {
   padding-bottom: 1.4rem;
 }
 
-.sc-content__footer {
+.sc__footer {
   display: flex;
   justify-content: space-between;
   padding: 3rem 0;
