@@ -12,6 +12,10 @@ html {
   outline: 0;
 }
 
+*:selection {
+  background-color: $themeColor;  
+}
+
 h1, h2, h3, h4 ,h5, h6 {
   font-family: $titleFont;
   line-height: 1.4;
