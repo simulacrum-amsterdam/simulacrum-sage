@@ -1,0 +1,33 @@
+input[type=submit] {
+  width: 100% !important;
+  margin: 1rem 0;
+  padding: 1rem;
+
+  border: 0.1rem solid $themeColor;
+
+  font-size: 1.5rem;
+  font-family: $titleFont;
+  background: white;
+}
+
+input[type=submit]:hover {
+  background: rgba( $themeColor, .1 );
+}
+
+
+
+input[type="checkbox"] {
+    display:none;
+}
+input[type="checkbox"] + label span {
+    display:inline-block;
+    width:19px;
+    height:19px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    background: url(.png) left top no-repeat;
+    cursor:pointer;
+}
+input[type="checkbox"]:checked + label span {
+    background:url(check_radio_sheet.png) -19px top no-repeat;
+}

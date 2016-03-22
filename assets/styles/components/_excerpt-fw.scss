@@ -1,23 +1,23 @@
-.fp-post {
+.excerpt-fw {
   width: 100%;
 }
 
-.fp-post__image-container {
+.excerpt-fw__image-container {
   display: flex;
   height: 40vh;
   align-items: center;
   overflow: hidden;
 }
 
-.fp-post__image {
+.excerpt-fw__image {
   width: 100%;
   filter: grayscale(100%) brightness(1.1) url(#monochrome);
 }
 
-.fp-post__meta {
+.excerpt-fw__meta {
   margin: 2rem;
 }
 
-.fp-post__author {
+.excerpt-fw__author {
   color: $themeColor;
 }
