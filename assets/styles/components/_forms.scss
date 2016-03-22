@@ -25,7 +25,7 @@ input[type="radio"] {
   display: none;
 }
 
-input[type="radio"] + label:before {
+.radio-button:before {
   content: "";
   display: inline-block;
   position: relative;
@@ -36,9 +36,10 @@ input[type="radio"] + label:before {
   background: url(../../assets/images/empty-checkbox.png) center center / cover no-repeat;
 }
 
-input[type="radio"]:checked + label:before {
-  background: url(../../assets/images/empty-checkbox-checked.png) center center / cover no-repeat;
+.radio-button--checked:before {
+  background: url(../../assets/images/empty-checkbox-filled.png) center center / cover no-repeat;
 }
+
 
 input[type="text"] {
   font-family: $baseFont;

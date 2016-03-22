@@ -19,6 +19,14 @@
     'common': {
       init: function() {
         // JavaScript to be fired on all pages
+
+        // Hack the weird ninja-forms radiobutton
+        // Not my prettiest code ever, but it'll do.
+        $("label:has(input[type=radio])").addClass("radio-button").bind("change", function(e){
+          $(e.target).parent().parent().parent().children().children().removeClass("radio-button--checked");
+          $(e.target).parent().addClass("radio-button--checked");
+        });
+
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
