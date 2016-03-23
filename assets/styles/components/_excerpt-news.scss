@@ -1,0 +1,14 @@
+.excerpt-news {
+  padding: 1rem 0;
+}
+
+.excerpt-news__title {
+  display: inline-block;
+  border-bottom: 5px solid $themeColor;
+}
+
+.excerpt-news__footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5rem 0;
+}

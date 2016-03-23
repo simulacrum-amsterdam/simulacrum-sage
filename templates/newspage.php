@@ -6,7 +6,7 @@
 		<div class="sc__content-container"><?php the_content() ?></div>
 		<?php 
 			function custom_excerpt_length($length) {
-			  return 20;
+			  return 100;
 			}
 
 			add_filter('excerpt_length', 'custom_excerpt_length', 999);
