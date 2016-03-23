@@ -4,7 +4,7 @@
 
 .social-media-bar .addthis_toolbox a span {
   margin-right: 10px;
-  filter: grayscale(100%);
+  background: $themeColor !important;
   // width: 2rem !important;
   // height: 2rem !important;
 }

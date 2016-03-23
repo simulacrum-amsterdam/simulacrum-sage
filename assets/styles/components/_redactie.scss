@@ -4,14 +4,29 @@
   padding: 1rem 0;
 }
 
+.redactie__member {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 1rem 0;
+}
+
 .redactie__img-container {
-  width: 25%;
+  width: 30%;
 }
 
 .redactie__img-container .avatar {
   width: 100%;
   height: auto;
-  padding: 0 1rem 1rem 0;
   filter: grayscale(100%) ;
 }
 
+.redactie__member-meta {
+  width: 70%;
+  padding: 0 0 0 2rem;
+}
+
+.redactie__member-title {
+  width: 100%;
+  padding-left: calc(30% + 2rem);
+}
