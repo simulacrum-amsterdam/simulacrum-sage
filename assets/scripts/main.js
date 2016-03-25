@@ -33,8 +33,7 @@
               .children()
               .removeClass('radio-button--checked');
             $(e.target).parent().addClass('radio-button--checked');
-        });
-
+          });
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired

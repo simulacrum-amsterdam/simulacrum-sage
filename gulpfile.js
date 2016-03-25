@@ -21,8 +21,8 @@ var sourcemaps   = require('gulp-sourcemaps');
 var uglify       = require('gulp-uglify');
 var fs           = require('fs');
 var GulpSSH      = require('gulp-ssh');
-var gutil = require( 'gulp-util' );
-var ftp = require( 'vinyl-ftp' );
+var gutil = require('gulp-util');
+var ftp = require('vinyl-ftp');
 
 var deployGlobs = [
   '!./auth.js',
@@ -49,7 +49,7 @@ gulp.task('deploy-production', function() {
     log:      gutil.log
   });
 
-  return gulp.src(deployGlobs, { base: '.', buffer: false })
+  return gulp.src(deployGlobs, {base: '.', buffer: false})
     .pipe(conn.newer('/wp-content/themes/simulacrum-sage')) // only upload newer files
     .pipe(conn.dest('/wp-content/themes/simulacrum-sage'));
 });
