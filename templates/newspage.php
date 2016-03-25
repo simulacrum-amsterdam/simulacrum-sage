@@ -6,13 +6,13 @@
 		<div class="sc__content-container"><?php the_content() ?></div>
 		<?php 
 			function custom_excerpt_length($length) {
-			  return 100;
+			  return 30;
 			}
 
 			add_filter('excerpt_length', 'custom_excerpt_length', 999);
 		?>
 		<?php $latest = new WP_Query(array(
-	        'posts_per_page' => 3,
+	        'posts_per_page' => 5,
 	        'tag_slug__in' => "on-about"
 	  	)); ?>
 

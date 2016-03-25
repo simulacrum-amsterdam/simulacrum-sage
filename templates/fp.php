@@ -8,7 +8,7 @@
 	<!-- query content -->
 	<?php 
 		$latest = new WP_Query(array(
-	        'posts_per_page' => 5,
+	        'posts_per_page' => 10,
 	        'paged' => $paged,
 	        'tag_slug__in' => "on-frontpage"
 	    ));

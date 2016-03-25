@@ -1,3 +1,13 @@
 .footer {
-  height: 30vh;
+  display: flex;
+  justify-content: center;
+  height: 40vh;
+  padding: 15vh;
+}
+
+.footer .featured-image {
+  width: 25%;
+  margin: 0;
+  height: auto;
+  background-size: contain;
 }
