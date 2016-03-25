@@ -6,7 +6,7 @@
 
   <header class="sc__meta">
     <h2 class="sc__title"><?php the_title(); ?></h2>
-    <?php if(!has_tag('no-author', $post->ID)) { ?>
+    <?php if (!has_tag('no-author', $post->ID)) { ?>
       <h6 class="sc__author"><?= get_the_author(); ?></h6>
     <?php } else { ?>
       <h6 class="sc__author">Redactie</h6>
@@ -20,7 +20,10 @@
   <footer class="sc__footer">
     <div class="social-media-bar">
         <?php do_action(
-            'addthis_widget', get_permalink(), get_the_title(), array(
+            'addthis_widget',
+            get_permalink(),
+            get_the_title(),
+            array(
             'type' => 'custom',
             'size' => '32', // size of the icons.  Either 16 or 32
             'services' => 'facebook,twitter,google,email,print', // the services you want to always appear

@@ -4,8 +4,8 @@
 	<div class="sc">
 		<h1 class="sc__title"><?php the_title() ?></h1>
 		<div class="sc__content-container"><?php the_content() ?></div>
-    <?php 
-    function custom_excerpt_length($length) 
+    <?php
+    function custom_excerpt_length($length)
     {
         return 20;
     }

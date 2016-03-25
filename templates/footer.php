@@ -5,7 +5,7 @@
   while ($recent->have_posts()) : $recent->the_post();
     ?>
     <?php get_template_part('templates/featured-image');?>
-    <?php 
+    <?php
   endwhile;
     wp_reset_postdata();
     ?>

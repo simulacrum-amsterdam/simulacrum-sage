@@ -25,11 +25,11 @@
         $authors = $wp_user_query->get_results();
 
         if (!empty($authors)) {
-            foreach ($authors as $author){
-                 $author_info = get_userdata($author->ID);
-                ?>
+          foreach ($authors as $author) {
+               $author_info = get_userdata($author->ID);
+              ?>
              <div class="redactie__member">
-               <h3 class="redactie__member-title"><?php echo $author->display_name; ?></h3>
+             <h3 class="redactie__member-title"><?php echo $author->display_name; ?></h3>
             <div class="redactie__img-container">
         <?php echo avatar_manager_get_custom_avatar($author->ID) ?>
             </div>
@@ -38,8 +38,8 @@
             </div>
           </div>
     
-            <?php 
-            }
+            <?php
+          }
         } else {
             echo 'No authors found';
         }?>

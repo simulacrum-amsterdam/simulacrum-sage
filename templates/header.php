@@ -6,7 +6,7 @@ while ($recent->have_posts()) : $recent->the_post();
     ?>
     <h1 class="header__title"><?= the_title(); ?></h1>
     <div class="header__description"><?php echo $page->post_content; ?></div>
-    <?php 
+    <?php
 endwhile;
   wp_reset_postdata();
 ?>

@@ -37,22 +37,22 @@ var deployGlobs = [
 
 // Deployment over ftp -> production
 
-gulp.task('deploy-production', function () {
+gulp.task('deploy-production', function() {
 
-    var sshPass      = require('./auth.js');
+  var sshPass = require('./auth.js');
 
-    var conn = ftp.create( {
-        host:     'ftp.simulacrum.nl',
-        user:     sshPass.ftpUser,
-        password: sshPass.ftpPassword,
-        parallel: 1,
-        log:      gutil.log
-    } );
+  var conn = ftp.create({
+    host:     'ftp.simulacrum.nl',
+    user:     sshPass.ftpUser,
+    password: sshPass.ftpPassword,
+    parallel: 1,
+    log:      gutil.log
+  });
 
-    return gulp.src( deployGlobs, { base: '.', buffer: false } )
-        .pipe( conn.newer( '/wp-content/themes/simulacrum-sage' ) ) // only upload newer files
-        .pipe( conn.dest( '/wp-content/themes/simulacrum-sage' ) );
-} );
+  return gulp.src(deployGlobs, { base: '.', buffer: false })
+    .pipe(conn.newer('/wp-content/themes/simulacrum-sage')) // only upload newer files
+    .pipe(conn.dest('/wp-content/themes/simulacrum-sage'));
+});
 
 // See https://github.com/austinpray/asset-builder
 var manifest = require('asset-builder')('./assets/manifest.json');
