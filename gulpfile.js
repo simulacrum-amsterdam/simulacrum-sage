@@ -21,7 +21,6 @@ var sourcemaps   = require('gulp-sourcemaps');
 var uglify       = require('gulp-uglify');
 var fs           = require('fs');
 var GulpSSH      = require('gulp-ssh');
-var sshPass      = require('./auth.js');
 var gutil = require( 'gulp-util' );
 var ftp = require( 'vinyl-ftp' );
 
@@ -39,6 +38,8 @@ var deployGlobs = [
 // Deployment over ftp -> production
 
 gulp.task('deploy-production', function () {
+
+    var sshPass      = require('./auth.js');
 
     var conn = ftp.create( {
         host:     'ftp.simulacrum.nl',
