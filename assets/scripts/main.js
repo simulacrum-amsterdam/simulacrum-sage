@@ -22,9 +22,16 @@
 
         // Hack the weird ninja-forms radiobutton
         // Not my prettiest code ever, but it'll do.
-        $("label:has(input[type=radio])").addClass("radio-button").bind("change", function(e){
-          $(e.target).parent().parent().parent().children().children().removeClass("radio-button--checked");
-          $(e.target).parent().addClass("radio-button--checked");
+        $('label:has(input[type=radio])").addClass("radio-button')
+          .bind("change", function(e) {
+            $(e.target)
+              .parent()
+              .parent()
+              .parent()
+              .children()
+              .children()
+              .removeClass('radio-button--checked');
+            $(e.target).parent().addClass('radio-button--checked');
         });
 
       },

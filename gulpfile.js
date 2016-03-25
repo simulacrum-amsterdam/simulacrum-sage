@@ -21,8 +21,8 @@ var sourcemaps   = require('gulp-sourcemaps');
 var uglify       = require('gulp-uglify');
 var fs           = require('fs');
 var GulpSSH      = require('gulp-ssh');
-var gutil = require( 'gulp-util' );
-var ftp = require( 'vinyl-ftp' );
+var gutil = require('gulp-util');
+var ftp = require('vinyl-ftp');
 
 var deployGlobs = [
   '!./auth.js',
@@ -37,22 +37,20 @@ var deployGlobs = [
 
 // Deployment over ftp -> production
 
-gulp.task('deploy-production', function () {
+gulp.task('deploy-production', function(){
+  var sshPass = require('./auth.js');
+  var conn = ftp.create({
+    host:     'ftp.simulacrum.nl',
+    user:     sshPass.ftpUser,
+    password: sshPass.ftpPassword,
+    parallel: 1,
+    log:      gutil.log
+  });
 
-    var sshPass      = require('./auth.js');
-
-    var conn = ftp.create( {
-        host:     'ftp.simulacrum.nl',
-        user:     sshPass.ftpUser,
-        password: sshPass.ftpPassword,
-        parallel: 1,
-        log:      gutil.log
-    } );
-
-    return gulp.src( deployGlobs, { base: '.', buffer: false } )
-        .pipe( conn.newer( '/wp-content/themes/simulacrum-sage' ) ) // only upload newer files
-        .pipe( conn.dest( '/wp-content/themes/simulacrum-sage' ) );
-} );
+  return gulp.src(deployGlobs, {base: '.', buffer: false })
+    .pipe(conn.newer('/wp-content/themes/simulacrum-sage')) // only upload newer files
+    .pipe(conn.dest('/wp-content/themes/simulacrum-sage'));
+});
 
 // See https://github.com/austinpray/asset-builder
 var manifest = require('asset-builder')('./assets/manifest.json');
