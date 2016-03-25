@@ -5,7 +5,7 @@
 		<div class="sc__content-container"><?= the_content(); ?></div>
 	</div>
 
-	<?php get_template_part('templates/redactie'); ?>
+    <?php get_template_part('templates/redactie'); ?>
 
 	<div class="sc">
 		<h1 class="sc__title"><?= get_post_custom_values('about-second__header')[0]; ?></h1>

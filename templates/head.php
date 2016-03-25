@@ -25,7 +25,7 @@
 	<meta name="msapplication-TileImage" content="<?php bloginfo('template_directory'); ?>/dist/images/favicons/mstile-144x144.png?v=2">
 	<meta name="theme-color" content="#ffffff">
 
-  <?php wp_head(); ?>
+    <?php wp_head(); ?>
 
   <svg class="svg-filter">
     <filter id="monochrome" color-interpolation-filters="sRGB"
