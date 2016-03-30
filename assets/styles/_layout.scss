@@ -1,8 +1,17 @@
+.layout__body {
+  // border-bottom: 40px solid $themeColor;
+}
+
 .layout__header {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100vw;
+
+  // border-top: 40px solid $themeColor;
+  // border-bottom: 40px solid $themeColor;
+  // padding-top: 40px;
+  // margin-bottom: 40px;
 }
 
 .layout__header--fp {

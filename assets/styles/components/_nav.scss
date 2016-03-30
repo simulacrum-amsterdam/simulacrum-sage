@@ -5,6 +5,10 @@
   padding: 2rem;
 }
 
+.nav li {
+  padding-right: 1rem;
+}
+
 // WP-class
 .current_page_item {
   color: $themeColor;
