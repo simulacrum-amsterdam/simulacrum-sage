@@ -1,0 +1,33 @@
+.blocks-layout {
+  padding: 0 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.blocks-layout__block {
+  width: 33.33%;
+  padding: 1rem;
+  background: $themeColor;
+  color: white;
+  border: 1rem solid white;
+}
+
+article:nth-of-type(2n).blocks-layout__block {
+  background: white;
+  color: black;
+  border: 1rem solid $themeColor;
+}
+
+article:nth-of-type(2n).blocks-layout__block .title
+
+
+.excerpt-news__title {
+  display: inline-block;
+  border-bottom: 0.25rem solid $themeColor;
+}
+
+.excerpt-news__footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5rem 0;
+}

@@ -1,4 +1,4 @@
-<article <?php post_class('excerpt-news'); ?>>
+<article <?php post_class('blocks-layout__block'); ?>>
   <header>
     <a href="<?php the_permalink(); ?>">  
       <h4 class="excerpt-news__title"><?php the_title(); ?></h4>
