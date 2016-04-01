@@ -22,4 +22,4 @@
     <?php endwhile; ?>
     <?php wp_reset_query(); ?>
 	</div>
-<main class="layout__main">
+</main>

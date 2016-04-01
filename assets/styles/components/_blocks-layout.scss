@@ -7,6 +7,10 @@
   flex-wrap: wrap;
 }
 
+.blocks-layout--without-filter .blocks-layout__image {
+  -webkit-filter: unset;
+}
+
 .blocks-layout__block {
   width: 26%;
   padding: 1rem;
@@ -52,12 +56,13 @@
   height: 200px;
   background-position: center center;
   background-size: 100% auto;
+  background-repeat: no-repeat;
   margin: 0.5rem 0 1rem 0;
   -webkit-filter: grayscale(100%) url(#monochrome);
 }
 
 .blocks-layout__summery {
-  display: none;
+  opacity: 0;
 }
 
 .blocks-layout__title {
@@ -79,7 +84,8 @@
 // Behaviour
 
 .blocks-layout__image:hover .blocks-layout__summery {
-  display: block;
+  opacity: 1;
+  transition: 1s all linear;
 }
 
 .blocks-layout__image:hover {
