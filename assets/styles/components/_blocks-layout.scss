@@ -63,6 +63,11 @@
 
 .blocks-layout__summery {
   opacity: 0;
+  margin: 0.5rem 0 1rem 0;
+}
+
+.blocks-layout__summery--unhover {
+  opacity: 1;
 }
 
 .blocks-layout__title {
@@ -91,9 +96,4 @@
 .blocks-layout__image:hover {
   background: white !important;
   -webkit-filter: unset;
-}
-
-
-.blocks-layout__summery-unhover p {
-  font-size: 0.65rem;
 }

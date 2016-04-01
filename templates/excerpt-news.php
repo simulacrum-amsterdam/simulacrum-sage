@@ -15,7 +15,7 @@
       </div>
     </div>
     <?php } else { ?>
-      <div class="blocks-layout__summery-unhover">
+      <div class="blocks-layout__summery blocks-layout__summery--unhover">
         <?php echo the_excerpt(); ?>
       </div>
     <?php } ?>
@@ -27,7 +27,7 @@
 </article>
 <?php
   $random = rand(1,100);
-  if ($random > 20) {
+  if ($random > 50) {
 ?>
 
 <div class="blocks-layout__block">

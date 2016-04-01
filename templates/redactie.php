@@ -23,23 +23,24 @@
         );
 
         $authors = $wp_user_query->get_results();
-
         if (!empty($authors)) {
           foreach ($authors as $author) {
-               $author_info = get_userdata($author->ID);
-              ?>
-             <div class="redactie__member">
-             <h3 class="redactie__member-title"><?php echo $author->display_name; ?></h3>
+            $author_info = get_userdata($author->ID);
+            $attachment_id = get_user_meta( $author->ID, 'avatar_manager_custom_avatar', true ); 
+            $custom_avatar = get_post_meta( $attachment_id, '_avatar_manager_custom_avatar', true );
+            $avatar_url = avatar_manager_generate_avatar_url( $attachment_id, 300 );
+            ?>
+            <div class="redactie__member">
+            <h3 class="redactie__member-title"><?php echo $author->display_name; ?></h3>
             <div class="redactie__img-container">
-        <?php echo avatar_manager_get_custom_avatar($author->ID) ?>
+              <div class="redactie__img" style="background-image:url(<?php echo $avatar_url ?>);"> </div>
             </div>
             <div class="redactie__member-meta">
-        <p><?php echo $author->description; ?></p>
+                <p><?php echo $author->description; ?></p>
             </div>
           </div>
-    
-            <?php
-          }
+        <?php
+        }
         } else {
             echo 'No authors found';
         }?>
