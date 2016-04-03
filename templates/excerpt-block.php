@@ -15,7 +15,7 @@ $imgAvailable = (has_post_thumbnail() == 1 && !has_tag('no-background', $post->I
   </header>
 
   <div>
-    <div class="blocks-layout__foreground">
+    <div class="blocks-layout__foreground" onclick="">
       <div class="blocks-layout__summery">
         <?php echo the_excerpt(); ?>
       </div>
