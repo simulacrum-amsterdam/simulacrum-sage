@@ -2,7 +2,7 @@
 
 <main class="layout__main">
 	<div class="blocks-layout">
-        <div class="blocks-layout__block blocks-layout__block--header">
+        <div class="blocks-layout__block blocks-layout__block--first-item">
             <h1>Nieuws</h1>
         </div>
         <?php
@@ -21,7 +21,7 @@
         ); ?>
 
         <?php while ($latest->have_posts()) : $latest->the_post(); ?>
-        <?php get_template_part('templates/excerpt-news', get_post_type() != 'post' ? get_post_type() : get_post_format()); ?>
+        <?php get_template_part('templates/excerpt-block', get_post_type() != 'post' ? get_post_type() : get_post_format()); ?>
         <?php endwhile; ?>
         <?php wp_reset_query(); ?>
 	</div>
