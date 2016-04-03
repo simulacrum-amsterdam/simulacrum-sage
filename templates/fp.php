@@ -1,6 +1,6 @@
 <?php use Roots\Sage\Titles; ?>
 
-<?php get_template_part('templates/header-fp'); ?>
+<?php get_template_part('templates/header'); ?>
 
 <main class="layout__main">
 	<!-- determine current page number -->
