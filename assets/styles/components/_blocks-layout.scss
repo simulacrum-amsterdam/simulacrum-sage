@@ -9,11 +9,7 @@
 .blocks-layout__block {
   position: relative;
   padding: 1rem;
-  min-height: 350px;
-}
-
-.blocks-layout__header {
-  width: 100%;
+  min-height: 400px;
 }
 
 .blocks-layout__block--unhover .blocks-layout__foreground{
@@ -64,6 +60,7 @@
   display: block;
   width: 100%;
   padding: 1rem 0;
+  margin: 0;
   font-size: 0.9rem;
   background: white;
   color: black;
@@ -78,7 +75,7 @@
   display: flex;
   align-items: flex-end;
   width: 100%;
-  padding: 0.5rem 0rem;
+  padding: 1rem 0;
 }
 
 .blocks-layout__time {
@@ -129,6 +126,10 @@
 
   background: $themeColor;
   color: white;
+}
+
+.blocks-layout__block--first-item-white {
+  background: white;
 }
 
 .blocks-layout__block--empty {

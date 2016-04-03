@@ -33,17 +33,17 @@ $imgAvailable = (has_post_thumbnail() == 1 && !has_tag('no-background', $post->I
 </article>
 <?php $rand = rand(1,100); ?>
 <?php if ($rand < 25) { ?>
-<div class="blocks-layout__block blocks-layout__block--first-item"></div>
+<div class="blocks-layout__block blocks-layout__block--first-item <?php if (rand(1,100) < 50) { echo "blocks-layout__block--first-item-white"; }?>"></div>
 <?php } else if ($rand < 50) { ?>
-<div class="blocks-layout__block blocks-layout__block--first-item"></div>
-<div class="blocks-layout__block blocks-layout__block--first-item"></div>
+<div class="blocks-layout__block blocks-layout__block--first-item <?php if (rand(1,100) < 50) { echo "blocks-layout__block--first-item-white"; }?>"></div>
+<div class="blocks-layout__block blocks-layout__block--first-item <?php if (rand(1,100) < 50) { echo "blocks-layout__block--first-item-white"; }?>"></div>
 <?php } else if ($rand < 75) { ?>
-<div class="blocks-layout__block blocks-layout__block--first-item"></div>
-<div class="blocks-layout__block blocks-layout__block--first-item"></div>
-<div class="blocks-layout__block blocks-layout__block--first-item"></div>
+<div class="blocks-layout__block blocks-layout__block--first-item <?php if (rand(1,100) < 50) { echo "blocks-layout__block--first-item-white"; }?>"></div>
+<div class="blocks-layout__block blocks-layout__block--first-item <?php if (rand(1,100) < 50) { echo "blocks-layout__block--first-item-white"; }?>"></div>
+<div class="blocks-layout__block blocks-layout__block--first-item <?php if (rand(1,100) < 50) { echo "blocks-layout__block--first-item-white"; }?>"></div>
 <?php } else if ($rand < 100) { ?>
-<div class="blocks-layout__block blocks-layout__block--first-item"></div>
-<div class="blocks-layout__block blocks-layout__block--first-item"></div>
-<div class="blocks-layout__block blocks-layout__block--first-item"></div>
-<div class="blocks-layout__block blocks-layout__block--first-item"></div>
+<div class="blocks-layout__block blocks-layout__block--first-item <?php if (rand(1,100) < 50) { echo "blocks-layout__block--first-item-white"; }?>"></div>
+<div class="blocks-layout__block blocks-layout__block--first-item <?php if (rand(1,100) < 50) { echo "blocks-layout__block--first-item-white"; }?>"></div>
+<div class="blocks-layout__block blocks-layout__block--first-item <?php if (rand(1,100) < 50) { echo "blocks-layout__block--first-item-white"; }?>"></div>
+<div class="blocks-layout__block blocks-layout__block--first-item <?php if (rand(1,100) < 50) { echo "blocks-layout__block--first-item-white"; }?>"></div>
 <?php } ?>
