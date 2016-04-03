@@ -43,7 +43,7 @@ function limit_text($text, $limit) {
         $custom_avatar = get_post_meta( $attachment_id, '_avatar_manager_custom_avatar', true );
         $avatar_url = avatar_manager_generate_avatar_url( $attachment_id, 300 );
         ?>
-        <div class="redactie__member">
+        <div class="redactie__member" onclick="">
             <div class="redactie__member-meta">
                 <div>
                     <h3 class="redactie__member-title"><?php echo $author->display_name; ?></h3>

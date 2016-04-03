@@ -8,42 +8,64 @@
 
 .blocks-layout__block {
   position: relative;
-  width: 26%;
   padding: 1rem;
+  min-height: 350px;
 }
 
-.blocks-layout__image {
+.blocks-layout__header {
   width: 100%;
+}
+
+.blocks-layout__block--unhover .blocks-layout__foreground{
+  background: rgba(#fff, 0.65);
+  color: rgba(#000, 1);
+}
+
+.blocks-layout__background {
+  display: flex;
+  align-items: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  background-size: 100% auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 200px;
   -webkit-filter: grayscale(100%) url(#monochrome);
 }
 
-.blocks-layout--without-filter .blocks-layout__image {
+.blocks-layout--without-filter .blocks-layout__background {
   -webkit-filter: unset;
 }
 
-.blocks-layout__summery {
+.blocks-layout__foreground {
   position: absolute;
-  height: 100%;
-  width: calc(100% - 3rem);
+  width: calc(100% - 2rem);
+  height: 200px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
   background: rgba(#fff, 0);
   color: rgba(#000, 0);
-  transition: 0.5s all ease-in-out;
   z-index: 100;
+  transition: 0.5s all ease-in-out;
 }
 
-.blocks-layout__summery:hover {
-  background: rgba(#fff, 1);
+.blocks-layout__foreground:hover {
+  background: rgba(#fff, 0.65);
   color: rgba(#000, 1);
 }
 
-.blocks-layout__summery--unhover {
-  background: rgba(#fff, 1);
-  color: rgba(#000, 1);
+.blocks-layout__summery {
+  width: 100%;
 }
 
 .blocks-layout__title {
-  display: inline-block;
+  display: block;
+  width: 100%;
+  padding: 1rem 0;
   font-size: 0.9rem;
+  background: white;
+  color: black;
 }
 
 .blocks-layout__summery p,
@@ -53,20 +75,27 @@
 
 .blocks-layout__footer {
   display: flex;
-  justify-content: flex-end;
-  padding: 0.5rem 0;
+  align-items: flex-end;
+  width: 100%;
+  padding: 0.5rem 0rem;
+}
+
+.blocks-layout__time {
+  width: 100%;
+  text-align: right;
+  background: white;
+  color: black;
 }
 
 // Behaviour
 
 
 // Mediaquerries
-@media (max-width: $breakpoint-sm){
+@media (max-width: $breakpoint-md){
   .blocks-layout__block {
     width: 100%;
   }
   .blocks-layout__title {
-    display: inline-block;
     font-size: inherit;
     font-size: 1.25rem;
   }
@@ -77,13 +106,7 @@
   }
 }
 
-@media (min-width: $breakpoint-sm){
-  .blocks-layout__block {
-    width: 1/2*100%;
-  }
-}
-
-@media (min-width: $breakpoint-lg){
+@media (min-width: $breakpoint-md){
   .blocks-layout__block {
     width: 1/3*100%;
   }
@@ -100,7 +123,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
   border: 1rem solid white;
+
   background: $themeColor;
   color: white;
+}
+
+.blocks-layout__block--empty {
 }
