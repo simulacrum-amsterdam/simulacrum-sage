@@ -31,12 +31,13 @@
             $avatar_url = avatar_manager_generate_avatar_url( $attachment_id, 300 );
             ?>
             <div class="redactie__member">
-            <h3 class="redactie__member-title"><?php echo $author->display_name; ?></h3>
             <div class="redactie__img-container">
-              <div class="redactie__img" style="background-image:url(<?php echo $avatar_url ?>);"> </div>
-            </div>
-            <div class="redactie__member-meta">
-                <p><?php echo $author->description; ?></p>
+              <div class="redactie__img" style="background-image:url(<?php echo $avatar_url ?>);"> 
+                <div class="redactie__member-meta">
+                    <h3 class="redactie__member-title"><?php echo $author->display_name; ?></h3>
+                    <p class="redactie__member-summery"><?php echo $author->description; ?></p>
+                </div>
+              </div>
             </div>
           </div>
         <?php

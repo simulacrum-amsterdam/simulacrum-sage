@@ -16,6 +16,15 @@
   padding: 1rem;
 }
 
+.blocks-layout__block--header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1rem solid white;
+  background: $themeColor;
+  color: white;
+}
+
 @media (min-width: 0){
   .blocks-layout__block {
     width: 100%;

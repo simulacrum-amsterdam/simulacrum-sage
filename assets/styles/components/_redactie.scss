@@ -11,13 +11,9 @@
   padding: 1rem 0;
 }
 
-.redactie__img-container {
-  width: 30%;
-}
-
 .redactie__img {
-  width: 100%;
-  height: 200px;
+  width: 50%;
+  height: 400px;
   background-position: center center;
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -25,11 +21,14 @@
 }
 
 .redactie__member-meta {
-  width: 70%;
   padding: 0 0 0 2rem;
 }
 
 .redactie__member-title {
   width: 100%;
-  padding-left: calc(30% + 2rem);
+  font-size: 0.9rem;
+}
+
+.redactie__member-summery {
+  font-size: 0.65rem;
 }
