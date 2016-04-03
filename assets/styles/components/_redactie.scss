@@ -4,31 +4,74 @@
   padding: 1rem 0;
 }
 
+
 .redactie__member {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  padding: 1rem 0;
+  position: relative;
+  width: 1/2*100%;
+  word-wrap: break-word;
+}
+
+@media (min-width: $breakpoint-sm){
+  .redactie__member {
+    width: 1/3*100%;
+  }
+  .redactie__member-title {
+    display: inline-block;
+    font-size: 1rem;
+  }
+  .redactie__member-summery {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: $breakpoint-lg){
+  .redactie__member {
+    width: 1/4*100%;
+  }
+}
+
+@media (min-width: $breakpoint-xxl){
+  .redactie__member {
+    width: 1/5*100%;
+  }
 }
 
 .redactie__img {
-  width: 50%;
-  height: 400px;
-  background-position: center center;
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  margin: 0.5rem 0 1rem 0;
+  display: block;
+  width: 100%;
+  filter: grayscale(100%);
 }
 
 .redactie__member-meta {
-  padding: 0 0 0 2rem;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0 1rem;
+  color: rgba(#000, 0);
+  background: rgba(#fff, 0);
+  transition: 0.5s all ease-in-out;
+  z-index: 100;
 }
 
+.redactie__member-meta:hover {
+  color: rgba(#000, 1);
+  background: rgba(#fff, 0.65);
+}
+
+
 .redactie__member-title {
-  width: 100%;
+  display: inline-block;
+  word-break: break-all;
   font-size: 0.9rem;
 }
 
 .redactie__member-summery {
+  word-break: break-all;
+  hyphens: -;
+  width: 100%;
   font-size: 0.65rem;
 }
