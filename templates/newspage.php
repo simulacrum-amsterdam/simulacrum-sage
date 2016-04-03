@@ -5,7 +5,7 @@
 <main class="layout__main">
 	<div class="blocks-layout">
         <div class="blocks-layout__block blocks-layout__block--first-item">
-            <h1>Nieuws</h1>
+            <h1><?php the_title() ?></h1>
         </div>
         <?php
         function custom_excerpt_length($length)
