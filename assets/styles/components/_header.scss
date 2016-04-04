@@ -1,13 +1,13 @@
 .header__title {
   padding-top: 2rem;
   font-family: $baseFont;
+  flex-shrink: 0;
 }
 
 .header__description {
   font-size: 1rem;
   font-family: $baseFont;
   margin: 0 2rem;
-  padding: 0.5rem 0;
   border-bottom: 0.25rem solid $themeColor;
-  text-align: center;
+  flex-shrink: 0;
 }

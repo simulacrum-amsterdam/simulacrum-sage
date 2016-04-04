@@ -1,7 +1,6 @@
 .featured-image {
   flex-grow: 1;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
 
   background-repeat: no-repeat; 
   background-size: cover; 
@@ -10,9 +9,10 @@
 
 .featured-image--fp {
   width: 80%;
-  height: 100%;
   margin: 2rem 0 0 0;
   background-size: contain; 
+  flex-shrink: 1;
+  flex-grow: 1;
 }
 
 .featured-image__caption {
