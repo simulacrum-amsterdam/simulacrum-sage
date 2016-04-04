@@ -3,7 +3,7 @@
 <?php $count = 0; ?>
 
 <main class="layout__main">
-	<div class="blocks-layout">
+    <div class="blocks-layout">
         <div class="blocks-layout__block blocks-layout__block--first-item">
             <h1><?php the_title() ?></h1>
         </div>
@@ -27,5 +27,5 @@
         <?php endwhile; ?>
         <?php wp_reset_query(); ?>
         <div class="blocks-layout__block blocks-layout__block--first-item"></div>
-	</div>
+    </div>
 </main>
