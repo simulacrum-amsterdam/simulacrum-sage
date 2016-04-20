@@ -39,12 +39,12 @@ var deployGlobs = [
 
 gulp.task('deploy-production', function() {
 
-  var sshPass = require('./auth.js');
+  var ftpPass = require('./auth.js');
 
   var conn = ftp.create({
     host:     'ftp.simulacrum.nl',
-    user:     sshPass.ftpUser,
-    password: sshPass.ftpPassword,
+    user:     ftpPass.user,
+    password: ftpPass.password,
     parallel: 1,
     log:      gutil.log
   });
