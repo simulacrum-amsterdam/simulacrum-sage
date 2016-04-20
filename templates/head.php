@@ -30,11 +30,11 @@
   <svg class="svg-filter">
     <filter id="monochrome" color-interpolation-filters="sRGB"
             x="0" y="0" height="100%" width="100%">
-      <!-- current matrix = #0081C3 = rgb(0 129 195) = [0 * 255][0.50588235 * 255][0.7647059 * 255] -->
+<!-- 128 137 144 -->
       <feColorMatrix type="matrix"
-        values="0.5764705882352941 0 0 0  0 
-                0.5764705882352941 0 0 0  0  
-                0.2235294117647059 0 0 0  0 
+        values="0,50196078431373 0 0 0  0 
+                0.53725490196078 0 0 0  0  
+                0.56470588235294 0 0 0  0 
                   0  0 0 1  0" />
     </filter>
   </svg>

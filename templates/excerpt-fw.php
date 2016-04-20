@@ -10,6 +10,6 @@
         <a href="<?php the_permalink(); ?>">
       <h3 class="excerpt-fw__title"><?php the_title(); ?></h3>
     </a>
-        <h6 class="excerpt-fw__author"><?= get_the_author(); ?></h6>
+        <p class="excerpt-fw__author"><?= get_the_author(); ?></p>
   </div>
 </article>
