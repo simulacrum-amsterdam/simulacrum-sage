@@ -15,7 +15,7 @@
         ?>
         <?php $latest = new WP_Query(
             array(
-                'posts_per_page' => 3,
+                'posts_per_page' => 40,
                 'tag_slug__in' => "on-issue"
               )
         ); ?>
