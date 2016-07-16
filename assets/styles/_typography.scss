@@ -11,34 +11,16 @@
 }
 
 @font-face {
-  font-family: 'Resistance-Regular';
-  src: url('../fonts/Resistance-Regular.woff') format('woff'),
-       url('../fonts/Resistance-Regular.ttf') format('truetype'),
-       url('../fonts/Resistance-Regular.svg#Resistance-Regular') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'resistance_generale-webfont';
-  src: url('../fonts/resistance_generale-webfont.eot');
-  src: url('../fonts/resistance_generale-webfont.woff2') format('woff2'),
-       url('../fonts/resistance_generale-webfont.eot?#iefix') format('embedded-opentype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'resistance-editted';
-  src: url('../fonts/resistance-editted.eot');
-  src: url('../fonts/resistance-editted.woff2') format('woff2'),
-       url('../fonts/resistance-editted.woff') format('woff'),
-       url('../fonts/resistance-editted.ttf') format('truetype'),
-       url('../fonts/resistance-editted.svg#MyFontobjectObject') format('svg'),
-       url('../fonts/resistance-editted.eot?#iefix') format('embedded-opentype');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'jungkabook';
+    src: url('../fonts/jungka-book-webfont.eot');
+    src: url('../fonts/jungka-book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/jungka-book-webfont.woff2') format('woff2'),
+         url('../fonts/jungka-book-webfont.woff') format('woff'),
+         url('../fonts/jungka-book-webfont.ttf') format('truetype'),
+         url('../fonts/jungka-book-webfont.svg#jungkabook') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 $baseFont: 'Academica';
-$titleFont: 'Resistance-Regular';
+$titleFont: 'jungkabook';

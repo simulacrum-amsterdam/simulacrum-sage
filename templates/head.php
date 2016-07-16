@@ -31,11 +31,11 @@
   <svg class="svg-filter">
     <filter id="monochrome" color-interpolation-filters="sRGB"
             x="0" y="0" height="100%" width="100%">
-<!-- 128 137 144 -->
+<!-- $themeColor: rgb(255, 142, 163);  -->
       <feColorMatrix type="matrix"
-        values="0,50196078431373 0 0 0  0 
-                0.53725490196078 0 0 0  0  
-                0.56470588235294 0 0 0  0 
+        values="1 0 0 0  0 
+                0.55686274509804 0 0 0  0  
+                0.63921568627451 0 0 0  0 
                   0  0 0 1  0" />
     </filter>
   </svg>

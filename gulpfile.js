@@ -7,7 +7,7 @@ var concat       = require('gulp-concat');
 var flatten      = require('gulp-flatten');
 var gulp         = require('gulp');
 var gulpif       = require('gulp-if');
-var imagemin     = require('gulp-imagemin');
+// var imagemin     = require('gulp-imagemin');
 var jshint       = require('gulp-jshint');
 var lazypipe     = require('lazypipe');
 var less         = require('gulp-less');
@@ -21,8 +21,8 @@ var sourcemaps   = require('gulp-sourcemaps');
 var uglify       = require('gulp-uglify');
 var fs           = require('fs');
 var GulpSSH      = require('gulp-ssh');
-var gutil = require('gulp-util');
-var ftp = require('vinyl-ftp');
+var gutil        = require('gulp-util');
+var ftp          = require('vinyl-ftp');
 
 var deployGlobs = [
   '!./auth.js',
@@ -250,11 +250,11 @@ gulp.task('fonts', function() {
 // `gulp images` - Run lossless compression on all the images.
 gulp.task('images', function() {
   return gulp.src(globs.images)
-    .pipe(imagemin({
-      progressive: true,
-      interlaced: true,
-      svgoPlugins: [{removeUnknownsAndDefaults: false}, {cleanupIDs: false}]
-    }))
+    // .pipe(imagemin({
+    //   progressive: true,
+    //   interlaced: true,
+    //   svgoPlugins: [{removeUnknownsAndDefaults: false}, {cleanupIDs: false}]
+    // }))
     .pipe(gulp.dest(path.dist + 'images'))
     .pipe(browserSync.stream());
 });
