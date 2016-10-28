@@ -2,7 +2,7 @@
 .blocks-layout {
   padding: 0 1rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
 }
 
@@ -106,13 +106,13 @@
 
 @media (min-width: $breakpoint-md){
   .blocks-layout__block {
-    width: 1/3*100%;
+    width: 1/2*100%;
   }
 }
 
 @media (min-width: $breakpoint-xxl){
   .blocks-layout__block {
-    width: 1/4*100%;
+    width: 1/2*100%;
   }
 }
 

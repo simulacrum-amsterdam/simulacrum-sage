@@ -26,6 +26,5 @@
         <?php get_template_part('templates/excerpt-block', get_post_type() != 'post' ? get_post_type() : get_post_format()); ?>
         <?php endwhile; ?>
         <?php wp_reset_query(); ?>
-        <div class="blocks-layout__block blocks-layout__block--first-item"></div>
     </div>
 </main>

@@ -21,7 +21,7 @@ $imgAvailable = (has_post_thumbnail() == 1 && !has_tag('no-background', $post->I
       </div>
     </div>
 
-    <div 
+    <div
     class="blocks-layout__background"
     style="background-image: url( <?php echo $backgroundImageSrc[0]; ?> );">
     </div>
@@ -31,19 +31,3 @@ $imgAvailable = (has_post_thumbnail() == 1 && !has_tag('no-background', $post->I
     <time class="blocks-layout__time" datetime="<?= get_post_time('c', true); ?>"><?= get_the_date(); ?></time>
   </div>
 </article>
-<?php $rand = rand(1, 100); ?>
-<?php if ($rand < 25) { ?>
-<div class="blocks-layout__block blocks-layout__block--first-item <?php if (rand(1, 100) < 50) { echo "blocks-layout__block--first-item-white"; }?>"></div>
-<?php } else if ($rand < 50) { ?>
-<div class="blocks-layout__block blocks-layout__block--first-item <?php if (rand(1, 100) < 50) { echo "blocks-layout__block--first-item-white"; }?>"></div>
-<div class="blocks-layout__block blocks-layout__block--first-item <?php if (rand(1, 100) < 50) { echo "blocks-layout__block--first-item-white"; }?>"></div>
-<?php } else if ($rand < 75) { ?>
-<div class="blocks-layout__block blocks-layout__block--first-item <?php if (rand(1, 100) < 50) { echo "blocks-layout__block--first-item-white"; }?>"></div>
-<div class="blocks-layout__block blocks-layout__block--first-item <?php if (rand(1, 100) < 50) { echo "blocks-layout__block--first-item-white"; }?>"></div>
-<div class="blocks-layout__block blocks-layout__block--first-item <?php if (rand(1, 100) < 50) { echo "blocks-layout__block--first-item-white"; }?>"></div>
-<?php } else if ($rand < 100) { ?>
-<div class="blocks-layout__block blocks-layout__block--first-item <?php if (rand(1, 100) < 50) { echo "blocks-layout__block--first-item-white"; }?>"></div>
-<div class="blocks-layout__block blocks-layout__block--first-item <?php if (rand(1, 100) < 50) { echo "blocks-layout__block--first-item-white"; }?>"></div>
-<div class="blocks-layout__block blocks-layout__block--first-item <?php if (rand(1, 100) < 50) { echo "blocks-layout__block--first-item-white"; }?>"></div>
-<div class="blocks-layout__block blocks-layout__block--first-item <?php if (rand(1, 100) < 50) { echo "blocks-layout__block--first-item-white"; }?>"></div>
-<?php } ?>
