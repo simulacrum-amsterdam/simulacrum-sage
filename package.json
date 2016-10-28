@@ -49,6 +49,7 @@
     "gulp-uglify": "",
     "gulp-util": "",
     "imagemin-pngcrush": "",
+    "jshint": "^2.9.4",
     "jshint-stylish": "",
     "lazypipe": "",
     "merge-stream": "",
